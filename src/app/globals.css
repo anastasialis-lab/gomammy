@@ -16,7 +16,10 @@
   /* Text */
   --color-ink: #242321;
   --color-ink-soft: #4a4640;
-  --color-muted: #77736d;
+  /* Darkened from the brief's #77736d, which measured 3.81:1 on the rose
+     CTA block and 4.05:1 in the footer — both under WCAG AA. This clears
+     4.5:1 on every surface it is used on. */
+  --color-muted: #6b6760;
 
   /* Primary accent — dusty rose */
   --color-rose-50: #fbf2f0;
@@ -54,6 +57,7 @@
 :root {
   color-scheme: light;
   --header-height: 4rem;
+  --icon-close: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath d='M3 3l10 10M13 3L3 13' stroke='black' stroke-width='2' stroke-linecap='round'/%3E%3C/svg%3E");
 }
 
 @layer base {
@@ -122,6 +126,24 @@
     border-radius: 2px;
   }
 
+  /* Chromium paints its own clear button inside type="search", in the UA
+     accent colour — a blue cross in the middle of a warm palette. Repaint it
+     as a masked shape in our own ink rather than dropping the affordance. */
+  input[type='search']::-webkit-search-cancel-button {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 0.8rem;
+    height: 0.8rem;
+    cursor: pointer;
+    background-color: var(--color-muted);
+    -webkit-mask: var(--icon-close) center / contain no-repeat;
+    mask: var(--icon-close) center / contain no-repeat;
+  }
+
+  input[type='search']::-webkit-search-cancel-button:hover {
+    background-color: var(--color-ink);
+  }
+
   ::selection {
     background: var(--color-rose-100);
   }
@@ -147,6 +169,22 @@
     .container-page {
       padding-inline: 2rem;
     }
+  }
+
+  /* Small round controls keep their visual size but take a 44px touch box,
+     which is the minimum a thumb can reliably hit. */
+  .tap-target {
+    position: relative;
+  }
+
+  .tap-target::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 2.75rem;
+    height: 2.75rem;
+    transform: translate(-50%, -50%);
   }
 
   .eyebrow {

@@ -85,7 +85,15 @@ export async function generateMetadata({
     },
     description: settings.siteDescription,
     applicationName: settings.siteName,
-    icons: { icon: [{ url: '/icon.svg', type: 'image/svg+xml' }] },
+    icons: {
+      // SVG where it is supported, a PNG for the browsers that ignore it, and
+      // an opaque 180px square for the iOS home screen.
+      icon: [
+        { url: '/icon.svg', type: 'image/svg+xml' },
+        { url: '/icon-32.png', sizes: '32x32', type: 'image/png' },
+      ],
+      apple: [{ url: '/apple-touch-icon.png', sizes: '180x180', type: 'image/png' }],
+    },
     formatDetection: { telephone: false },
   };
 }

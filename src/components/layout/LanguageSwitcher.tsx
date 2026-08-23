@@ -56,7 +56,7 @@ export function LanguageSwitcher({ locale, label }: { locale: Locale; label: str
         aria-expanded={open}
         aria-haspopup="menu"
         aria-label={label}
-        className="flex items-center gap-1.5 rounded-full border border-line px-3 py-1.5 text-xs font-semibold uppercase tracking-wider transition-colors hover:border-ink"
+        className="tap-target flex items-center gap-1.5 rounded-full border border-line px-3 py-1.5 text-xs font-semibold uppercase tracking-wider transition-colors hover:border-ink"
       >
         {locale}
         <svg width="10" height="6" viewBox="0 0 10 6" aria-hidden fill="none">
