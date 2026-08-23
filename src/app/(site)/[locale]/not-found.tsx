@@ -3,6 +3,7 @@ import { DEFAULT_LOCALE } from '@/lib/i18n/config';
 import { getDictionary } from '@/lib/i18n/dictionaries';
 import { LinkButton } from '@/components/ui/Button';
 import { routes } from '@/lib/routes';
+import { BRAND } from '@/content/data/site';
 
 /**
  * Rendered for any unmatched path under a locale. It cannot read params, so it
@@ -24,7 +25,7 @@ export default function NotFound() {
       </div>
       <p className="mt-10 text-sm text-muted">
         <Link href={`/${DEFAULT_LOCALE}`} className="link-underline">
-          GoMammy
+          {BRAND.name}
         </Link>
       </p>
     </div>

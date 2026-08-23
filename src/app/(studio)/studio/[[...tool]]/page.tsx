@@ -4,7 +4,7 @@ export const dynamic = 'force-dynamic';
 export const maxDuration = 30;
 
 export const metadata: Metadata = {
-  title: 'GoMammy CMS',
+  title: 'HelloMommy CMS',
   robots: { index: false, follow: false },
 };
 

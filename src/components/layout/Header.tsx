@@ -4,6 +4,7 @@ import { useEffect, useState } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import type { Locale } from '@/lib/i18n/config';
+import { BRAND } from '@/content/data/site';
 import type { Dictionary } from '@/lib/i18n/dictionaries';
 import { LanguageSwitcher } from './LanguageSwitcher';
 import { SearchOverlay } from '@/components/search/SearchOverlay';
@@ -41,7 +42,7 @@ export function Header({
 
       <header className="sticky top-0 z-40 border-b border-line-soft bg-ivory/85 backdrop-blur-md">
         <div className="container-page flex h-16 items-center justify-between gap-4">
-          <Link href={`/${locale}`} className="flex shrink-0 items-center gap-2.5" aria-label="GoMammy">
+          <Link href={`/${locale}`} className="flex shrink-0 items-center gap-2.5" aria-label={BRAND.name}>
             <svg width="34" height="34" viewBox="0 0 48 48" aria-hidden>
               <circle cx="24" cy="24" r="24" fill="var(--color-rose-100)" />
               <path
@@ -53,7 +54,7 @@ export function Header({
               />
               <circle cx="24" cy="15.5" r="3.3" fill="var(--color-rose-500)" />
             </svg>
-            <span className="font-serif text-[1.35rem] tracking-tight">GoMammy</span>
+            <span className="font-serif text-[1.35rem] tracking-tight">{BRAND.name}</span>
           </Link>
 
           <nav aria-label="Main" className="hidden lg:block">

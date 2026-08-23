@@ -132,7 +132,7 @@ export const fr: Dictionary = {
     terms: 'Conditions d’utilisation',
     cookiePolicy: 'Politique des cookies',
     disclaimer:
-      'GoMammy propose des informations générales sur la grossesse et la parentalité. Elles ne remplacent ni un avis médical, ni un diagnostic, ni un traitement.',
+      'HelloMommy propose des informations générales sur la grossesse et la parentalité. Elles ne remplacent ni un avis médical, ni un diagnostic, ni un traitement.',
     rights: 'Tous droits réservés.',
   },
   common: {
