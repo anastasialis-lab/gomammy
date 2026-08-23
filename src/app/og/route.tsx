@@ -1,5 +1,6 @@
 import { ImageResponse } from 'next/og';
 import { isLocale } from '@/lib/i18n/config';
+import { siteUrl } from '@/lib/seo/site';
 
 export const runtime = 'nodejs';
 export const revalidate = 86400;
@@ -13,6 +14,9 @@ export async function GET(request: Request) {
   const title = (searchParams.get('title') ?? 'GoMammy').slice(0, 120);
   const eyebrow = searchParams.get('eyebrow')?.slice(0, 40) ?? '';
   const locale = searchParams.get('locale');
+  // The wordmark on the card is the site's own host, so a domain change never
+  // leaves 300 share images advertising the previous one.
+  const wordmark = new URL(siteUrl()).host.replace(/^www\./, '');
 
   return new ImageResponse(
     (
@@ -68,7 +72,7 @@ export async function GET(request: Request) {
             justifyContent: 'space-between',
           }}
         >
-          <span>gomammy.com</span>
+          <span>{wordmark}</span>
           <span>{isLocale(locale ?? '') ? (locale ?? '').toUpperCase() : ''}</span>
         </div>
       </div>
