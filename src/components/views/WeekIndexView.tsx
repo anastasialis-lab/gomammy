@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import Link from 'next/link';
 import type { Locale } from '@/lib/i18n/config';
 import type { Dictionary } from '@/lib/i18n/dictionaries';
@@ -48,12 +49,21 @@ export function WeekIndexView({
                 <li key={facts.week}>
                   <Link
                     href={routes.week(locale, facts.week)}
-                    className="card-soft flex h-full flex-col justify-between p-4 transition-colors hover:border-rose-200"
+                    className="card-soft group flex h-full flex-col overflow-hidden p-3 transition-colors hover:border-rose-200 sm:p-4"
                   >
-                    <span className="font-serif text-2xl">
+                    <span className="relative aspect-[4/3] w-full overflow-hidden rounded-md bg-gradient-to-br from-rose-50/70 to-ivory-deep/60">
+                      <Image
+                        src={`/images/weeks/week-${facts.week}.webp`}
+                        alt=""
+                        fill
+                        sizes="(min-width: 1024px) 18vw, (min-width: 640px) 30vw, 44vw"
+                        className="object-contain p-3 transition-transform duration-300 group-hover:scale-105"
+                      />
+                    </span>
+                    <span className="mt-3 font-serif text-2xl">
                       {t(dict.week.shortLabel, { n: facts.week })}
                     </span>
-                    <span className="mt-2 text-xs leading-snug text-muted">{page.sizeLabel}</span>
+                    <span className="mt-1 text-xs leading-snug text-muted">{page.sizeLabel}</span>
                   </Link>
                 </li>
               );

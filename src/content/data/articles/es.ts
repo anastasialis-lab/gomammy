@@ -32,7 +32,7 @@ export const esArticles: Article[] = [
     excerpt:
       'Las señales que llegan primero, cuándo el test es fiable y qué merece la pena hacer en los días siguientes a un positivo.',
     heroImage: {
-      src: '/images/articles/early-signs.svg',
+      src: '/images/articles/early-signs.webp',
       alt: 'Mañana tranquila con una taza de té y un test de embarazo sobre la mesa',
       width: 1600,
       height: 900,
@@ -129,7 +129,7 @@ export const esArticles: Article[] = [
     excerpt:
       'Una lista práctica para el parto, para los días después y para tu bebé — lista antes de la semana 36.',
     heroImage: {
-      src: '/images/articles/hospital-bag.svg',
+      src: '/images/articles/hospital-bag.webp',
       alt: 'Bolsa preparada para el hospital con ropita de bebé doblada al lado',
       width: 1600,
       height: 900,
@@ -218,7 +218,7 @@ export const esArticles: Article[] = [
     excerpt:
       'Por qué desde la semana 28 se recomienda dormir de lado, cómo hacerlo cómodo y qué hacer con los otros motivos que te desvelan.',
     heroImage: {
-      src: '/images/articles/sleep.svg',
+      src: '/images/articles/sleep.webp',
       alt: 'Dormitorio con luz suave y almohadas colocadas para dormir de lado',
       width: 1600,
       height: 900,
@@ -302,7 +302,7 @@ export const esArticles: Article[] = [
     excerpt:
       'Cuándo empieza a latir el corazón, qué frecuencias son normales semana a semana y por qué las matronas prefieren los movimientos al doppler casero.',
     heroImage: {
-      src: '/images/articles/heartbeat.svg',
+      src: '/images/articles/heartbeat.webp',
       alt: 'Imagen de ecografía en una pantalla en una consulta con luz suave',
       width: 1600,
       height: 900,
@@ -387,7 +387,7 @@ export const esArticles: Article[] = [
     excerpt:
       'Revisiones, suplementos y conocimiento de tu ciclo antes de empezar a buscar — y cuánto suele tardar el embarazo en llegar.',
     heroImage: {
-      src: '/images/articles/preparing.svg',
+      src: '/images/articles/preparing.webp',
       alt: 'Un calendario, un vaso de agua y un bol de fruta en la mesa de la cocina',
       width: 1600,
       height: 900,

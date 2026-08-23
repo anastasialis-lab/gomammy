@@ -1,5 +1,6 @@
 'use client';
 
+import Image from 'next/image';
 import Link from 'next/link';
 import type { Locale } from '@/lib/i18n/config';
 import { BRAND } from '@/content/data/site';
@@ -22,8 +23,14 @@ export function Footer({
     <footer className="mt-24 border-t border-line-soft bg-ivory-deep/60">
       <div className="container-page grid gap-10 py-14 md:grid-cols-[1.4fr_1fr_1fr]">
         <div>
-          <Link href={`/${locale}`} className="font-serif text-2xl tracking-tight">
-            {BRAND.name}
+          <Link href={`/${locale}`} className="inline-flex" aria-label={BRAND.name}>
+            <Image
+              src="/brand/logo-stacked.webp"
+              alt={BRAND.name}
+              width={900}
+              height={932}
+              className="h-auto w-44"
+            />
           </Link>
           <p className="mt-3 max-w-xs text-sm text-muted">{dict.footer.tagline}</p>
         </div>

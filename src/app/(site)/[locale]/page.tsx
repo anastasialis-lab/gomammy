@@ -82,7 +82,7 @@ export default async function HomePage({ params }: Props) {
 
           <div className="relative aspect-[4/3] overflow-hidden rounded-xl bg-ivory-deep md:aspect-[5/4]">
             <Image
-              src="/images/categories/by-week.svg"
+              src="/images/categories/by-week.webp"
               alt=""
               fill
               priority
@@ -106,10 +106,19 @@ export default async function HomePage({ params }: Props) {
               <li key={week}>
                 <Link
                   href={routes.week(locale, week)}
-                  className="card-soft flex h-full flex-col justify-between p-4 transition-colors hover:border-rose-200"
+                  className="card-soft group flex min-h-[13rem] h-full flex-col overflow-hidden p-4 transition-colors hover:border-rose-200 sm:min-h-[14rem]"
                 >
                   <span className="font-serif text-2xl">{t(dict.week.shortLabel, { n: week })}</span>
-                  <span className="mt-2 text-xs text-muted">{page.sizeLabel}</span>
+                  <span className="relative my-2 min-h-0 flex-1" aria-hidden>
+                    <Image
+                      src={`/images/weeks/week-${week}.webp`}
+                      alt=""
+                      fill
+                      sizes="(min-width: 640px) 160px, 42vw"
+                      className="object-contain p-1 drop-shadow-[0_8px_12px_rgba(74,70,64,0.14)] transition-transform duration-500 ease-[cubic-bezier(0.22,0.61,0.36,1)] group-hover:scale-105"
+                    />
+                  </span>
+                  <span className="text-xs leading-snug text-muted">{page.sizeLabel}</span>
                 </Link>
               </li>
             );

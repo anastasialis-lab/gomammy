@@ -562,10 +562,10 @@ export function getCategories(locale: Locale): Category[] {
       isWeekIndex: key === 'by-week',
       seo: { title: c.seoTitle, description: c.seoDescription },
       featuredImage: {
-        src: `/images/categories/${key}.svg`,
+        src: `/images/categories/${key}.webp`,
         alt: c.title,
-        width: 1200,
-        height: 630,
+        width: 1536,
+        height: 1024,
       },
     } satisfies Category;
   });
