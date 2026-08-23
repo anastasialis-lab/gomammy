@@ -64,49 +64,49 @@ const titles: Record<Locale, Record<LegalKey, string>> = {
     privacy: 'Privacy policy',
     cookies: 'Cookie policy',
     terms: 'Terms of use',
-    about: 'About GoMammy',
+    about: 'About HelloMommy',
     editorial: 'Editorial policy',
   },
   de: {
     privacy: 'Datenschutzerklärung',
     cookies: 'Cookie-Richtlinie',
     terms: 'Nutzungsbedingungen',
-    about: 'Über GoMammy',
+    about: 'Über HelloMommy',
     editorial: 'Redaktionelle Grundsätze',
   },
   it: {
     privacy: 'Informativa sulla privacy',
     cookies: 'Cookie policy',
     terms: 'Termini di utilizzo',
-    about: 'Chi è GoMammy',
+    about: 'Chi è HelloMommy',
     editorial: 'Linea editoriale',
   },
   es: {
     privacy: 'Política de privacidad',
     cookies: 'Política de cookies',
     terms: 'Términos de uso',
-    about: 'Sobre GoMammy',
+    about: 'Sobre HelloMommy',
     editorial: 'Política editorial',
   },
   pt: {
     privacy: 'Política de privacidade',
     cookies: 'Política de cookies',
     terms: 'Termos de utilização',
-    about: 'Sobre a GoMammy',
+    about: 'Sobre a HelloMommy',
     editorial: 'Política editorial',
   },
   fr: {
     privacy: 'Politique de confidentialité',
     cookies: 'Politique des cookies',
     terms: 'Conditions d’utilisation',
-    about: 'À propos de GoMammy',
+    about: 'À propos de HelloMommy',
     editorial: 'Charte éditoriale',
   },
   uk: {
     privacy: 'Політика конфіденційності',
     cookies: 'Політика cookie',
     terms: 'Умови користування',
-    about: 'Про GoMammy',
+    about: 'Про HelloMommy',
     editorial: 'Редакційна політика',
   },
 };
@@ -143,7 +143,7 @@ const readInEnglish: Record<Locale, string> = {
 const englishBodies: Record<LegalKey, ReturnType<typeof p>[]> = {
   privacy: [
     p(
-      'This policy explains what GoMammy collects when you read the site, why, and what you can decide about it. It applies to hellomommy.co and to every language version of it.',
+      'This policy explains what HelloMommy collects when you read the site, why, and what you can decide about it. It applies to hellomommy.co and to every language version of it.',
     ),
     h2('What we collect'),
     ul([
@@ -189,7 +189,7 @@ const englishBodies: Record<LegalKey, ReturnType<typeof p>[]> = {
   ],
   terms: [
     p(
-      'By using GoMammy you accept these terms. If you do not agree with them, please do not use the site.',
+      'By using HelloMommy you accept these terms. If you do not agree with them, please do not use the site.',
     ),
     h2('Information, not medical advice'),
     p(
@@ -200,13 +200,13 @@ const englishBodies: Record<LegalKey, ReturnType<typeof p>[]> = {
       'We date every article and review health content against current antenatal guidance, but medicine changes and no article can account for your individual situation.',
     ),
     h2('Intellectual property'),
-    p('The text, design and brand on this site belong to GoMammy. You may link to it and quote it with attribution.'),
+    p('The text, design and brand on this site belong to HelloMommy. You may link to it and quote it with attribution.'),
     h2('Links to other sites'),
     p('We link to external sources for reference. We are not responsible for their content or their privacy practices.'),
   ],
   about: [
     p(
-      'GoMammy is a digital companion for pregnancy: a place to read something calm and accurate at two in the morning, and a set of apps that keep the practical side in one place.',
+      'HelloMommy is a digital companion for pregnancy: a place to read something calm and accurate at two in the morning, and a set of apps that keep the practical side in one place.',
     ),
     h2('What we publish'),
     p(
@@ -221,7 +221,7 @@ const englishBodies: Record<LegalKey, ReturnType<typeof p>[]> = {
   ],
   editorial: [
     p(
-      'Health content deserves to say where it comes from. This is how GoMammy articles are made.',
+      'Health content deserves to say where it comes from. This is how HelloMommy articles are made.',
     ),
     h2('Sourcing'),
     p(
@@ -276,7 +276,7 @@ export function getLegalPage(locale: Locale, key: LegalKey): LegalPage {
         ],
     seo: {
       title,
-      description: isSource ? `${title} — GoMammy.` : pendingNotice[locale],
+      description: isSource ? `${title} — HelloMommy.` : pendingNotice[locale],
       noindex: !isSource,
     },
   };

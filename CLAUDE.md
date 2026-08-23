@@ -1,6 +1,6 @@
 @AGENTS.md
 
-# GoMammy
+# HelloMommy
 
 Multilingual SEO content site (Next.js 16 App Router, Tailwind 4, Sanity).
 Read README.md first — the URL architecture and the two-layer week-page content

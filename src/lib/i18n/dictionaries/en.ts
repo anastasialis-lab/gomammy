@@ -132,7 +132,7 @@ export const en: Dictionary = {
     terms: 'Terms of use',
     cookiePolicy: 'Cookie policy',
     disclaimer:
-      'GoMammy provides general information about pregnancy and parenthood. It is not a substitute for professional medical advice, diagnosis or treatment.',
+      'HelloMommy provides general information about pregnancy and parenthood. It is not a substitute for professional medical advice, diagnosis or treatment.',
     rights: 'All rights reserved.',
   },
   common: {

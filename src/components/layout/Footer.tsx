@@ -2,6 +2,7 @@
 
 import Link from 'next/link';
 import type { Locale } from '@/lib/i18n/config';
+import { BRAND } from '@/content/data/site';
 import type { Dictionary } from '@/lib/i18n/dictionaries';
 import { CookieSettingsLink } from '@/components/consent/CookieBanner';
 import type { NavItem } from './Header';
@@ -22,7 +23,7 @@ export function Footer({
       <div className="container-page grid gap-10 py-14 md:grid-cols-[1.4fr_1fr_1fr]">
         <div>
           <Link href={`/${locale}`} className="font-serif text-2xl tracking-tight">
-            GoMammy
+            {BRAND.name}
           </Link>
           <p className="mt-3 max-w-xs text-sm text-muted">{dict.footer.tagline}</p>
         </div>
@@ -65,7 +66,7 @@ export function Footer({
         <div className="container-page flex flex-col gap-3 py-6 text-xs text-muted md:flex-row md:items-center md:justify-between">
           <p className="max-w-2xl">{dict.footer.disclaimer}</p>
           <p className="shrink-0">
-            © {new Date().getFullYear()} GoMammy. {dict.footer.rights}
+            © {new Date().getFullYear()} {BRAND.name}. {dict.footer.rights}
           </p>
         </div>
       </div>

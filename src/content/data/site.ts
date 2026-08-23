@@ -2,13 +2,13 @@ import type { Locale } from '@/lib/i18n/config';
 import type { Author, SiteSettings } from '@/lib/content/types';
 
 export const BRAND = {
-  name: 'GoMammy',
-  legalName: 'GoMammy',
+  name: 'HelloMommy',
+  legalName: 'HelloMommy',
   /** Overridden by NEXT_PUBLIC_SITE_URL in every environment. */
   fallbackUrl: 'https://hellomommy.co',
   social: [
-    'https://www.instagram.com/gomammy',
-    'https://www.pinterest.com/gomammy',
+    'https://www.instagram.com/hellomommy',
+    'https://www.pinterest.com/hellomommy',
   ],
   contactEmail: 'hello@hellomommy.co',
 } as const;
@@ -31,7 +31,7 @@ export function getSiteSettings(locale: Locale): SiteSettings {
     organizationName: BRAND.legalName,
     logo: {
       src: '/brand/logo.svg',
-      alt: 'GoMammy',
+      alt: 'HelloMommy',
       width: 160,
       height: 40,
     },
@@ -50,7 +50,7 @@ export function getSiteSettings(locale: Locale): SiteSettings {
 const authorCopy: Record<Locale, Record<string, { role: string; bio: string }>> = {
   en: {
     editorial: {
-      role: 'GoMammy editorial team',
+      role: 'HelloMommy editorial team',
       bio: 'Writers and editors who turn antenatal guidance into plain, calm language.',
     },
     reviewer: {
@@ -60,7 +60,7 @@ const authorCopy: Record<Locale, Record<string, { role: string; bio: string }>> 
   },
   de: {
     editorial: {
-      role: 'GoMammy Redaktion',
+      role: 'HelloMommy Redaktion',
       bio: 'Autorinnen und Redakteurinnen, die Vorsorgewissen in klare, ruhige Sprache übersetzen.',
     },
     reviewer: {
@@ -70,7 +70,7 @@ const authorCopy: Record<Locale, Record<string, { role: string; bio: string }>> 
   },
   it: {
     editorial: {
-      role: 'Redazione GoMammy',
+      role: 'Redazione HelloMommy',
       bio: 'Autrici e redattori che traducono le linee guida in un linguaggio semplice e sereno.',
     },
     reviewer: {
@@ -80,7 +80,7 @@ const authorCopy: Record<Locale, Record<string, { role: string; bio: string }>> 
   },
   es: {
     editorial: {
-      role: 'Redacción de GoMammy',
+      role: 'Redacción de HelloMommy',
       bio: 'Autoras y editoras que traducen las guías clínicas a un lenguaje claro y sereno.',
     },
     reviewer: {
@@ -90,7 +90,7 @@ const authorCopy: Record<Locale, Record<string, { role: string; bio: string }>> 
   },
   pt: {
     editorial: {
-      role: 'Redação GoMammy',
+      role: 'Redação HelloMommy',
       bio: 'Autoras e editoras que traduzem as orientações clínicas para uma linguagem simples e calma.',
     },
     reviewer: {
@@ -100,7 +100,7 @@ const authorCopy: Record<Locale, Record<string, { role: string; bio: string }>> 
   },
   fr: {
     editorial: {
-      role: 'Rédaction GoMammy',
+      role: 'Rédaction HelloMommy',
       bio: 'Des autrices et éditrices qui traduisent les recommandations en un langage clair et apaisant.',
     },
     reviewer: {
@@ -110,7 +110,7 @@ const authorCopy: Record<Locale, Record<string, { role: string; bio: string }>> 
   },
   uk: {
     editorial: {
-      role: 'Редакція GoMammy',
+      role: 'Редакція HelloMommy',
       bio: 'Авторки й редакторки, які перекладають медичні рекомендації спокійною зрозумілою мовою.',
     },
     reviewer: {
@@ -125,17 +125,17 @@ export function getAuthors(locale: Locale): Author[] {
   return [
     {
       id: 'editorial',
-      name: 'GoMammy',
+      name: 'HelloMommy',
       role: copy.editorial.role,
       bio: copy.editorial.bio,
-      avatar: { src: '/brand/avatar-editorial.svg', alt: 'GoMammy', width: 96, height: 96 },
+      avatar: { src: '/brand/avatar-editorial.svg', alt: 'HelloMommy', width: 96, height: 96 },
     },
     {
       id: 'reviewer',
-      name: 'GoMammy',
+      name: 'HelloMommy',
       role: copy.reviewer.role,
       bio: copy.reviewer.bio,
-      avatar: { src: '/brand/avatar-reviewer.svg', alt: 'GoMammy', width: 96, height: 96 },
+      avatar: { src: '/brand/avatar-reviewer.svg', alt: 'HelloMommy', width: 96, height: 96 },
     },
   ];
 }

@@ -1,6 +1,7 @@
 import { ImageResponse } from 'next/og';
 import { isLocale } from '@/lib/i18n/config';
 import { siteUrl } from '@/lib/seo/site';
+import { BRAND } from '@/content/data/site';
 
 export const runtime = 'nodejs';
 export const revalidate = 86400;
@@ -11,7 +12,7 @@ export const revalidate = 86400;
  */
 export async function GET(request: Request) {
   const { searchParams } = new URL(request.url);
-  const title = (searchParams.get('title') ?? 'GoMammy').slice(0, 120);
+  const title = (searchParams.get('title') ?? BRAND.name).slice(0, 120);
   const eyebrow = searchParams.get('eyebrow')?.slice(0, 40) ?? '';
   const locale = searchParams.get('locale');
   // The wordmark on the card is the site's own host, so a domain change never
@@ -42,7 +43,7 @@ export async function GET(request: Request) {
               display: 'flex',
             }}
           />
-          <div style={{ fontSize: 34, color: '#242321', letterSpacing: -0.5 }}>GoMammy</div>
+          <div style={{ fontSize: 34, color: '#242321', letterSpacing: -0.5 }}>{BRAND.name}</div>
         </div>
 
         <div style={{ display: 'flex', flexDirection: 'column', maxWidth: 960 }}>

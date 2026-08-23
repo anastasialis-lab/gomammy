@@ -30,7 +30,7 @@ export function websiteSchema(locale: Locale, searchPath: string): JsonLdObject 
     '@type': 'WebSite',
     '@id': `${absoluteUrl('/')}#website`,
     name: BRAND.name,
-    alternateName: 'GoMammy pregnancy',
+    alternateName: 'HelloMommy pregnancy',
     url: absoluteUrl(`/${locale}`),
     inLanguage: LOCALE_TAGS[locale],
     publisher: { '@id': `${absoluteUrl('/')}#organization` },

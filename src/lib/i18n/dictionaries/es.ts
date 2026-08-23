@@ -132,7 +132,7 @@ export const es: Dictionary = {
     terms: 'Términos de uso',
     cookiePolicy: 'Política de cookies',
     disclaimer:
-      'GoMammy ofrece información general sobre embarazo y maternidad. No sustituye el consejo, diagnóstico ni tratamiento de un profesional sanitario.',
+      'HelloMommy ofrece información general sobre embarazo y maternidad. No sustituye el consejo, diagnóstico ni tratamiento de un profesional sanitario.',
     rights: 'Todos los derechos reservados.',
   },
   common: {

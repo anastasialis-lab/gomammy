@@ -1,4 +1,4 @@
-# GoMammy
+# HelloMommy
 
 A multilingual, SEO-first content site for expectant mothers, built to funnel
 organic search traffic into the brand's mobile apps.

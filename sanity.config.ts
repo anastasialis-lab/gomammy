@@ -11,8 +11,8 @@ export const dataset = process.env.NEXT_PUBLIC_SANITY_DATASET ?? 'production';
 export const apiVersion = process.env.NEXT_PUBLIC_SANITY_API_VERSION ?? '2026-01-01';
 
 export default defineConfig({
-  name: 'gomammy',
-  title: 'GoMammy CMS',
+  name: 'hellomommy',
+  title: 'HelloMommy CMS',
   basePath: '/studio',
   projectId,
   dataset,
