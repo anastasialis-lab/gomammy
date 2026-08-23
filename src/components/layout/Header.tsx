@@ -78,12 +78,12 @@ export function Header({
             </ul>
           </nav>
 
-          <div className="flex items-center gap-2">
+          <div className="flex items-center gap-2.5">
             <button
               type="button"
               onClick={() => setSearchOpen(true)}
               aria-label={dict.actions.search}
-              className="rounded-full border border-line p-2 transition-colors hover:border-ink"
+              className="tap-target rounded-full border border-line p-2 transition-colors hover:border-ink"
             >
               <svg width="16" height="16" viewBox="0 0 16 16" aria-hidden fill="none">
                 <circle cx="7" cy="7" r="5" stroke="currentColor" strokeWidth="1.6" />
@@ -99,7 +99,7 @@ export function Header({
               aria-expanded={menuOpen}
               aria-controls="mobile-nav"
               aria-label={menuOpen ? dict.nav.closeMenu : dict.nav.menu}
-              className="rounded-full border border-line p-2 transition-colors hover:border-ink lg:hidden"
+              className="tap-target rounded-full border border-line p-2 transition-colors hover:border-ink lg:hidden"
             >
               <svg width="16" height="16" viewBox="0 0 16 16" aria-hidden fill="none">
                 {menuOpen ? (
