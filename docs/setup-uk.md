@@ -7,21 +7,50 @@
 
 ## Крок 1. Домен і хостинг (30 хв)
 
-Сайт — це Next.js, найпростіше на Vercel (безкоштовного плану вистачить надовго).
+### Чому не GitHub Pages
 
-1. Залийте репозиторій на GitHub.
-2. vercel.com → **Add New → Project** → імпортуйте репозиторій. Vercel сам
-   визначить Next.js, нічого налаштовувати не треба.
+GitHub Pages віддає лише статичні файли — там немає сервера. Цей сайт без
+сервера втрачає те, заради чого його побудовано:
+
+| Що зламається | Чому |
+| --- | --- |
+| `hellomommy.co/` | редірект на потрібну мову робить `proxy.ts` — на Pages його нема, головна віддає 404 |
+| OG-зображення | `/og` малює картинку на льоту; довелося б згенерувати 280+ файлів наперед |
+| Пошук по сайту | сторінка читає `?q=` на сервері |
+| `/studio` | CMS потребує сервера |
+| Оптимізація зображень | `next/image` довелося б вимкнути → без WebP/AVIF і адаптивних розмірів, а це прямо б'є по LCP і Core Web Vitals |
+| Заголовки безпеки | Pages ігнорує `headers()` з `next.config.ts` |
+| Оновлення з CMS | немає перезбірки по вебхуку |
+
+Зараз на `hellomommy.co` Pages віддає не сайт, а **README репозиторію**:
+у налаштуваннях стоїть збірка Jekyll із гілки `main`, тому `README.md`
+перетворився на головну сторінку.
+
+Vercel робить усе перелічене з коробки, безкоштовно, з того самого репозиторію.
+
+### Налаштування на Vercel
+
+1. Репозиторій уже на GitHub: `anastasialis-lab/gomammy`.
+2. vercel.com → **Add New → Project** → імпортуйте `anastasialis-lab/gomammy`.
+   Vercel сам визначить Next.js, нічого налаштовувати не треба.
 3. **Settings → Domains** → додайте свій домен, Vercel покаже, які DNS-записи
    прописати в реєстратора.
 4. **Settings → Environment Variables** → додайте для оточення *Production*:
 
    | Змінна | Значення |
    | --- | --- |
-   | `NEXT_PUBLIC_SITE_URL` | `https://вашдомен.com` (без слеша в кінці) |
-   | `NEXT_PUBLIC_GA_ID` | поки порожньо, заповните на кроці 2 |
+   | `NEXT_PUBLIC_SITE_URL` | `https://hellomommy.co` (без слеша в кінці) |
+   | `NEXT_PUBLIC_GA_ID` | `G-S63TD95BBW` |
 
 5. Redeploy.
+
+### Після переходу на Vercel
+
+1. GitHub → репозиторій → **Settings → Pages → Source: None**. Інакше два
+   деплої змагатимуться за один домен.
+2. У реєстратора домену переставте DNS із GitHub на Vercel (Vercel покаже,
+   які саме записи).
+3. Vercel вмикає HTTPS автоматично — зникне попередження «Не захищено».
 
 > **Важливо.** `NEXT_PUBLIC_SITE_URL` — це те, з чого будуються canonical,
 > hreflang, sitemap і OG-зображення. Якщо його не задати, всюди буде
@@ -37,8 +66,13 @@
 1. analytics.google.com → **Admin → Create → Property**.
 2. Назва `GoMammy`, часовий пояс і валюта — ваші.
 3. **Data streams → Add stream → Web**, URL вашого домену, назва `Website`.
-4. Скопіюйте **Measurement ID** — це `G-XXXXXXXXXX`.
-5. Vercel → Environment Variables → `NEXT_PUBLIC_GA_ID` = `G-XXXXXXXXXX` → Redeploy.
+4. Скопіюйте **Measurement ID** — у вас це `G-S63TD95BBW`.
+5. Vercel → Environment Variables → `NEXT_PUBLIC_GA_ID` = `G-S63TD95BBW` → Redeploy.
+
+> **Не вставляйте фрагмент gtag.js із інструкції Google у код.** Сайт уже
+> підключає GA сам — але тільки після згоди на cookie. Вставлений вручну
+> скрипт вантажив би Google ще до згоди (порушення GDPR) і рахував би
+> перегляди двічі. Достатньо однієї змінної оточення.
 
 ### 2.2. Перевірити, що працює
 
