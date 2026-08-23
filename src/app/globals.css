@@ -1,26 +1,281 @@
-@import "tailwindcss";
+@import 'tailwindcss';
+
+/* ------------------------------------------------------------------ */
+/* GoMammy design tokens                                               */
+/* Modern editorial + premium wellness + soft motherhood.              */
+/* ------------------------------------------------------------------ */
+
+@theme {
+  /* Surfaces */
+  --color-ivory: #faf8f5;
+  --color-ivory-deep: #f3ede5;
+  --color-card: #fffdfb;
+  --color-line: #e8e0d5;
+  --color-line-soft: #f0e9df;
+
+  /* Text */
+  --color-ink: #242321;
+  --color-ink-soft: #4a4640;
+  --color-muted: #77736d;
+
+  /* Primary accent — dusty rose */
+  --color-rose-50: #fbf2f0;
+  --color-rose-100: #f6e3df;
+  --color-rose-200: #ebc9c3;
+  --color-rose-400: #d09a92;
+  --color-rose-500: #bd8078;
+  --color-rose-600: #a4675f;
+  --color-rose-700: #85514a;
+
+  /* Secondary accent — muted sage */
+  --color-sage-50: #f0f3ee;
+  --color-sage-100: #e2e9de;
+  --color-sage-300: #b9c7b4;
+  --color-sage-600: #67795f;
+  --color-sage-700: #52614c;
+
+  /* Typography */
+  --font-serif: var(--font-display), 'Iowan Old Style', 'Palatino Linotype', Georgia, serif;
+  --font-sans: var(--font-body), ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif;
+
+  /* Radii */
+  --radius-sm: 0.5rem;
+  --radius-md: 0.875rem;
+  --radius-lg: 1.25rem;
+  --radius-xl: 1.75rem;
+
+  /* Reading measure */
+  --spacing-measure: 44rem;
+
+  /* Motion */
+  --ease-soft: cubic-bezier(0.22, 0.61, 0.36, 1);
+}
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  color-scheme: light;
+  --header-height: 4rem;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    /* Anchors from the table of contents must clear the sticky header. */
+    scroll-padding-top: calc(var(--header-height) + 1.5rem);
+    -webkit-text-size-adjust: 100%;
+  }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+
+  body {
+    background-color: var(--color-ivory);
+    color: var(--color-ink);
+    font-family: var(--font-sans);
+    font-size: 1.0625rem;
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: var(--font-serif);
+    color: var(--color-ink);
+    letter-spacing: -0.015em;
+    line-height: 1.15;
+    text-wrap: balance;
+    /* German compounds ("Schwangerschaftswoche") overflow a 360px screen
+       otherwise. `lang` is set on <html>, so hyphenation is language-aware. */
+    overflow-wrap: break-word;
+    hyphens: auto;
+  }
+
+  p,
+  li,
+  dd {
+    overflow-wrap: break-word;
+  }
+
+  p {
+    text-wrap: pretty;
+  }
+
+  a {
+    color: inherit;
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--color-rose-600);
+    outline-offset: 3px;
+    border-radius: 2px;
+  }
+
+  ::selection {
+    background: var(--color-rose-100);
+  }
+
+  /* Images never push layout around while loading. */
+  img,
+  svg,
+  video {
+    max-width: 100%;
+    height: auto;
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+@layer components {
+  .container-page {
+    width: 100%;
+    margin-inline: auto;
+    max-width: 76rem;
+    padding-inline: 1.25rem;
+  }
+
+  @media (min-width: 768px) {
+    .container-page {
+      padding-inline: 2rem;
+    }
+  }
+
+  .eyebrow {
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--color-rose-700);
+  }
+
+  /* Long-form article body: everything inside gets editorial spacing. */
+  .prose-editorial {
+    max-width: var(--spacing-measure);
+    font-size: 1.09375rem;
+    line-height: 1.75;
+    color: var(--color-ink-soft);
+  }
+
+  .prose-editorial > * + * {
+    margin-top: 1.35rem;
+  }
+
+  .prose-editorial h2 {
+    margin-top: 3rem;
+    font-size: 1.75rem;
+    color: var(--color-ink);
+  }
+
+  .prose-editorial h3 {
+    margin-top: 2.25rem;
+    font-size: 1.3125rem;
+    color: var(--color-ink);
+  }
+
+  .prose-editorial a {
+    color: var(--color-rose-700);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    text-decoration-thickness: 1px;
+    text-decoration-color: var(--color-rose-200);
+    transition: text-decoration-color 200ms var(--ease-soft);
+  }
+
+  .prose-editorial a:hover {
+    text-decoration-color: var(--color-rose-500);
+  }
+
+  .prose-editorial ul,
+  .prose-editorial ol {
+    padding-left: 1.15rem;
+    display: grid;
+    gap: 0.6rem;
+  }
+
+  .prose-editorial ul {
+    list-style: none;
+    padding-left: 0;
+  }
+
+  .prose-editorial ul > li {
+    position: relative;
+    padding-left: 1.4rem;
+  }
+
+  .prose-editorial ul > li::before {
+    content: '';
+    position: absolute;
+    left: 0.15rem;
+    top: 0.72em;
+    width: 0.4rem;
+    height: 0.4rem;
+    border-radius: 999px;
+    background: var(--color-rose-400);
+  }
+
+  .prose-editorial ol {
+    list-style: decimal;
+  }
+
+  .prose-editorial ol > li::marker {
+    color: var(--color-rose-700);
+    font-variant-numeric: tabular-nums;
+  }
+
+  .prose-editorial strong {
+    color: var(--color-ink);
+    font-weight: 600;
+  }
+
+  @media (min-width: 768px) {
+    .prose-editorial {
+      font-size: 1.125rem;
+    }
+    .prose-editorial h2 {
+      font-size: 2rem;
+    }
+  }
+
+  .card-soft {
+    background: var(--color-card);
+    border: 1px solid var(--color-line-soft);
+    border-radius: var(--radius-lg);
+  }
+
+  .link-underline {
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    text-decoration-thickness: 1px;
+    text-decoration-color: var(--color-line);
+  }
+
+  .link-underline:hover {
+    text-decoration-color: currentColor;
+  }
+}
+
+@layer utilities {
+  .fade-up {
+    animation: fade-up 500ms var(--ease-soft) both;
+  }
+
+  @keyframes fade-up {
+    from {
+      opacity: 0;
+      transform: translateY(8px);
+    }
+    to {
+      opacity: 1;
+      transform: none;
+    }
+  }
 }
