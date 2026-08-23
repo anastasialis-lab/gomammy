@@ -32,7 +32,7 @@ export const deArticles: Article[] = [
     excerpt:
       'Welche Anzeichen zuerst auftauchen, ab wann ein Test zuverlässig ist und was in den Tagen nach einem positiven Ergebnis wirklich zählt.',
     heroImage: {
-      src: '/images/articles/early-signs.svg',
+      src: '/images/articles/early-signs.webp',
       alt: 'Ruhiger Morgen mit einer Tasse Tee und einem Schwangerschaftstest auf dem Tisch',
       width: 1600,
       height: 900,
@@ -129,7 +129,7 @@ export const deArticles: Article[] = [
     excerpt:
       'Was für die Geburt, für die Zeit danach und für dein Baby wirklich in die Tasche gehört — gepackt bis zur 36. Woche.',
     heroImage: {
-      src: '/images/articles/hospital-bag.svg',
+      src: '/images/articles/hospital-bag.webp',
       alt: 'Gepackte Kliniktasche mit zusammengelegter Babykleidung daneben',
       width: 1600,
       height: 900,
@@ -218,7 +218,7 @@ export const deArticles: Article[] = [
     excerpt:
       'Warum ab der 28. Woche zur Seitenlage geraten wird, wie sie bequem wird und was gegen die anderen Gründe fürs Wachliegen hilft.',
     heroImage: {
-      src: '/images/articles/sleep.svg',
+      src: '/images/articles/sleep.webp',
       alt: 'Weich beleuchtetes Schlafzimmer mit Kissen für die Seitenlage',
       width: 1600,
       height: 900,
@@ -302,7 +302,7 @@ export const deArticles: Article[] = [
     excerpt:
       'Wann das Herz zu schlagen beginnt, welche Werte in welcher Woche normal sind und warum Hebammen Bewegungen für verlässlicher halten als Heim-Dopplers.',
     heroImage: {
-      src: '/images/articles/heartbeat.svg',
+      src: '/images/articles/heartbeat.webp',
       alt: 'Ultraschallbild auf einem Bildschirm in einer ruhig beleuchteten Praxis',
       width: 1600,
       height: 900,
@@ -387,7 +387,7 @@ export const deArticles: Article[] = [
     excerpt:
       'Welche Untersuchungen, Nährstoffe und Zykluskenntnisse vor dem ersten Versuch zählen — und wie lange es üblicherweise dauert.',
     heroImage: {
-      src: '/images/articles/preparing.svg',
+      src: '/images/articles/preparing.webp',
       alt: 'Kalender, ein Glas Wasser und eine Schale Obst auf einem Küchentisch',
       width: 1600,
       height: 900,

@@ -32,7 +32,7 @@ export const ukArticles: Article[] = [
     excerpt:
       'Які симптоми з’являються найпершими, коли тест стає надійним і що варто зробити в перші дні після позитивного результату.',
     heroImage: {
-      src: '/images/articles/early-signs.svg',
+      src: '/images/articles/early-signs.webp',
       alt: 'Спокійний ранок: чашка чаю і тест на вагітність на столі',
       width: 1600,
       height: 900,
@@ -129,7 +129,7 @@ export const ukArticles: Article[] = [
     excerpt:
       'Практичний список для пологів, для перших днів після них і для дитини — зібраний до 36-го тижня.',
     heroImage: {
-      src: '/images/articles/hospital-bag.svg',
+      src: '/images/articles/hospital-bag.webp',
       alt: 'Зібрана сумка в пологовий, поруч складений дитячий одяг',
       width: 1600,
       height: 900,
@@ -218,7 +218,7 @@ export const ukArticles: Article[] = [
     excerpt:
       'Чому з 28-го тижня радять спати на боці, як зробити це зручним і що робити з іншими причинами нічних пробуджень.',
     heroImage: {
-      src: '/images/articles/sleep.svg',
+      src: '/images/articles/sleep.webp',
       alt: 'Спальня з м’яким освітленням і подушками, розкладеними для сну на боці',
       width: 1600,
       height: 900,
@@ -302,7 +302,7 @@ export const ukArticles: Article[] = [
     excerpt:
       'Коли серце починає битися, які показники нормальні по тижнях і чому акушерки більше довіряють рухам, ніж домашньому доплеру.',
     heroImage: {
-      src: '/images/articles/heartbeat.svg',
+      src: '/images/articles/heartbeat.webp',
       alt: 'Зображення УЗД на екрані в кабінеті з м’яким освітленням',
       width: 1600,
       height: 900,
@@ -387,7 +387,7 @@ export const ukArticles: Article[] = [
     excerpt:
       'Які обстеження, добавки та знання про свій цикл мають значення ще до початку — і скільки зазвичай триває шлях до вагітності.',
     heroImage: {
-      src: '/images/articles/preparing.svg',
+      src: '/images/articles/preparing.webp',
       alt: 'Календар, склянка води та миска з фруктами на кухонному столі',
       width: 1600,
       height: 900,

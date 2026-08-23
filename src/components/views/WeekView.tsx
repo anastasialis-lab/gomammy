@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import Link from 'next/link';
 import type { Locale } from '@/lib/i18n/config';
 import type { Dictionary } from '@/lib/i18n/dictionaries';
@@ -80,15 +81,27 @@ export function WeekView({
 
       <div className="mt-8 grid gap-12 lg:grid-cols-[minmax(0,1fr)_20rem]">
         <div className="min-w-0 max-w-measure">
-          <header>
-            <span className="eyebrow">{dict.week.trimesterNames[facts.trimester - 1]}</span>
-            <h1 className="mt-3 text-[2.25rem] leading-tight md:text-[3rem]">{page.title}</h1>
-            <p className="mt-5 text-lg text-muted">{page.intro}</p>
-            {milestone ? (
-              <p className="mt-5 rounded-md border-l-2 border-sage-300 bg-sage-50 px-5 py-3 text-[0.98rem] text-ink-soft">
-                {milestone}
-              </p>
-            ) : null}
+          <header className="grid gap-6 sm:grid-cols-[minmax(0,1fr)_11rem] sm:items-center">
+            <div>
+              <span className="eyebrow">{dict.week.trimesterNames[facts.trimester - 1]}</span>
+              <h1 className="mt-3 text-[2.25rem] leading-tight md:text-[3rem]">{page.title}</h1>
+              <p className="mt-5 text-lg text-muted">{page.intro}</p>
+              {milestone ? (
+                <p className="mt-5 rounded-md border-l-2 border-sage-300 bg-sage-50 px-5 py-3 text-[0.98rem] text-ink-soft">
+                  {milestone}
+                </p>
+              ) : null}
+            </div>
+            <div className="relative mx-auto aspect-square w-40 overflow-hidden rounded-full bg-gradient-to-br from-rose-50/80 to-ivory-deep/70 sm:w-44">
+              <Image
+                src={`/images/weeks/week-${page.week}.webp`}
+                alt=""
+                fill
+                priority
+                sizes="11rem"
+                className="object-contain p-4"
+              />
+            </div>
           </header>
 
           {/* Facts strip */}

@@ -168,8 +168,8 @@ glyphs.
 
 ## Known gaps before launch
 
-- **Article and category imagery** is generated SVG placeholder art. Replace
-  with commissioned lifestyle photography. The Bubbi app icon and screenshots
+- **Article and category imagery** uses generated editorial lifestyle
+  photography in compressed WebP format. The Bubbi app icon and screenshots
   are real, pulled from the App Store listing.
 - **Store buttons** are styled, not the official Apple/Google badge artwork —
   swap them before launch to comply with each store's brand guidelines.

@@ -1,6 +1,7 @@
 'use client';
 
 import { useEffect, useState } from 'react';
+import Image from 'next/image';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import type { Locale } from '@/lib/i18n/config';
@@ -42,19 +43,15 @@ export function Header({
 
       <header className="sticky top-0 z-40 border-b border-line-soft bg-ivory/85 backdrop-blur-md">
         <div className="container-page flex h-16 items-center justify-between gap-4">
-          <Link href={`/${locale}`} className="flex shrink-0 items-center gap-2.5" aria-label={BRAND.name}>
-            <svg width="34" height="34" viewBox="0 0 48 48" aria-hidden>
-              <circle cx="24" cy="24" r="24" fill="var(--color-rose-100)" />
-              <path
-                d="M13 32c0-6.2 3.1-10.4 7.6-10.4 3.3 0 5.6 2.2 6.4 5.6.8-3.4 3.1-5.6 6.4-5.6 4.5 0 7.6 4.2 7.6 10.4"
-                fill="none"
-                stroke="var(--color-rose-500)"
-                strokeWidth="3.1"
-                strokeLinecap="round"
-              />
-              <circle cx="24" cy="15.5" r="3.3" fill="var(--color-rose-500)" />
-            </svg>
-            <span className="font-serif text-[1.35rem] tracking-tight">{BRAND.name}</span>
+          <Link href={`/${locale}`} className="flex shrink-0 items-center" aria-label={BRAND.name}>
+            <Image
+              src="/brand/logo-horizontal.webp"
+              alt={BRAND.name}
+              width={1400}
+              height={434}
+              priority
+              className="h-10 w-auto sm:h-11"
+            />
           </Link>
 
           <nav aria-label="Main" className="hidden lg:block">

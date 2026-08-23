@@ -199,7 +199,7 @@ export default async function ContentPage({ params }: Props) {
                 path: url,
                 headline: route.page.title,
                 description: route.page.seo.description,
-                image: route.category.featuredImage?.src ?? '/images/categories/by-week.svg',
+                image: route.category.featuredImage?.src ?? '/images/categories/by-week.webp',
                 publishedAt: '2026-01-15',
                 updatedAt: '2026-08-20',
                 section: route.category.title,

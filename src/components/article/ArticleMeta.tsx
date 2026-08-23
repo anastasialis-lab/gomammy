@@ -36,9 +36,9 @@ export function ArticleMeta({
             <Image
               src={author.avatar.src}
               alt=""
-              width={32}
-              height={32}
-              className="rounded-full"
+              width={40}
+              height={40}
+              className="h-10 w-10 rounded-full border border-rose-100 object-cover"
             />
           ) : null}
           <span>
@@ -49,9 +49,20 @@ export function ArticleMeta({
       ) : null}
 
       {reviewer ? (
-        <span>
-          <span className="text-ink">{dict.article.reviewedBy} </span>
-          {reviewer.role}
+        <span className="flex items-center gap-2.5">
+          {reviewer.avatar ? (
+            <Image
+              src={reviewer.avatar.src}
+              alt=""
+              width={40}
+              height={40}
+              className="h-10 w-10 rounded-full border border-sage-100 object-cover"
+            />
+          ) : null}
+          <span>
+            <span className="text-ink">{dict.article.reviewedBy} </span>
+            {reviewer.role}
+          </span>
         </span>
       ) : null}
 

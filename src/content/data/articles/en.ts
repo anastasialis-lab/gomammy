@@ -210,7 +210,7 @@ export const enArticles: Article[] = [
     excerpt:
       'The symptoms that show up first, when a test becomes reliable, and what is worth doing in the days after a positive result.',
     heroImage: {
-      src: '/images/articles/early-signs.svg',
+      src: '/images/articles/early-signs.webp',
       alt: 'A calm morning scene with a cup of tea and a pregnancy test on a table',
       width: 1600,
       height: 900,
@@ -265,7 +265,7 @@ export const enArticles: Article[] = [
     excerpt:
       'A practical list for labour, for after the birth and for your baby — packed by week 36, so it is one less thing to think about.',
     heroImage: {
-      src: '/images/articles/hospital-bag.svg',
+      src: '/images/articles/hospital-bag.webp',
       alt: 'A packed hospital bag with folded baby clothes beside it',
       width: 1600,
       height: 900,
@@ -318,7 +318,7 @@ export const enArticles: Article[] = [
     excerpt:
       'Why side sleeping is recommended from week 28, how to make it comfortable, and what to do about the other reasons you wake up.',
     heroImage: {
-      src: '/images/articles/sleep.svg',
+      src: '/images/articles/sleep.webp',
       alt: 'A softly lit bedroom with pillows arranged for side sleeping',
       width: 1600,
       height: 900,
@@ -372,7 +372,7 @@ export const enArticles: Article[] = [
     excerpt:
       'When the heart begins to beat, what a normal rate looks like week by week, and why midwives prefer movement over home dopplers.',
     heroImage: {
-      src: '/images/articles/heartbeat.svg',
+      src: '/images/articles/heartbeat.webp',
       alt: 'An ultrasound image on a screen in a softly lit consulting room',
       width: 1600,
       height: 900,
@@ -427,7 +427,7 @@ export const enArticles: Article[] = [
     excerpt:
       'The health checks, supplements and cycle knowledge that matter before you start trying — and how long conceiving usually takes.',
     heroImage: {
-      src: '/images/articles/preparing.svg',
+      src: '/images/articles/preparing.webp',
       alt: 'A calendar, a glass of water and a bowl of fruit on a kitchen table',
       width: 1600,
       height: 900,

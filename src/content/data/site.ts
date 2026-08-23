@@ -30,10 +30,10 @@ export function getSiteSettings(locale: Locale): SiteSettings {
     siteDescription: siteDescriptions[locale],
     organizationName: BRAND.legalName,
     logo: {
-      src: '/brand/logo.svg',
+      src: '/brand/logo-horizontal.webp',
       alt: 'HelloMommy',
-      width: 160,
-      height: 40,
+      width: 1400,
+      height: 434,
     },
     social: [...BRAND.social],
   };
@@ -128,7 +128,7 @@ export function getAuthors(locale: Locale): Author[] {
       name: 'HelloMommy',
       role: copy.editorial.role,
       bio: copy.editorial.bio,
-      avatar: { src: '/brand/avatar-editorial.svg', alt: 'HelloMommy', width: 96, height: 96 },
+      avatar: { src: '/brand/avatar-hellomommy.webp', alt: 'HelloMommy', width: 320, height: 320 },
     },
     {
       id: 'reviewer',

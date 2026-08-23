@@ -15,6 +15,25 @@ type Props = {
   tone?: 'dark' | 'light';
 };
 
+function AppleIcon() {
+  return (
+    <svg className="h-5 w-5 shrink-0" viewBox="0 0 24 24" aria-hidden fill="currentColor">
+      <path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.06 7.31c1.35-.07 2.29.74 3.08.74.76 0 2.16-.91 3.64-.78 1.56.13 2.73.74 3.51 1.86-3.22 1.93-2.45 6.18.5 7.37-.59 1.5-1.36 2.98-2.74 3.78ZM12.03 7.25C11.88 5.02 13.69 3.18 15.77 3c.29 2.58-2.34 4.5-3.74 4.25Z" />
+    </svg>
+  );
+}
+
+function GooglePlayIcon() {
+  return (
+    <svg className="h-5 w-5 shrink-0" viewBox="0 0 24 24" aria-hidden>
+      <path fill="#00d6b4" d="M3.5 2.4C3.2 2.8 3 3.4 3 4.2v15.6c0 .8.2 1.4.5 1.8L13.8 12 3.5 2.4Z" />
+      <path fill="#70d44b" d="m4.3 2.1 12.3 6.9-2.8 3L4.3 2.1Z" />
+      <path fill="#4b8df8" d="m4.3 21.9 9.5-9.9 2.8 3-12.3 6.9Z" />
+      <path fill="#ffb43b" d="m16.6 9 3.9 2.2c.7.4.7 1.2 0 1.6L16.6 15l-2.8-3 2.8-3Z" />
+    </svg>
+  );
+}
+
 /**
  * Store buttons are the conversion point of the whole funnel, so every click
  * is both tagged with campaign parameters (attribution inside the store) and
@@ -41,7 +60,7 @@ export function StoreButtons({
     content.startsWith('article_') || content.startsWith('week_') ? 'article' : 'site';
 
   const base =
-    'inline-flex items-center gap-2.5 rounded-full px-5 py-3 text-sm font-medium transition-colors';
+    'inline-flex items-center justify-center gap-3 whitespace-nowrap rounded-full px-5 py-3 text-sm font-medium transition-colors max-sm:w-full';
   const skin =
     tone === 'dark'
       ? 'bg-ink text-ivory hover:bg-rose-700'
@@ -67,9 +86,7 @@ export function StoreButtons({
         onClick={() => onClick('app_store')}
         className={`${base} ${skin}`}
       >
-        <svg width="15" height="18" viewBox="0 0 15 18" aria-hidden fill="currentColor">
-          <path d="M12.3 9.5c0-2 1.6-3 1.7-3-.9-1.4-2.4-1.6-2.9-1.6-1.2-.1-2.4.7-3 .7s-1.6-.7-2.6-.7C4.2 4.9 3 5.7 2.3 7c-1.3 2.3-.3 5.7 1 7.5.6.9 1.4 1.9 2.4 1.9.9 0 1.3-.6 2.4-.6s1.4.6 2.4.6 1.7-.9 2.3-1.8c.7-1 1-2 1-2.1 0 0-2-.8-2-3zM10.4 3.6c.5-.6.9-1.5.8-2.4-.8 0-1.7.5-2.2 1.2-.5.6-.9 1.5-.8 2.4.8.1 1.7-.5 2.2-1.2z" />
-        </svg>
+        <AppleIcon />
         {appStoreLabel}
       </a>
 
@@ -80,9 +97,7 @@ export function StoreButtons({
         onClick={() => onClick('google_play')}
         className={`${base} ${skin}`}
       >
-        <svg width="16" height="18" viewBox="0 0 16 18" aria-hidden fill="currentColor">
-          <path d="M1.3.6C1.1.8 1 1.1 1 1.6v14.8c0 .5.1.8.3 1l.1.1 8.3-8.3v-.2L1.4.5l-.1.1zM12.6 6.2l-2.5-1.4-2 2 2 2 2.5-1.4c.7-.4.7-1 0-1.2zM9.6 5.5L1.9.7l7.7 7.7 2-2-2-.9zM1.9 17.3l7.7-4.4-2-2-7.7 7.7c.2.1.4.1.7-.3l1.3-1z" />
-        </svg>
+        <GooglePlayIcon />
         {googlePlayLabel}
       </a>
     </div>

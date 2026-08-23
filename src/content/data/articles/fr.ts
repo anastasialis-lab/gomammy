@@ -32,7 +32,7 @@ export const frArticles: Article[] = [
     excerpt:
       'Les signes qui apparaissent en premier, à partir de quand un test est fiable et ce qui compte vraiment dans les jours suivant un test positif.',
     heroImage: {
-      src: '/images/articles/early-signs.svg',
+      src: '/images/articles/early-signs.webp',
       alt: 'Matinée calme avec une tasse de thé et un test de grossesse sur la table',
       width: 1600,
       height: 900,
@@ -129,7 +129,7 @@ export const frArticles: Article[] = [
     excerpt:
       'Une liste concrète pour l’accouchement, pour les jours d’après et pour votre bébé — prête avant la 36e semaine.',
     heroImage: {
-      src: '/images/articles/hospital-bag.svg',
+      src: '/images/articles/hospital-bag.webp',
       alt: 'Valise de maternité préparée avec des vêtements de bébé pliés à côté',
       width: 1600,
       height: 900,
@@ -218,7 +218,7 @@ export const frArticles: Article[] = [
     excerpt:
       'Pourquoi la position latérale est conseillée à partir de 28 semaines, comment la rendre confortable et que faire des autres raisons qui vous réveillent.',
     heroImage: {
-      src: '/images/articles/sleep.svg',
+      src: '/images/articles/sleep.webp',
       alt: 'Chambre à la lumière douce avec des oreillers disposés pour dormir sur le côté',
       width: 1600,
       height: 900,
@@ -302,7 +302,7 @@ export const frArticles: Article[] = [
     excerpt:
       'Quand le cœur commence à battre, quelles fréquences sont normales semaine après semaine et pourquoi les sages-femmes préfèrent les mouvements au doppler à domicile.',
     heroImage: {
-      src: '/images/articles/heartbeat.svg',
+      src: '/images/articles/heartbeat.webp',
       alt: 'Image d’échographie sur un écran dans un cabinet à la lumière douce',
       width: 1600,
       height: 900,
@@ -387,7 +387,7 @@ export const frArticles: Article[] = [
     excerpt:
       'Les examens, les compléments et la connaissance de votre cycle avant de commencer — et le temps que cela prend en général.',
     heroImage: {
-      src: '/images/articles/preparing.svg',
+      src: '/images/articles/preparing.webp',
       alt: 'Un calendrier, un verre d’eau et un bol de fruits sur une table de cuisine',
       width: 1600,
       height: 900,

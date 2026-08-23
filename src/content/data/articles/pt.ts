@@ -32,7 +32,7 @@ export const ptArticles: Article[] = [
     excerpt:
       'Os sinais que surgem primeiro, a partir de quando o teste é fiável e o que vale a pena fazer nos dias a seguir a um positivo.',
     heroImage: {
-      src: '/images/articles/early-signs.svg',
+      src: '/images/articles/early-signs.webp',
       alt: 'Manhã calma com uma chávena de chá e um teste de gravidez em cima da mesa',
       width: 1600,
       height: 900,
@@ -129,7 +129,7 @@ export const ptArticles: Article[] = [
     excerpt:
       'Uma lista prática para o parto, para os dias a seguir e para o bebé — pronta até às 36 semanas.',
     heroImage: {
-      src: '/images/articles/hospital-bag.svg',
+      src: '/images/articles/hospital-bag.webp',
       alt: 'Mala preparada para a maternidade com roupa de bebé dobrada ao lado',
       width: 1600,
       height: 900,
@@ -218,7 +218,7 @@ export const ptArticles: Article[] = [
     excerpt:
       'Porque se recomenda dormir de lado a partir das 28 semanas, como tornar isso confortável e o que fazer aos outros motivos que te acordam.',
     heroImage: {
-      src: '/images/articles/sleep.svg',
+      src: '/images/articles/sleep.webp',
       alt: 'Quarto com luz suave e almofadas dispostas para dormir de lado',
       width: 1600,
       height: 900,
@@ -302,7 +302,7 @@ export const ptArticles: Article[] = [
     excerpt:
       'Quando o coração começa a bater, que frequências são normais semana a semana e porque as parteiras preferem os movimentos ao doppler caseiro.',
     heroImage: {
-      src: '/images/articles/heartbeat.svg',
+      src: '/images/articles/heartbeat.webp',
       alt: 'Imagem de ecografia num ecrã, num consultório com luz suave',
       width: 1600,
       height: 900,
@@ -387,7 +387,7 @@ export const ptArticles: Article[] = [
     excerpt:
       'Exames, suplementos e conhecimento do ciclo antes de começar a tentar — e quanto tempo costuma demorar a engravidar.',
     heroImage: {
-      src: '/images/articles/preparing.svg',
+      src: '/images/articles/preparing.webp',
       alt: 'Um calendário, um copo de água e uma taça de fruta na mesa da cozinha',
       width: 1600,
       height: 900,

@@ -32,7 +32,7 @@ export const itArticles: Article[] = [
     excerpt:
       'I segnali che compaiono per primi, quando il test diventa affidabile e cosa conviene fare nei giorni successivi a un risultato positivo.',
     heroImage: {
-      src: '/images/articles/early-signs.svg',
+      src: '/images/articles/early-signs.webp',
       alt: 'Mattina tranquilla con una tazza di tè e un test di gravidanza sul tavolo',
       width: 1600,
       height: 900,
@@ -129,7 +129,7 @@ export const itArticles: Article[] = [
     excerpt:
       'Una lista pratica per il travaglio, per i giorni dopo il parto e per il bambino — pronta entro la 36ª settimana.',
     heroImage: {
-      src: '/images/articles/hospital-bag.svg',
+      src: '/images/articles/hospital-bag.webp',
       alt: 'Borsa preparata per l’ospedale con vestitini piegati accanto',
       width: 1600,
       height: 900,
@@ -218,7 +218,7 @@ export const itArticles: Article[] = [
     excerpt:
       'Perché dalla 28ª settimana si consiglia di dormire su un fianco, come renderlo comodo e cosa fare per gli altri motivi che ti svegliano.',
     heroImage: {
-      src: '/images/articles/sleep.svg',
+      src: '/images/articles/sleep.webp',
       alt: 'Camera da letto con luce soffusa e cuscini disposti per dormire su un fianco',
       width: 1600,
       height: 900,
@@ -302,7 +302,7 @@ export const itArticles: Article[] = [
     excerpt:
       'Quando il cuore inizia a battere, quali frequenze sono normali settimana per settimana e perché le ostetriche preferiscono i movimenti al doppler casalingo.',
     heroImage: {
-      src: '/images/articles/heartbeat.svg',
+      src: '/images/articles/heartbeat.webp',
       alt: 'Immagine ecografica su uno schermo in un ambulatorio con luce soffusa',
       width: 1600,
       height: 900,
@@ -387,7 +387,7 @@ export const itArticles: Article[] = [
     excerpt:
       'Controlli, integratori e conoscenza del ciclo prima di iniziare a cercare — e quanto tempo serve di solito per concepire.',
     heroImage: {
-      src: '/images/articles/preparing.svg',
+      src: '/images/articles/preparing.webp',
       alt: 'Un calendario, un bicchiere d’acqua e una ciotola di frutta sul tavolo della cucina',
       width: 1600,
       height: 900,
