@@ -5,12 +5,12 @@ export const BRAND = {
   name: 'GoMammy',
   legalName: 'GoMammy',
   /** Overridden by NEXT_PUBLIC_SITE_URL in every environment. */
-  fallbackUrl: 'https://gomammy.com',
+  fallbackUrl: 'https://hellomommy.co',
   social: [
     'https://www.instagram.com/gomammy',
     'https://www.pinterest.com/gomammy',
   ],
-  contactEmail: 'hello@gomammy.com',
+  contactEmail: 'hello@hellomommy.co',
 } as const;
 
 const siteDescriptions: Record<Locale, string> = {

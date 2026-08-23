@@ -143,7 +143,7 @@ const readInEnglish: Record<Locale, string> = {
 const englishBodies: Record<LegalKey, ReturnType<typeof p>[]> = {
   privacy: [
     p(
-      'This policy explains what GoMammy collects when you read the site, why, and what you can decide about it. It applies to gomammy.com and to every language version of it.',
+      'This policy explains what GoMammy collects when you read the site, why, and what you can decide about it. It applies to hellomommy.co and to every language version of it.',
     ),
     h2('What we collect'),
     ul([
@@ -163,7 +163,7 @@ const englishBodies: Record<LegalKey, ReturnType<typeof p>[]> = {
     ),
     h2('Your rights'),
     p(
-      'If you are in the EU or UK you can request access to your data, correction, deletion, restriction, portability, and you can object to processing. Write to hello@gomammy.com and we will respond within one month.',
+      'If you are in the EU or UK you can request access to your data, correction, deletion, restriction, portability, and you can object to processing. Write to hello@hellomommy.co and we will respond within one month.',
     ),
     h2('Retention'),
     p(
@@ -217,7 +217,7 @@ const englishBodies: Record<LegalKey, ReturnType<typeof p>[]> = {
       'The site is funded by our own apps. We do not take payment for editorial coverage, and any commercial placement is visually separated from editorial content.',
     ),
     h2('Contact'),
-    p('Write to hello@gomammy.com. We read everything, including corrections.'),
+    p('Write to hello@hellomommy.co. We read everything, including corrections.'),
   ],
   editorial: [
     p(
@@ -233,7 +233,7 @@ const englishBodies: Record<LegalKey, ReturnType<typeof p>[]> = {
     ),
     h2('Corrections'),
     p(
-      'If something is wrong, tell us at hello@gomammy.com. Corrections to facts are made promptly and noted in the updated date.',
+      'If something is wrong, tell us at hello@hellomommy.co. Corrections to facts are made promptly and noted in the updated date.',
     ),
     h2('Independence'),
     p(
