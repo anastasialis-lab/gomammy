@@ -25,7 +25,7 @@ export type GeneratedContent = {
 };
 
 export const GENERATED: GeneratedContent = {
-  "generatedAt": "2026-08-27T16:48:31.636Z",
+  "generatedAt": "2026-08-27T17:05:24.405Z",
   "categories": {
     "pt": [
       {
@@ -2297,11 +2297,11 @@ export const GENERATED: GeneratedContent = {
         "featured": false,
         "heading": null,
         "heroImage": {
-          "src": "https://cdn.sanity.io/images/hphu8zlu/production/70bc664b2dbaf60c84be93c538fa1b85d8b2bee4-1536x1024.webp?w=1600&fit=max&auto=format",
+          "src": "https://cdn.sanity.io/images/hphu8zlu/production/0d1b8335370391c43ff943e1f4d700dfa983ade9-1672x941.png?w=1600&fit=max&auto=format",
           "alt": "Pregnant woman resting her hands on her bump while noticing baby movements",
-          "width": 1536,
-          "height": 1024,
-          "credit": "HelloMommy editorial image"
+          "width": 1672,
+          "height": 941,
+          "credit": "HelloMommy editorial image generated with OpenAI"
         },
         "intro": "Most people first feel their baby move between 16 and 24 weeks. Early movements may feel like bubbles, flutters or gentle swirls before becoming clear kicks, rolls and stretches. There is no single “normal” number: what matters is learning your baby’s usual pattern and calling your maternity team immediately if it slows, changes or stops.",
         "locale": "en",
@@ -2316,6 +2316,12 @@ export const GENERATED: GeneratedContent = {
           "description": "When do you feel baby move? Learn when kicks start, what normal movement feels like and when reduced or changed movements need an urgent call.",
           "noindex": false,
           "ogDescription": null,
+          "ogImage": {
+            "src": "https://cdn.sanity.io/images/hphu8zlu/production/0d1b8335370391c43ff943e1f4d700dfa983ade9-1672x941.png?w=1600&fit=max&auto=format",
+            "alt": "",
+            "width": 1672,
+            "height": 941
+          },
           "ogTitle": null,
           "primaryKeyword": "when do you feel baby move",
           "secondaryKeywords": [
@@ -2531,11 +2537,11 @@ export const GENERATED: GeneratedContent = {
         "featured": false,
         "heading": null,
         "heroImage": {
-          "src": "https://cdn.sanity.io/images/hphu8zlu/production/6d78a2d9fab220b1011f00f0dcd425368386e83b-1536x1024.webp?w=1600&fit=max&auto=format",
+          "src": "https://cdn.sanity.io/images/hphu8zlu/production/d47eec5d685dc447dfcecab3da6ea96cfa8f39fe-1672x941.png?w=1600&fit=max&auto=format",
           "alt": "Pregnant woman resting with water and a plain snack during morning sickness",
-          "width": 1536,
-          "height": 1024,
-          "credit": "HelloMommy editorial image"
+          "width": 1672,
+          "height": 941,
+          "credit": "HelloMommy editorial image generated with OpenAI"
         },
         "intro": "Morning sickness usually starts between weeks 4 and 7 and often improves by weeks 16 to 20, although it can last longer. Despite the name, nausea and vomiting can happen at any time. Small frequent meals, fluids, rest and avoiding triggers may help; safe anti-sickness medicines are available when symptoms interfere with eating, drinking or daily life.",
         "locale": "en",
@@ -2550,6 +2556,12 @@ export const GENERATED: GeneratedContent = {
           "description": "When does morning sickness start? Learn when nausea usually ends, practical remedies that may help and the warning signs of hyperemesis gravidarum.",
           "noindex": false,
           "ogDescription": null,
+          "ogImage": {
+            "src": "https://cdn.sanity.io/images/hphu8zlu/production/d47eec5d685dc447dfcecab3da6ea96cfa8f39fe-1672x941.png?w=1600&fit=max&auto=format",
+            "alt": "",
+            "width": 1672,
+            "height": 941
+          },
           "ogTitle": null,
           "primaryKeyword": "when does morning sickness start",
           "secondaryKeywords": [
@@ -2782,11 +2794,11 @@ export const GENERATED: GeneratedContent = {
         "featured": false,
         "heading": null,
         "heroImage": {
-          "src": "https://cdn.sanity.io/images/hphu8zlu/production/70bc664b2dbaf60c84be93c538fa1b85d8b2bee4-1536x1024.webp?w=1600&fit=max&auto=format",
+          "src": "https://cdn.sanity.io/images/hphu8zlu/production/7dcf9b72422a28072fbf7a07ed3fd1c050188889-1672x941.png?w=1600&fit=max&auto=format",
           "alt": "Pregnant woman noting baby movements on a phone while resting on her side",
-          "width": 1536,
-          "height": 1024,
-          "credit": "HelloMommy editorial image"
+          "width": 1672,
+          "height": 941,
+          "credit": "HelloMommy editorial image generated with OpenAI"
         },
         "intro": "Some maternity teams recommend a structured kick-count routine, while NHS guidance focuses on knowing your baby’s individual pattern rather than reaching a universal number. Follow your own clinician’s method. Whatever system you use, reduced, changed or absent movement requires an immediate call—never wait until the next day.",
         "locale": "en",
@@ -2801,6 +2813,12 @@ export const GENERATED: GeneratedContent = {
           "description": "Kick counts explained: how common tracking methods work, why movement patterns matter and when reduced or changed movements need an urgent call.",
           "noindex": false,
           "ogDescription": null,
+          "ogImage": {
+            "src": "https://cdn.sanity.io/images/hphu8zlu/production/7dcf9b72422a28072fbf7a07ed3fd1c050188889-1672x941.png?w=1600&fit=max&auto=format",
+            "alt": "",
+            "width": 1672,
+            "height": 941
+          },
           "ogTitle": null,
           "primaryKeyword": "kick counts",
           "secondaryKeywords": [
@@ -2949,11 +2967,11 @@ export const GENERATED: GeneratedContent = {
         "featured": false,
         "heading": null,
         "heroImage": {
-          "src": "https://cdn.sanity.io/images/hphu8zlu/production/469aece9b9339f9ab1b88fb1122b1c141e36a811-1536x1024.webp?w=1600&fit=max&auto=format",
+          "src": "https://cdn.sanity.io/images/hphu8zlu/production/cc96fb9d4fce25c1812b5296dc79509307dc57b1-1672x941.png?w=1600&fit=max&auto=format",
           "alt": "Pregnant woman having a blood sample taken for a gestational diabetes test",
-          "width": 1536,
-          "height": 1024,
-          "credit": "HelloMommy editorial image"
+          "width": 1672,
+          "height": 941,
+          "credit": "HelloMommy editorial image generated with OpenAI"
         },
         "intro": "Gestational diabetes screening is commonly offered between 24 and 28 weeks, with earlier testing for some risk factors. Testing pathways differ: some systems use a non-fasting glucose challenge followed by a diagnostic test, while others use a fasting oral glucose tolerance test. Follow the exact instructions from your clinic.",
         "locale": "en",
@@ -2968,6 +2986,12 @@ export const GENERATED: GeneratedContent = {
           "description": "When is the gestational diabetes test? Learn how glucose screening and OGTT work, fasting preparation, results and what happens after diagnosis.",
           "noindex": false,
           "ogDescription": null,
+          "ogImage": {
+            "src": "https://cdn.sanity.io/images/hphu8zlu/production/cc96fb9d4fce25c1812b5296dc79509307dc57b1-1672x941.png?w=1600&fit=max&auto=format",
+            "alt": "",
+            "width": 1672,
+            "height": 941
+          },
           "ogTitle": null,
           "primaryKeyword": "gestational diabetes test",
           "secondaryKeywords": [
@@ -3111,11 +3135,11 @@ export const GENERATED: GeneratedContent = {
         "featured": false,
         "heading": null,
         "heroImage": {
-          "src": "https://cdn.sanity.io/images/hphu8zlu/production/469aece9b9339f9ab1b88fb1122b1c141e36a811-1536x1024.webp?w=1600&fit=max&auto=format",
+          "src": "https://cdn.sanity.io/images/hphu8zlu/production/0f98234fb1625e38a6adf17de7b066ab3659366c-1672x941.png?w=1600&fit=max&auto=format",
           "alt": "Pregnant woman discussing healthy weight gain with a maternity clinician",
-          "width": 1536,
-          "height": 1024,
-          "credit": "HelloMommy editorial image"
+          "width": 1672,
+          "height": 941,
+          "credit": "HelloMommy editorial image generated with OpenAI"
         },
         "intro": "A healthy weight-gain target depends mainly on your pre-pregnancy BMI, whether you carry one baby or multiples, and your individual health. For a singleton pregnancy, US guidance recommends a total of 12.7–18.1 kg if underweight, 11.3–15.9 kg at a healthy BMI, 6.8–11.3 kg if overweight and 5–9.1 kg with obesity. Local recommendations may differ.",
         "locale": "en",
@@ -3130,6 +3154,12 @@ export const GENERATED: GeneratedContent = {
           "description": "Pregnancy weight gain by trimester: see healthy total ranges by pre-pregnancy BMI, typical weekly gain and when a sudden change needs medical advice.",
           "noindex": false,
           "ogDescription": null,
+          "ogImage": {
+            "src": "https://cdn.sanity.io/images/hphu8zlu/production/0f98234fb1625e38a6adf17de7b066ab3659366c-1672x941.png?w=1600&fit=max&auto=format",
+            "alt": "",
+            "width": 1672,
+            "height": 941
+          },
           "ogTitle": null,
           "primaryKeyword": "pregnancy weight gain",
           "secondaryKeywords": [
@@ -3274,11 +3304,11 @@ export const GENERATED: GeneratedContent = {
         "featured": false,
         "heading": null,
         "heroImage": {
-          "src": "https://cdn.sanity.io/images/hphu8zlu/production/469aece9b9339f9ab1b88fb1122b1c141e36a811-1536x1024.webp?w=1600&fit=max&auto=format",
+          "src": "https://cdn.sanity.io/images/hphu8zlu/production/4a20dfa9f5a0970d4b3bc8b585814ef97aaf5fc0-1672x941.png?w=1600&fit=max&auto=format",
           "alt": "Pregnant woman doing a gentle supported exercise in a light studio",
-          "width": 1536,
-          "height": 1024,
-          "credit": "HelloMommy editorial image"
+          "width": 1672,
+          "height": 941,
+          "credit": "HelloMommy editorial image generated with OpenAI"
         },
         "intro": "For most healthy people with an uncomplicated pregnancy, regular exercise is safe and beneficial. A common goal is at least 150 minutes of moderate aerobic activity each week, adapted to fitness and medical advice. Choose low-risk activities, stay cool and hydrated, and avoid sports with a high risk of falling, collision or abdominal injury.",
         "locale": "en",
@@ -3293,6 +3323,12 @@ export const GENERATED: GeneratedContent = {
           "description": "Exercise during pregnancy: learn safe activities, the 150-minute weekly goal, useful modifications, what to avoid and warning signs to stop.",
           "noindex": false,
           "ogDescription": null,
+          "ogImage": {
+            "src": "https://cdn.sanity.io/images/hphu8zlu/production/4a20dfa9f5a0970d4b3bc8b585814ef97aaf5fc0-1672x941.png?w=1600&fit=max&auto=format",
+            "alt": "",
+            "width": 1672,
+            "height": 941
+          },
           "ogTitle": null,
           "primaryKeyword": "exercise during pregnancy",
           "secondaryKeywords": [
@@ -3440,11 +3476,11 @@ export const GENERATED: GeneratedContent = {
         "featured": false,
         "heading": null,
         "heroImage": {
-          "src": "https://cdn.sanity.io/images/hphu8zlu/production/991b50468e2b9bbf7ab8e163168e1b31b899983b-1536x1024.webp?w=1600&fit=max&auto=format",
+          "src": "https://cdn.sanity.io/images/hphu8zlu/production/6cf099aad233538d1a513039646e5d56c786d835-1672x941.png?w=1600&fit=max&auto=format",
           "alt": "Pregnant woman timing contractions at home with her hospital bag ready",
-          "width": 1536,
-          "height": 1024,
-          "credit": "HelloMommy editorial image"
+          "width": 1672,
+          "height": 941,
+          "credit": "HelloMommy editorial image generated with OpenAI"
         },
         "intro": "Signs of labour can include increasingly regular contractions, a mucus “show”, backache, pelvic pressure and your waters breaking. Early labour may last hours or sometimes days. Your own maternity unit’s advice takes priority, so call if you think labour has started, and call urgently for bleeding, reduced baby movement, broken waters or possible labour before 37 weeks.",
         "locale": "en",
@@ -3459,6 +3495,12 @@ export const GENERATED: GeneratedContent = {
           "description": "Know the signs of labour, how real contractions differ from Braxton Hicks, when to call your maternity unit and when to go to hospital urgently.",
           "noindex": false,
           "ogDescription": null,
+          "ogImage": {
+            "src": "https://cdn.sanity.io/images/hphu8zlu/production/6cf099aad233538d1a513039646e5d56c786d835-1672x941.png?w=1600&fit=max&auto=format",
+            "alt": "",
+            "width": 1672,
+            "height": 941
+          },
           "ogTitle": null,
           "primaryKeyword": "signs of labour",
           "secondaryKeywords": [
@@ -3675,11 +3717,11 @@ export const GENERATED: GeneratedContent = {
         "featured": false,
         "heading": null,
         "heroImage": {
-          "src": "https://cdn.sanity.io/images/hphu8zlu/production/6d78a2d9fab220b1011f00f0dcd425368386e83b-1536x1024.webp?w=1600&fit=max&auto=format",
+          "src": "https://cdn.sanity.io/images/hphu8zlu/production/c8134a212ba033cafc822354b5551b25a386b252-1672x941.png?w=1600&fit=max&auto=format",
           "alt": "Pregnant woman showing the stages of a growing bump across three trimesters",
-          "width": 1536,
-          "height": 1024,
-          "credit": "HelloMommy editorial image"
+          "width": 1672,
+          "height": 941,
+          "credit": "HelloMommy editorial image generated with OpenAI"
         },
         "intro": "Pregnancy symptoms change as hormones shift, the uterus grows and your baby develops. The first trimester often brings fatigue, nausea and breast changes; the second may bring more energy, a growing bump and first movements; the third commonly adds pelvic pressure, breathlessness and sleep difficulty. Experiences vary, and severe or sudden symptoms deserve medical advice.",
         "locale": "en",
@@ -3695,6 +3737,12 @@ export const GENERATED: GeneratedContent = {
           "description": "Pregnancy symptoms by trimester: a clear guide to common first, second and third trimester changes, relief tips and warning signs to call about.",
           "noindex": false,
           "ogDescription": null,
+          "ogImage": {
+            "src": "https://cdn.sanity.io/images/hphu8zlu/production/c8134a212ba033cafc822354b5551b25a386b252-1672x941.png?w=1600&fit=max&auto=format",
+            "alt": "",
+            "width": 1672,
+            "height": 941
+          },
           "ogTitle": null,
           "primaryKeyword": "pregnancy symptoms by trimester",
           "secondaryKeywords": [
@@ -4035,11 +4083,11 @@ export const GENERATED: GeneratedContent = {
         "featured": false,
         "heading": null,
         "heroImage": {
-          "src": "https://cdn.sanity.io/images/hphu8zlu/production/a4cacf00216953178b477d327ea78bca3589b267-1536x1024.webp?w=1600&fit=max&auto=format",
+          "src": "https://cdn.sanity.io/images/hphu8zlu/production/d67f903fc2fed40ad1b304baeef091131d7cbbac-1672x941.png?w=1600&fit=max&auto=format",
           "alt": "Pregnant woman speaking with a clinician at her first prenatal appointment",
-          "width": 1536,
-          "height": 1024,
-          "credit": "HelloMommy editorial image"
+          "width": 1672,
+          "height": 941,
+          "credit": "HelloMommy editorial image generated with OpenAI"
         },
         "intro": "Contact a maternity care provider as soon as you know or think you are pregnant. The actual first appointment is often scheduled around 8–12 weeks, but timing varies by country, service and medical history. Earlier assessment may be needed for pain, bleeding, severe symptoms, previous complications or an ongoing health condition.",
         "locale": "en",
@@ -4054,6 +4102,12 @@ export const GENERATED: GeneratedContent = {
           "description": "When should you book your first prenatal appointment? Learn what happens, which tests may be offered and what information to bring to your visit.",
           "noindex": false,
           "ogDescription": null,
+          "ogImage": {
+            "src": "https://cdn.sanity.io/images/hphu8zlu/production/d67f903fc2fed40ad1b304baeef091131d7cbbac-1672x941.png?w=1600&fit=max&auto=format",
+            "alt": "",
+            "width": 1672,
+            "height": 941
+          },
           "ogTitle": null,
           "primaryKeyword": "first prenatal appointment",
           "secondaryKeywords": [
@@ -4196,11 +4250,11 @@ export const GENERATED: GeneratedContent = {
         "featured": false,
         "heading": null,
         "heroImage": {
-          "src": "https://cdn.sanity.io/images/hphu8zlu/production/991b50468e2b9bbf7ab8e163168e1b31b899983b-1536x1024.webp?w=1600&fit=max&auto=format",
+          "src": "https://cdn.sanity.io/images/hphu8zlu/production/12d05b79c0ea1be928c90eb0bacf1ac19d3b0db8-1672x941.png?w=1600&fit=max&auto=format",
           "alt": "Pregnant woman timing abdominal tightenings to compare contractions",
-          "width": 1536,
-          "height": 1024,
-          "credit": "HelloMommy editorial image"
+          "width": 1672,
+          "height": 941,
+          "credit": "HelloMommy editorial image generated with OpenAI"
         },
         "intro": "Braxton Hicks tightenings are usually irregular, short and do not steadily become stronger. Labour contractions develop a pattern, last longer, come closer together and intensify. No checklist is perfect, so contact your maternity team whenever you are unsure—especially before 37 weeks.",
         "locale": "en",
@@ -4215,6 +4269,12 @@ export const GENERATED: GeneratedContent = {
           "description": "Braxton Hicks vs contractions: compare timing, intensity and progression, plus learn when contractions or other symptoms need an urgent call.",
           "noindex": false,
           "ogDescription": null,
+          "ogImage": {
+            "src": "https://cdn.sanity.io/images/hphu8zlu/production/12d05b79c0ea1be928c90eb0bacf1ac19d3b0db8-1672x941.png?w=1600&fit=max&auto=format",
+            "alt": "",
+            "width": 1672,
+            "height": 941
+          },
           "ogTitle": null,
           "primaryKeyword": "Braxton Hicks vs contractions",
           "secondaryKeywords": [
@@ -4357,11 +4417,11 @@ export const GENERATED: GeneratedContent = {
         "featured": false,
         "heading": null,
         "heroImage": {
-          "src": "https://cdn.sanity.io/images/hphu8zlu/production/6d78a2d9fab220b1011f00f0dcd425368386e83b-1536x1024.webp?w=1600&fit=max&auto=format",
+          "src": "https://cdn.sanity.io/images/hphu8zlu/production/53c6d16f2137419df1857a55bd07d706466820ea-1672x941.png?w=1600&fit=max&auto=format",
           "alt": "Pregnant woman reviewing a pregnancy symptom guide in a bright bedroom",
-          "width": 1536,
-          "height": 1024,
-          "credit": "HelloMommy editorial image"
+          "width": 1672,
+          "height": 941,
+          "credit": "HelloMommy editorial image generated with OpenAI"
         },
         "intro": "More vaginal discharge is normal in pregnancy. Healthy discharge is usually thin, clear or milky white and does not smell unpleasant. Green, yellow, grey, foul-smelling, itchy or painful discharge can suggest infection, while watery leakage or any bleeding needs maternity advice.",
         "locale": "en",
@@ -4376,6 +4436,12 @@ export const GENERATED: GeneratedContent = {
           "description": "Pregnancy discharge explained: what clear, white, yellow, green, brown or pink discharge can mean and when to call your maternity team.",
           "noindex": false,
           "ogDescription": null,
+          "ogImage": {
+            "src": "https://cdn.sanity.io/images/hphu8zlu/production/53c6d16f2137419df1857a55bd07d706466820ea-1672x941.png?w=1600&fit=max&auto=format",
+            "alt": "",
+            "width": 1672,
+            "height": 941
+          },
           "ogTitle": null,
           "primaryKeyword": "pregnancy discharge",
           "secondaryKeywords": [
@@ -5885,11 +5951,11 @@ export const GENERATED: GeneratedContent = {
         "featured": false,
         "heading": null,
         "heroImage": {
-          "src": "https://cdn.sanity.io/images/hphu8zlu/production/6d78a2d9fab220b1011f00f0dcd425368386e83b-1536x1024.webp?w=1600&fit=max&auto=format",
+          "src": "https://cdn.sanity.io/images/hphu8zlu/production/d47eec5d685dc447dfcecab3da6ea96cfa8f39fe-1672x941.png?w=1600&fit=max&auto=format",
           "alt": "Вагітна жінка відпочиває з водою та легким перекусом",
-          "width": 1536,
-          "height": 1024,
-          "credit": "HelloMommy editorial image"
+          "width": 1672,
+          "height": 941,
+          "credit": "HelloMommy editorial image generated with OpenAI"
         },
         "intro": "Нудота вагітних зазвичай починається між 4-м і 7-м тижнями та часто слабшає до 16–20-го тижня. Попри назву, вона може виникати будь-коли. Допомагають часті невеликі прийоми їжі, рідина, відпочинок і за потреби безпечні ліки.",
         "locale": "uk",
@@ -5904,6 +5970,12 @@ export const GENERATED: GeneratedContent = {
           "description": "Коли починається й закінчується нудота вагітних, практичні способи полегшення та ознаки гіперемезису й зневоднення.",
           "noindex": false,
           "ogDescription": null,
+          "ogImage": {
+            "src": "https://cdn.sanity.io/images/hphu8zlu/production/d47eec5d685dc447dfcecab3da6ea96cfa8f39fe-1672x941.png?w=1600&fit=max&auto=format",
+            "alt": "",
+            "width": 1672,
+            "height": 941
+          },
           "ogTitle": null,
           "primaryKeyword": "коли починається нудота при вагітності",
           "secondaryKeywords": [
@@ -6052,11 +6124,11 @@ export const GENERATED: GeneratedContent = {
         "featured": false,
         "heading": null,
         "heroImage": {
-          "src": "https://cdn.sanity.io/images/hphu8zlu/production/a4cacf00216953178b477d327ea78bca3589b267-1536x1024.webp?w=1600&fit=max&auto=format",
+          "src": "https://cdn.sanity.io/images/hphu8zlu/production/d67f903fc2fed40ad1b304baeef091131d7cbbac-1672x941.png?w=1600&fit=max&auto=format",
           "alt": "Вагітна жінка розмовляє з клініцистом на своєму першому допологовому прийомі",
-          "width": 1536,
-          "height": 1024,
-          "credit": "HelloMommy editorial image"
+          "width": 1672,
+          "height": 941,
+          "credit": "HelloMommy editorial image generated with OpenAI"
         },
         "intro": "Зв’яжіться з медичним працівником, що надає послуги по догляду за вагітними, як тільки ви дізнаєтесь або думаєте, що вагітні. Фактичний перший прийом часто призначається приблизно через 8–12 тижнів, але час залежить від країни, служби та історії хвороби. Може знадобитися раннє обстеження щодо болю, кровотечі, серйозних симптомів, попередніх ускладнень або поточного стану здоров’я.",
         "locale": "uk",
@@ -6071,6 +6143,12 @@ export const GENERATED: GeneratedContent = {
           "description": "Коли слід записатися на перший допологовий прийом? Дізнайтеся, що відбувається, які тести можуть бути запропоновані та яку інформацію принести під час візиту.",
           "noindex": false,
           "ogDescription": null,
+          "ogImage": {
+            "src": "https://cdn.sanity.io/images/hphu8zlu/production/d67f903fc2fed40ad1b304baeef091131d7cbbac-1672x941.png?w=1600&fit=max&auto=format",
+            "alt": "",
+            "width": 1672,
+            "height": 941
+          },
           "ogTitle": null,
           "primaryKeyword": "перший прийом під час вагітності",
           "secondaryKeywords": [
@@ -6213,11 +6291,11 @@ export const GENERATED: GeneratedContent = {
         "featured": false,
         "heading": null,
         "heroImage": {
-          "src": "https://cdn.sanity.io/images/hphu8zlu/production/469aece9b9339f9ab1b88fb1122b1c141e36a811-1536x1024.webp?w=1600&fit=max&auto=format",
+          "src": "https://cdn.sanity.io/images/hphu8zlu/production/4a20dfa9f5a0970d4b3bc8b585814ef97aaf5fc0-1672x941.png?w=1600&fit=max&auto=format",
           "alt": "Вагітна жінка робить м'яку підтримувану вправу в освітленій студії",
-          "width": 1536,
-          "height": 1024,
-          "credit": "HelloMommy editorial image"
+          "width": 1672,
+          "height": 941,
+          "credit": "HelloMommy editorial image generated with OpenAI"
         },
         "intro": "Для більшості здорових людей з неускладненою вагітністю регулярні фізичні вправи є безпечними та корисними. Загальною метою є принаймні 150 хвилин помірної аеробної активності щотижня, адаптованої до фітнесу та медичних рекомендацій. Вибирайте види діяльності з низьким рівнем ризику, залишайтеся холодними та зволоженими та уникайте видів спорту з високим ризиком падіння, зіткнення або травми живота.",
         "locale": "uk",
@@ -6231,6 +6309,12 @@ export const GENERATED: GeneratedContent = {
           "description": "Займайтеся спортом під час вагітності: дізнайтеся про безпечні види діяльності, 150-хвилинну ціль на тиждень, корисні модифікації, чого слід уникати та попереджувальні знаки, які слід припинити.",
           "noindex": false,
           "ogDescription": null,
+          "ogImage": {
+            "src": "https://cdn.sanity.io/images/hphu8zlu/production/4a20dfa9f5a0970d4b3bc8b585814ef97aaf5fc0-1672x941.png?w=1600&fit=max&auto=format",
+            "alt": "",
+            "width": 1672,
+            "height": 941
+          },
           "ogTitle": null,
           "primaryKeyword": "вправи під час вагітності",
           "secondaryKeywords": [
@@ -6374,11 +6458,11 @@ export const GENERATED: GeneratedContent = {
         "featured": false,
         "heading": null,
         "heroImage": {
-          "src": "https://cdn.sanity.io/images/hphu8zlu/production/70bc664b2dbaf60c84be93c538fa1b85d8b2bee4-1536x1024.webp?w=1600&fit=max&auto=format",
+          "src": "https://cdn.sanity.io/images/hphu8zlu/production/7dcf9b72422a28072fbf7a07ed3fd1c050188889-1672x941.png?w=1600&fit=max&auto=format",
           "alt": "Вагітна жінка відзначає рухи дитини по телефону, відпочиваючи на боці",
-          "width": 1536,
-          "height": 1024,
-          "credit": "HelloMommy editorial image"
+          "width": 1672,
+          "height": 941,
+          "credit": "HelloMommy editorial image generated with OpenAI"
         },
         "intro": "Деякі бригади вагітних рекомендують структуровану процедуру підрахунку ударів, тоді як керівництво NHS зосереджується на знанні індивідуальних особливостей вашої дитини, а не на досягненні універсального числа. Дотримуйтесь методу власного клініциста. Якою б системою ви не користувалися, обмежений, змінений або відсутній рух вимагає негайного виклику — ніколи не чекайте до наступного дня.",
         "locale": "uk",
@@ -6393,6 +6477,12 @@ export const GENERATED: GeneratedContent = {
           "description": "Пояснено підрахунок ударів: як працюють звичайні методи відстеження, чому шаблони рухів важливі та коли зменшені або змінені рухи потребують термінового виклику.",
           "noindex": false,
           "ogDescription": null,
+          "ogImage": {
+            "src": "https://cdn.sanity.io/images/hphu8zlu/production/7dcf9b72422a28072fbf7a07ed3fd1c050188889-1672x941.png?w=1600&fit=max&auto=format",
+            "alt": "",
+            "width": 1672,
+            "height": 941
+          },
           "ogTitle": null,
           "primaryKeyword": "як рахувати рухи дитини",
           "secondaryKeywords": [
@@ -6541,11 +6631,11 @@ export const GENERATED: GeneratedContent = {
         "featured": false,
         "heading": null,
         "heroImage": {
-          "src": "https://cdn.sanity.io/images/hphu8zlu/production/469aece9b9339f9ab1b88fb1122b1c141e36a811-1536x1024.webp?w=1600&fit=max&auto=format",
+          "src": "https://cdn.sanity.io/images/hphu8zlu/production/0f98234fb1625e38a6adf17de7b066ab3659366c-1672x941.png?w=1600&fit=max&auto=format",
           "alt": "Вагітна жінка обговорює здорове збільшення ваги з лікарем пологів",
-          "width": 1536,
-          "height": 1024,
-          "credit": "HelloMommy editorial image"
+          "width": 1672,
+          "height": 941,
+          "credit": "HelloMommy editorial image generated with OpenAI"
         },
         "intro": "Здорове цільове збільшення ваги залежить головним чином від вашого ІМТ до вагітності, від того, чи носите ви одну дитину чи кількох, а також від вашого індивідуального здоров’я. Для одноплідної вагітності рекомендації США рекомендують загалом 12,7–18,1 кг при недостатній вазі, 11,3–15,9 кг при нормальному ІМТ, 6,8–11,3 кг при надмірній вазі та 5–9,1 кг при ожирінні. Місцеві рекомендації можуть відрізнятися.",
         "locale": "uk",
@@ -6560,6 +6650,12 @@ export const GENERATED: GeneratedContent = {
           "description": "Збільшення ваги під час вагітності за триместром: дивіться здорові загальні діапазони за ІМТ до вагітності, типовий тижневий приріст і коли раптова зміна потребує медичної консультації.",
           "noindex": false,
           "ogDescription": null,
+          "ogImage": {
+            "src": "https://cdn.sanity.io/images/hphu8zlu/production/0f98234fb1625e38a6adf17de7b066ab3659366c-1672x941.png?w=1600&fit=max&auto=format",
+            "alt": "",
+            "width": 1672,
+            "height": 941
+          },
           "ogTitle": null,
           "primaryKeyword": "набір ваги під час вагітності",
           "secondaryKeywords": [
@@ -6704,11 +6800,11 @@ export const GENERATED: GeneratedContent = {
         "featured": false,
         "heading": null,
         "heroImage": {
-          "src": "https://cdn.sanity.io/images/hphu8zlu/production/6d78a2d9fab220b1011f00f0dcd425368386e83b-1536x1024.webp?w=1600&fit=max&auto=format",
+          "src": "https://cdn.sanity.io/images/hphu8zlu/production/53c6d16f2137419df1857a55bd07d706466820ea-1672x941.png?w=1600&fit=max&auto=format",
           "alt": "Вагітна жінка переглядає довідник із симптомів вагітності у світлій спальні",
-          "width": 1536,
-          "height": 1024,
-          "credit": "HelloMommy editorial image"
+          "width": 1672,
+          "height": 941,
+          "credit": "HelloMommy editorial image generated with OpenAI"
         },
         "intro": "Більше виділень з піхви є нормальним явищем під час вагітності. Здорові виділення зазвичай рідкі, прозорі або молочно-білі і не мають неприємного запаху. Зелені, жовті, сірі виділення з неприємним запахом, що сверблять або хворобливі можуть свідчити про інфекцію, тоді як підтікання води або будь-яка кровотеча потребують консультації вагітних.",
         "locale": "uk",
@@ -6723,6 +6819,12 @@ export const GENERATED: GeneratedContent = {
           "description": "Виділення при вагітності: що можуть означати прозорі, білі, жовті, зелені, коричневі або рожеві виділення і коли викликати пологову бригаду.",
           "noindex": false,
           "ogDescription": null,
+          "ogImage": {
+            "src": "https://cdn.sanity.io/images/hphu8zlu/production/53c6d16f2137419df1857a55bd07d706466820ea-1672x941.png?w=1600&fit=max&auto=format",
+            "alt": "",
+            "width": 1672,
+            "height": 941
+          },
           "ogTitle": null,
           "primaryKeyword": "виділення під час вагітності",
           "secondaryKeywords": [
@@ -6867,11 +6969,11 @@ export const GENERATED: GeneratedContent = {
         "featured": false,
         "heading": null,
         "heroImage": {
-          "src": "https://cdn.sanity.io/images/hphu8zlu/production/70bc664b2dbaf60c84be93c538fa1b85d8b2bee4-1536x1024.webp?w=1600&fit=max&auto=format",
+          "src": "https://cdn.sanity.io/images/hphu8zlu/production/0d1b8335370391c43ff943e1f4d700dfa983ade9-1672x941.png?w=1600&fit=max&auto=format",
           "alt": "Вагітна жінка тримає руки на животі й відчуває рухи дитини",
-          "width": 1536,
-          "height": 1024,
-          "credit": "HelloMommy editorial image"
+          "width": 1672,
+          "height": 941,
+          "credit": "HelloMommy editorial image generated with OpenAI"
         },
         "intro": "Більшість вагітних уперше відчувають рухи дитини між 16-м і 24-м тижнями. Спочатку це можуть бути легке тремтіння чи перекочування, а згодом — чіткі поштовхи. Важлива не фіксована кількість, а звичний ритм саме вашої дитини.",
         "locale": "uk",
@@ -6886,6 +6988,12 @@ export const GENERATED: GeneratedContent = {
           "description": "Коли починаються рухи дитини, якими вони бувають у нормі та коли зменшення або зміна рухів потребує негайного дзвінка лікарю.",
           "noindex": false,
           "ogDescription": null,
+          "ogImage": {
+            "src": "https://cdn.sanity.io/images/hphu8zlu/production/0d1b8335370391c43ff943e1f4d700dfa983ade9-1672x941.png?w=1600&fit=max&auto=format",
+            "alt": "",
+            "width": 1672,
+            "height": 941
+          },
           "ogTitle": null,
           "primaryKeyword": "коли відчуваються рухи дитини",
           "secondaryKeywords": [
@@ -7029,11 +7137,11 @@ export const GENERATED: GeneratedContent = {
         "featured": false,
         "heading": null,
         "heroImage": {
-          "src": "https://cdn.sanity.io/images/hphu8zlu/production/991b50468e2b9bbf7ab8e163168e1b31b899983b-1536x1024.webp?w=1600&fit=max&auto=format",
+          "src": "https://cdn.sanity.io/images/hphu8zlu/production/6cf099aad233538d1a513039646e5d56c786d835-1672x941.png?w=1600&fit=max&auto=format",
           "alt": "Вагітна жінка засікає перейми вдома поруч із сумкою до пологового",
-          "width": 1536,
-          "height": 1024,
-          "credit": "HelloMommy editorial image"
+          "width": 1672,
+          "height": 941,
+          "credit": "HelloMommy editorial image generated with OpenAI"
         },
         "intro": "Ознаками пологів можуть бути регулярніші перейми, відходження слизової пробки, біль у попереку, тиск у тазу та відходження вод. Рання фаза іноді триває години або дні. Насамперед дотримуйтеся рекомендацій вашого пологового.",
         "locale": "uk",
@@ -7048,6 +7156,12 @@ export const GENERATED: GeneratedContent = {
           "description": "Основні ознаки пологів, різниця між справжніми й тренувальними переймами та коли телефонувати або терміново їхати до пологового.",
           "noindex": false,
           "ogDescription": null,
+          "ogImage": {
+            "src": "https://cdn.sanity.io/images/hphu8zlu/production/6cf099aad233538d1a513039646e5d56c786d835-1672x941.png?w=1600&fit=max&auto=format",
+            "alt": "",
+            "width": 1672,
+            "height": 941
+          },
           "ogTitle": null,
           "primaryKeyword": "ознаки пологів",
           "secondaryKeywords": [
@@ -7190,11 +7304,11 @@ export const GENERATED: GeneratedContent = {
         "featured": false,
         "heading": null,
         "heroImage": {
-          "src": "https://cdn.sanity.io/images/hphu8zlu/production/6d78a2d9fab220b1011f00f0dcd425368386e83b-1536x1024.webp?w=1600&fit=max&auto=format",
+          "src": "https://cdn.sanity.io/images/hphu8zlu/production/c8134a212ba033cafc822354b5551b25a386b252-1672x941.png?w=1600&fit=max&auto=format",
           "alt": "Вагітна жінка показує зміни живота протягом трьох триместрів",
-          "width": 1536,
-          "height": 1024,
-          "credit": "HelloMommy editorial image"
+          "width": 1672,
+          "height": 941,
+          "credit": "HelloMommy editorial image generated with OpenAI"
         },
         "intro": "У першому триместрі часто виникають втома, нудота й чутливість грудей. У другому росте живіт і з’являються рухи дитини. У третьому посилюються тиск у тазу, печія та труднощі зі сном. Кожна вагітність індивідуальна.",
         "locale": "uk",
@@ -7210,6 +7324,12 @@ export const GENERATED: GeneratedContent = {
           "description": "Симптоми вагітності у першому, другому й третьому триместрах: нормальні зміни, поради для полегшення та важливі тривожні ознаки.",
           "noindex": false,
           "ogDescription": null,
+          "ogImage": {
+            "src": "https://cdn.sanity.io/images/hphu8zlu/production/c8134a212ba033cafc822354b5551b25a386b252-1672x941.png?w=1600&fit=max&auto=format",
+            "alt": "",
+            "width": 1672,
+            "height": 941
+          },
           "ogTitle": null,
           "primaryKeyword": "симптоми вагітності за триместрами",
           "secondaryKeywords": [
@@ -7360,11 +7480,11 @@ export const GENERATED: GeneratedContent = {
         "featured": false,
         "heading": null,
         "heroImage": {
-          "src": "https://cdn.sanity.io/images/hphu8zlu/production/991b50468e2b9bbf7ab8e163168e1b31b899983b-1536x1024.webp?w=1600&fit=max&auto=format",
+          "src": "https://cdn.sanity.io/images/hphu8zlu/production/12d05b79c0ea1be928c90eb0bacf1ac19d3b0db8-1672x941.png?w=1600&fit=max&auto=format",
           "alt": "Вагітна жінка визначає час напруження живота, щоб порівняти скорочення",
-          "width": 1536,
-          "height": 1024,
-          "credit": "HelloMommy editorial image"
+          "width": 1672,
+          "height": 941,
+          "credit": "HelloMommy editorial image generated with OpenAI"
         },
         "intro": "Підтяжки Брекстона-Хікса зазвичай нерегулярні, короткі та не стають сильнішими. Пологові скорочення розвиваються за законом, тривають довше, зближуються та посилюються. Жоден контрольний список не є ідеальним, тому зв’яжіться зі своєю командою пологів щоразу, коли ви не впевнені, особливо до 37 тижнів.",
         "locale": "uk",
@@ -7379,6 +7499,12 @@ export const GENERATED: GeneratedContent = {
           "description": "Braxton Hicks проти скорочень: порівняйте час, інтенсивність і прогресування, а також дізнайтеся, коли скорочення або інші симптоми потребують термінового виклику.",
           "noindex": false,
           "ogDescription": null,
+          "ogImage": {
+            "src": "https://cdn.sanity.io/images/hphu8zlu/production/12d05b79c0ea1be928c90eb0bacf1ac19d3b0db8-1672x941.png?w=1600&fit=max&auto=format",
+            "alt": "",
+            "width": 1672,
+            "height": 941
+          },
           "ogTitle": null,
           "primaryKeyword": "перейми Брекстона Гікса чи справжні",
           "secondaryKeywords": [
@@ -7521,11 +7647,11 @@ export const GENERATED: GeneratedContent = {
         "featured": false,
         "heading": null,
         "heroImage": {
-          "src": "https://cdn.sanity.io/images/hphu8zlu/production/469aece9b9339f9ab1b88fb1122b1c141e36a811-1536x1024.webp?w=1600&fit=max&auto=format",
+          "src": "https://cdn.sanity.io/images/hphu8zlu/production/cc96fb9d4fce25c1812b5296dc79509307dc57b1-1672x941.png?w=1600&fit=max&auto=format",
           "alt": "У вагітної жінки беруть зразок крові для тесту на гестаційний діабет",
-          "width": 1536,
-          "height": 1024,
-          "credit": "HelloMommy editorial image"
+          "width": 1672,
+          "height": 941,
+          "credit": "HelloMommy editorial image generated with OpenAI"
         },
         "intro": "Скринінг гестаційного діабету зазвичай пропонується між 24 і 28 тижнями з раннім тестуванням на деякі фактори ризику. Шляхи тестування відрізняються: в деяких системах використовується проба глюкози не натщесерце з подальшим діагностичним тестом, тоді як інші використовують пероральний тест на толерантність до глюкози натщесерце. Дотримуйтесь точних інструкцій вашої клініки.",
         "locale": "uk",
@@ -7540,6 +7666,12 @@ export const GENERATED: GeneratedContent = {
           "description": "Коли тест на гестаційний діабет? Дізнайтеся, як працюють скринінг глюкози та ОГТТ, підготовка натще, результати та що відбувається після діагностики.",
           "noindex": false,
           "ogDescription": null,
+          "ogImage": {
+            "src": "https://cdn.sanity.io/images/hphu8zlu/production/cc96fb9d4fce25c1812b5296dc79509307dc57b1-1672x941.png?w=1600&fit=max&auto=format",
+            "alt": "",
+            "width": 1672,
+            "height": 941
+          },
           "ogTitle": null,
           "primaryKeyword": "тест на гестаційний діабет",
           "secondaryKeywords": [
@@ -9042,11 +9174,11 @@ export const GENERATED: GeneratedContent = {
         "featured": false,
         "heading": null,
         "heroImage": {
-          "src": "https://cdn.sanity.io/images/hphu8zlu/production/6d78a2d9fab220b1011f00f0dcd425368386e83b-1536x1024.webp?w=1600&fit=max&auto=format",
+          "src": "https://cdn.sanity.io/images/hphu8zlu/production/d47eec5d685dc447dfcecab3da6ea96cfa8f39fe-1672x941.png?w=1600&fit=max&auto=format",
           "alt": "Nausées de grossesse : début, fin et solutions",
-          "width": 1536,
-          "height": 1024,
-          "credit": "HelloMommy editorial image"
+          "width": 1672,
+          "height": 941,
+          "credit": "HelloMommy editorial image generated with OpenAI"
         },
         "intro": "Les nausées commencent souvent entre 4 et 7 semaines et s’améliorent généralement vers 16 à 20 semaines. Elles peuvent survenir à toute heure. De petits repas, des liquides, du repos et des médicaments adaptés peuvent aider.",
         "locale": "fr",
@@ -9061,6 +9193,12 @@ export const GENERATED: GeneratedContent = {
           "description": "Les nausées commencent souvent entre 4 et 7 semaines et s’améliorent généralement vers 16 à 20 semaines. Elles peuvent survenir à toute heure. De petits repas, des liquides, du repos et des ",
           "noindex": false,
           "ogDescription": null,
+          "ogImage": {
+            "src": "https://cdn.sanity.io/images/hphu8zlu/production/d47eec5d685dc447dfcecab3da6ea96cfa8f39fe-1672x941.png?w=1600&fit=max&auto=format",
+            "alt": "",
+            "width": 1672,
+            "height": 941
+          },
           "ogTitle": null,
           "primaryKeyword": "quand commencent les nausées de grossesse",
           "secondaryKeywords": [],
@@ -9191,11 +9329,11 @@ export const GENERATED: GeneratedContent = {
         "featured": false,
         "heading": null,
         "heroImage": {
-          "src": "https://cdn.sanity.io/images/hphu8zlu/production/6d78a2d9fab220b1011f00f0dcd425368386e83b-1536x1024.webp?w=1600&fit=max&auto=format",
+          "src": "https://cdn.sanity.io/images/hphu8zlu/production/c8134a212ba033cafc822354b5551b25a386b252-1672x941.png?w=1600&fit=max&auto=format",
           "alt": "Symptômes de grossesse par trimestre : à quoi s’attendre",
-          "width": 1536,
-          "height": 1024,
-          "credit": "HelloMommy editorial image"
+          "width": 1672,
+          "height": 941,
+          "credit": "HelloMommy editorial image generated with OpenAI"
         },
         "intro": "Le premier trimestre apporte souvent fatigue, nausées et seins sensibles ; le deuxième, un ventre qui s’arrondit et les premiers mouvements ; le troisième, davantage de pression, de reflux et de troubles du sommeil. Chaque grossesse est différente.",
         "locale": "fr",
@@ -9211,6 +9349,12 @@ export const GENERATED: GeneratedContent = {
           "description": "Le premier trimestre apporte souvent fatigue, nausées et seins sensibles ; le deuxième, un ventre qui s’arrondit et les premiers mouvements ; le troisième, davantage de pression, de reflux e",
           "noindex": false,
           "ogDescription": null,
+          "ogImage": {
+            "src": "https://cdn.sanity.io/images/hphu8zlu/production/c8134a212ba033cafc822354b5551b25a386b252-1672x941.png?w=1600&fit=max&auto=format",
+            "alt": "",
+            "width": 1672,
+            "height": 941
+          },
           "ogTitle": null,
           "primaryKeyword": "symptômes grossesse par trimestre",
           "secondaryKeywords": [],
@@ -9343,11 +9487,11 @@ export const GENERATED: GeneratedContent = {
         "featured": false,
         "heading": null,
         "heroImage": {
-          "src": "https://cdn.sanity.io/images/hphu8zlu/production/469aece9b9339f9ab1b88fb1122b1c141e36a811-1536x1024.webp?w=1600&fit=max&auto=format",
+          "src": "https://cdn.sanity.io/images/hphu8zlu/production/4a20dfa9f5a0970d4b3bc8b585814ef97aaf5fc0-1672x941.png?w=1600&fit=max&auto=format",
           "alt": "Femme enceinte faisant un exercice doux soutenu dans un studio lumineux",
-          "width": 1536,
-          "height": 1024,
-          "credit": "HelloMommy editorial image"
+          "width": 1672,
+          "height": 941,
+          "credit": "HelloMommy editorial image generated with OpenAI"
         },
         "intro": "Pour la plupart des personnes en bonne santé dont la grossesse n’est pas compliquée, l’exercice régulier est sûr et bénéfique. Un objectif commun est d’effectuer au moins 150 minutes d’activité aérobique modérée chaque semaine, adaptée à la condition physique et aux conseils médicaux. Choisissez des activités à faible risque, restez au frais et hydraté et évitez les sports présentant un risque élevé de chute, de collision ou de blessures abdominales.",
         "locale": "fr",
@@ -9361,6 +9505,12 @@ export const GENERATED: GeneratedContent = {
           "description": "Faites de l'exercice pendant la grossesse : apprenez les activités sécuritaires, l'objectif hebdomadaire de 150 minutes, les modifications utiles, ce qu'il faut éviter et les signes avant-coureurs d'arrêter.",
           "noindex": false,
           "ogDescription": null,
+          "ogImage": {
+            "src": "https://cdn.sanity.io/images/hphu8zlu/production/4a20dfa9f5a0970d4b3bc8b585814ef97aaf5fc0-1672x941.png?w=1600&fit=max&auto=format",
+            "alt": "",
+            "width": 1672,
+            "height": 941
+          },
           "ogTitle": null,
           "primaryKeyword": "exercice pendant la grossesse",
           "secondaryKeywords": [
@@ -9504,11 +9654,11 @@ export const GENERATED: GeneratedContent = {
         "featured": false,
         "heading": null,
         "heroImage": {
-          "src": "https://cdn.sanity.io/images/hphu8zlu/production/70bc664b2dbaf60c84be93c538fa1b85d8b2bee4-1536x1024.webp?w=1600&fit=max&auto=format",
+          "src": "https://cdn.sanity.io/images/hphu8zlu/production/7dcf9b72422a28072fbf7a07ed3fd1c050188889-1672x941.png?w=1600&fit=max&auto=format",
           "alt": "Femme enceinte notant les mouvements de bébé sur un téléphone tout en se reposant sur le côté",
-          "width": 1536,
-          "height": 1024,
-          "credit": "HelloMommy editorial image"
+          "width": 1672,
+          "height": 941,
+          "credit": "HelloMommy editorial image generated with OpenAI"
         },
         "intro": "Certaines équipes de maternité recommandent une routine structurée de comptage des coups de pied, tandis que les conseils du NHS se concentrent sur la connaissance du modèle individuel de votre bébé plutôt que sur l’atteinte d’un nombre universel. Suivez la méthode de votre propre clinicien. Quel que soit le système que vous utilisez, un mouvement réduit, modifié ou absent nécessite un appel immédiat : n'attendez jamais le lendemain.",
         "locale": "fr",
@@ -9523,6 +9673,12 @@ export const GENERATED: GeneratedContent = {
           "description": "Le nombre de coups de pied expliqué : comment fonctionnent les méthodes de suivi courantes, pourquoi les schémas de mouvement sont importants et quand les mouvements réduits ou modifiés nécessitent un appel urgent.",
           "noindex": false,
           "ogDescription": null,
+          "ogImage": {
+            "src": "https://cdn.sanity.io/images/hphu8zlu/production/7dcf9b72422a28072fbf7a07ed3fd1c050188889-1672x941.png?w=1600&fit=max&auto=format",
+            "alt": "",
+            "width": 1672,
+            "height": 941
+          },
           "ogTitle": null,
           "primaryKeyword": "compter les mouvements de bébé",
           "secondaryKeywords": [
@@ -9671,11 +9827,11 @@ export const GENERATED: GeneratedContent = {
         "featured": false,
         "heading": null,
         "heroImage": {
-          "src": "https://cdn.sanity.io/images/hphu8zlu/production/469aece9b9339f9ab1b88fb1122b1c141e36a811-1536x1024.webp?w=1600&fit=max&auto=format",
+          "src": "https://cdn.sanity.io/images/hphu8zlu/production/cc96fb9d4fce25c1812b5296dc79509307dc57b1-1672x941.png?w=1600&fit=max&auto=format",
           "alt": "Femme enceinte ayant un échantillon de sang prélevé pour un test de diabète gestationnel",
-          "width": 1536,
-          "height": 1024,
-          "credit": "HelloMommy editorial image"
+          "width": 1672,
+          "height": 941,
+          "credit": "HelloMommy editorial image generated with OpenAI"
         },
         "intro": "Le dépistage du diabète gestationnel est généralement proposé entre 24 et 28 semaines, avec des tests plus précoces pour certains facteurs de risque. Les voies de test diffèrent : certains systèmes utilisent un test de glycémie non à jeun suivi d'un test de diagnostic, tandis que d'autres utilisent un test de tolérance au glucose oral à jeun. Suivez les instructions exactes de votre clinique.",
         "locale": "fr",
@@ -9690,6 +9846,12 @@ export const GENERATED: GeneratedContent = {
           "description": "Quand a lieu le test de diabète gestationnel ? Découvrez comment fonctionnent le dépistage de la glycémie et l'OGTT, la préparation au jeûne, les résultats et ce qui se passe après le diagnostic.",
           "noindex": false,
           "ogDescription": null,
+          "ogImage": {
+            "src": "https://cdn.sanity.io/images/hphu8zlu/production/cc96fb9d4fce25c1812b5296dc79509307dc57b1-1672x941.png?w=1600&fit=max&auto=format",
+            "alt": "",
+            "width": 1672,
+            "height": 941
+          },
           "ogTitle": null,
           "primaryKeyword": "test diabète gestationnel",
           "secondaryKeywords": [
@@ -9833,11 +9995,11 @@ export const GENERATED: GeneratedContent = {
         "featured": false,
         "heading": null,
         "heroImage": {
-          "src": "https://cdn.sanity.io/images/hphu8zlu/production/991b50468e2b9bbf7ab8e163168e1b31b899983b-1536x1024.webp?w=1600&fit=max&auto=format",
+          "src": "https://cdn.sanity.io/images/hphu8zlu/production/6cf099aad233538d1a513039646e5d56c786d835-1672x941.png?w=1600&fit=max&auto=format",
           "alt": "Signes du travail : premiers symptômes et quand aller à la maternité",
-          "width": 1536,
-          "height": 1024,
-          "credit": "HelloMommy editorial image"
+          "width": 1672,
+          "height": 941,
+          "credit": "HelloMommy editorial image generated with OpenAI"
         },
         "intro": "Contractions régulières, perte du bouchon muqueux, mal de dos, pression pelvienne et rupture de la poche des eaux peuvent annoncer le travail. La phase précoce dure parfois des heures ou des jours. Suivez toujours les consignes de votre maternité.",
         "locale": "fr",
@@ -9852,6 +10014,12 @@ export const GENERATED: GeneratedContent = {
           "description": "Contractions régulières, perte du bouchon muqueux, mal de dos, pression pelvienne et rupture de la poche des eaux peuvent annoncer le travail. La phase précoce dure parfois des heures ou des",
           "noindex": false,
           "ogDescription": null,
+          "ogImage": {
+            "src": "https://cdn.sanity.io/images/hphu8zlu/production/6cf099aad233538d1a513039646e5d56c786d835-1672x941.png?w=1600&fit=max&auto=format",
+            "alt": "",
+            "width": 1672,
+            "height": 941
+          },
           "ogTitle": null,
           "primaryKeyword": "signes du travail",
           "secondaryKeywords": [],
@@ -9976,11 +10144,11 @@ export const GENERATED: GeneratedContent = {
         "featured": false,
         "heading": null,
         "heroImage": {
-          "src": "https://cdn.sanity.io/images/hphu8zlu/production/a4cacf00216953178b477d327ea78bca3589b267-1536x1024.webp?w=1600&fit=max&auto=format",
+          "src": "https://cdn.sanity.io/images/hphu8zlu/production/d67f903fc2fed40ad1b304baeef091131d7cbbac-1672x941.png?w=1600&fit=max&auto=format",
           "alt": "Femme enceinte parlant avec un clinicien lors de son premier rendez-vous prénatal",
-          "width": 1536,
-          "height": 1024,
-          "credit": "HelloMommy editorial image"
+          "width": 1672,
+          "height": 941,
+          "credit": "HelloMommy editorial image generated with OpenAI"
         },
         "intro": "Contactez un prestataire de soins de maternité dès que vous savez ou pensez que vous êtes enceinte. Le premier rendez-vous est souvent prévu entre 8 et 12 semaines, mais le calendrier varie selon le pays, le service et les antécédents médicaux. Une évaluation plus précoce peut être nécessaire en cas de douleur, de saignement, de symptômes graves, de complications antérieures ou d’un problème de santé persistant.",
         "locale": "fr",
@@ -9995,6 +10163,12 @@ export const GENERATED: GeneratedContent = {
           "description": "Quand réserver votre premier rendez-vous prénatal ? Découvrez ce qui se passe, quels tests peuvent être proposés et quelles informations apporter lors de votre visite.",
           "noindex": false,
           "ogDescription": null,
+          "ogImage": {
+            "src": "https://cdn.sanity.io/images/hphu8zlu/production/d67f903fc2fed40ad1b304baeef091131d7cbbac-1672x941.png?w=1600&fit=max&auto=format",
+            "alt": "",
+            "width": 1672,
+            "height": 941
+          },
           "ogTitle": null,
           "primaryKeyword": "premier rendez-vous prénatal",
           "secondaryKeywords": [
@@ -10137,11 +10311,11 @@ export const GENERATED: GeneratedContent = {
         "featured": false,
         "heading": null,
         "heroImage": {
-          "src": "https://cdn.sanity.io/images/hphu8zlu/production/6d78a2d9fab220b1011f00f0dcd425368386e83b-1536x1024.webp?w=1600&fit=max&auto=format",
+          "src": "https://cdn.sanity.io/images/hphu8zlu/production/53c6d16f2137419df1857a55bd07d706466820ea-1672x941.png?w=1600&fit=max&auto=format",
           "alt": "Femme enceinte examinant un guide des symptômes de grossesse dans une chambre lumineuse",
-          "width": 1536,
-          "height": 1024,
-          "credit": "HelloMommy editorial image"
+          "width": 1672,
+          "height": 941,
+          "credit": "HelloMommy editorial image generated with OpenAI"
         },
         "intro": "Il est normal qu’il y ait davantage de pertes vaginales pendant la grossesse. Les pertes saines sont généralement fines, claires ou d’un blanc laiteux et ne sentent pas désagréable. Des écoulements verts, jaunes, gris, nauséabonds, irritants ou douloureux peuvent suggérer une infection, tandis qu'une fuite aqueuse ou tout saignement nécessite l'avis d'une maternité.",
         "locale": "fr",
@@ -10156,6 +10330,12 @@ export const GENERATED: GeneratedContent = {
           "description": "Les pertes de grossesse expliquées : que peuvent signifier des pertes claires, blanches, jaunes, vertes, brunes ou roses et quand appeler votre équipe de maternité.",
           "noindex": false,
           "ogDescription": null,
+          "ogImage": {
+            "src": "https://cdn.sanity.io/images/hphu8zlu/production/53c6d16f2137419df1857a55bd07d706466820ea-1672x941.png?w=1600&fit=max&auto=format",
+            "alt": "",
+            "width": 1672,
+            "height": 941
+          },
           "ogTitle": null,
           "primaryKeyword": "pertes pendant la grossesse",
           "secondaryKeywords": [
@@ -10300,11 +10480,11 @@ export const GENERATED: GeneratedContent = {
         "featured": false,
         "heading": null,
         "heroImage": {
-          "src": "https://cdn.sanity.io/images/hphu8zlu/production/469aece9b9339f9ab1b88fb1122b1c141e36a811-1536x1024.webp?w=1600&fit=max&auto=format",
+          "src": "https://cdn.sanity.io/images/hphu8zlu/production/0f98234fb1625e38a6adf17de7b066ab3659366c-1672x941.png?w=1600&fit=max&auto=format",
           "alt": "Femme enceinte discutant d’une prise de poids saine avec un clinicien en maternité",
-          "width": 1536,
-          "height": 1024,
-          "credit": "HelloMommy editorial image"
+          "width": 1672,
+          "height": 941,
+          "credit": "HelloMommy editorial image generated with OpenAI"
         },
         "intro": "Un objectif de prise de poids santé dépend principalement de votre IMC avant la grossesse, du fait que vous portiez un ou plusieurs bébés, et de votre état de santé individuel. Pour une grossesse unique, les directives américaines recommandent un total de 12,7 à 18,1 kg en cas d'insuffisance pondérale, de 11,3 à 15,9 kg avec un IMC sain, de 6,8 à 11,3 kg en cas de surpoids et de 5 à 9,1 kg en cas d'obésité. Les recommandations locales peuvent différer.",
         "locale": "fr",
@@ -10319,6 +10499,12 @@ export const GENERATED: GeneratedContent = {
           "description": "Gain de poids pendant la grossesse par trimestre : consultez les plages totales saines par IMC avant la grossesse, le gain hebdomadaire typique et lorsqu'un changement soudain nécessite un avis médical.",
           "noindex": false,
           "ogDescription": null,
+          "ogImage": {
+            "src": "https://cdn.sanity.io/images/hphu8zlu/production/0f98234fb1625e38a6adf17de7b066ab3659366c-1672x941.png?w=1600&fit=max&auto=format",
+            "alt": "",
+            "width": 1672,
+            "height": 941
+          },
           "ogTitle": null,
           "primaryKeyword": "prise de poids grossesse",
           "secondaryKeywords": [
@@ -10463,11 +10649,11 @@ export const GENERATED: GeneratedContent = {
         "featured": false,
         "heading": null,
         "heroImage": {
-          "src": "https://cdn.sanity.io/images/hphu8zlu/production/70bc664b2dbaf60c84be93c538fa1b85d8b2bee4-1536x1024.webp?w=1600&fit=max&auto=format",
+          "src": "https://cdn.sanity.io/images/hphu8zlu/production/0d1b8335370391c43ff943e1f4d700dfa983ade9-1672x941.png?w=1600&fit=max&auto=format",
           "alt": "Mouvements de bébé : quand commencent-ils et quand appeler ?",
-          "width": 1536,
-          "height": 1024,
-          "credit": "HelloMommy editorial image"
+          "width": 1672,
+          "height": 941,
+          "credit": "HelloMommy editorial image generated with OpenAI"
         },
         "intro": "La plupart des femmes sentent leur bébé entre 16 et 24 semaines. Les premiers mouvements ressemblent à des bulles ou des papillons, puis deviennent des coups et des roulades. Il n’existe pas de nombre universel : apprenez le rythme habituel de votre bébé.",
         "locale": "fr",
@@ -10482,6 +10668,12 @@ export const GENERATED: GeneratedContent = {
           "description": "La plupart des femmes sentent leur bébé entre 16 et 24 semaines. Les premiers mouvements ressemblent à des bulles ou des papillons, puis deviennent des coups et des roulades. Il n’existe pas",
           "noindex": false,
           "ogDescription": null,
+          "ogImage": {
+            "src": "https://cdn.sanity.io/images/hphu8zlu/production/0d1b8335370391c43ff943e1f4d700dfa983ade9-1672x941.png?w=1600&fit=max&auto=format",
+            "alt": "",
+            "width": 1672,
+            "height": 941
+          },
           "ogTitle": null,
           "primaryKeyword": "quand sent-on bébé bouger",
           "secondaryKeywords": [],
@@ -10607,11 +10799,11 @@ export const GENERATED: GeneratedContent = {
         "featured": false,
         "heading": null,
         "heroImage": {
-          "src": "https://cdn.sanity.io/images/hphu8zlu/production/991b50468e2b9bbf7ab8e163168e1b31b899983b-1536x1024.webp?w=1600&fit=max&auto=format",
+          "src": "https://cdn.sanity.io/images/hphu8zlu/production/12d05b79c0ea1be928c90eb0bacf1ac19d3b0db8-1672x941.png?w=1600&fit=max&auto=format",
           "alt": "Femme enceinte chronométrant les contractions abdominales pour comparer les contractions",
-          "width": 1536,
-          "height": 1024,
-          "credit": "HelloMommy editorial image"
+          "width": 1672,
+          "height": 941,
+          "credit": "HelloMommy editorial image generated with OpenAI"
         },
         "intro": "Les serrages de Braxton Hicks sont généralement irréguliers, courts et ne deviennent pas progressivement plus forts. Les contractions du travail développent un schéma, durent plus longtemps, se rapprochent et s'intensifient. Aucune liste de contrôle n'est parfaite, alors contactez votre équipe de maternité en cas de doute, surtout avant 37 semaines.",
         "locale": "fr",
@@ -10626,6 +10818,12 @@ export const GENERATED: GeneratedContent = {
           "description": "Braxton Hicks vs contractions : comparez le timing, l'intensité et la progression, et apprenez quand les contractions ou d'autres symptômes nécessitent un appel urgent.",
           "noindex": false,
           "ogDescription": null,
+          "ogImage": {
+            "src": "https://cdn.sanity.io/images/hphu8zlu/production/12d05b79c0ea1be928c90eb0bacf1ac19d3b0db8-1672x941.png?w=1600&fit=max&auto=format",
+            "alt": "",
+            "width": 1672,
+            "height": 941
+          },
           "ogTitle": null,
           "primaryKeyword": "Braxton Hicks ou vraies contractions",
           "secondaryKeywords": [
@@ -12127,11 +12325,11 @@ export const GENERATED: GeneratedContent = {
         "featured": false,
         "heading": null,
         "heroImage": {
-          "src": "https://cdn.sanity.io/images/hphu8zlu/production/70bc664b2dbaf60c84be93c538fa1b85d8b2bee4-1536x1024.webp?w=1600&fit=max&auto=format",
+          "src": "https://cdn.sanity.io/images/hphu8zlu/production/0d1b8335370391c43ff943e1f4d700dfa983ade9-1672x941.png?w=1600&fit=max&auto=format",
           "alt": "Movimenti fetali: quando iniziano, cosa è normale e quando chiamare",
-          "width": 1536,
-          "height": 1024,
-          "credit": "HelloMommy editorial image"
+          "width": 1672,
+          "height": 941,
+          "credit": "HelloMommy editorial image generated with OpenAI"
         },
         "intro": "La maggior parte delle persone sente il bambino tra la 16ª e la 24ª settimana. All’inizio sembrano bollicine o farfalle, poi diventano calci e rotazioni. Non esiste un numero valido per tutti: conta conoscere il ritmo abituale del proprio bambino.",
         "locale": "it",
@@ -12146,6 +12344,12 @@ export const GENERATED: GeneratedContent = {
           "description": "La maggior parte delle persone sente il bambino tra la 16ª e la 24ª settimana. All’inizio sembrano bollicine o farfalle, poi diventano calci e rotazioni. Non esiste un numero valido per tutt",
           "noindex": false,
           "ogDescription": null,
+          "ogImage": {
+            "src": "https://cdn.sanity.io/images/hphu8zlu/production/0d1b8335370391c43ff943e1f4d700dfa983ade9-1672x941.png?w=1600&fit=max&auto=format",
+            "alt": "",
+            "width": 1672,
+            "height": 941
+          },
           "ogTitle": null,
           "primaryKeyword": "quando si sentono i movimenti fetali",
           "secondaryKeywords": [],
@@ -12271,11 +12475,11 @@ export const GENERATED: GeneratedContent = {
         "featured": false,
         "heading": null,
         "heroImage": {
-          "src": "https://cdn.sanity.io/images/hphu8zlu/production/6d78a2d9fab220b1011f00f0dcd425368386e83b-1536x1024.webp?w=1600&fit=max&auto=format",
+          "src": "https://cdn.sanity.io/images/hphu8zlu/production/c8134a212ba033cafc822354b5551b25a386b252-1672x941.png?w=1600&fit=max&auto=format",
           "alt": "Sintomi della gravidanza per trimestre: cosa aspettarsi",
-          "width": 1536,
-          "height": 1024,
-          "credit": "HelloMommy editorial image"
+          "width": 1672,
+          "height": 941,
+          "credit": "HelloMommy editorial image generated with OpenAI"
         },
         "intro": "Nel primo trimestre sono comuni stanchezza, nausea e seno dolente; nel secondo crescono il pancione e i primi movimenti; nel terzo aumentano pressione, reflusso e difficoltà a dormire. Ogni gravidanza è diversa.",
         "locale": "it",
@@ -12291,6 +12495,12 @@ export const GENERATED: GeneratedContent = {
           "description": "Nel primo trimestre sono comuni stanchezza, nausea e seno dolente; nel secondo crescono il pancione e i primi movimenti; nel terzo aumentano pressione, reflusso e difficoltà a dormire. Ogni ",
           "noindex": false,
           "ogDescription": null,
+          "ogImage": {
+            "src": "https://cdn.sanity.io/images/hphu8zlu/production/c8134a212ba033cafc822354b5551b25a386b252-1672x941.png?w=1600&fit=max&auto=format",
+            "alt": "",
+            "width": 1672,
+            "height": 941
+          },
           "ogTitle": null,
           "primaryKeyword": "sintomi gravidanza per trimestre",
           "secondaryKeywords": [],
@@ -12423,11 +12633,11 @@ export const GENERATED: GeneratedContent = {
         "featured": false,
         "heading": null,
         "heroImage": {
-          "src": "https://cdn.sanity.io/images/hphu8zlu/production/991b50468e2b9bbf7ab8e163168e1b31b899983b-1536x1024.webp?w=1600&fit=max&auto=format",
+          "src": "https://cdn.sanity.io/images/hphu8zlu/production/12d05b79c0ea1be928c90eb0bacf1ac19d3b0db8-1672x941.png?w=1600&fit=max&auto=format",
           "alt": "Donna incinta che cronometra le contrazioni addominali per confrontare le contrazioni",
-          "width": 1536,
-          "height": 1024,
-          "credit": "HelloMommy editorial image"
+          "width": 1672,
+          "height": 941,
+          "credit": "HelloMommy editorial image generated with OpenAI"
         },
         "intro": "Le contrazioni di Braxton Hicks sono generalmente irregolari, brevi e non diventano costantemente più forti. Le contrazioni del travaglio sviluppano uno schema, durano più a lungo, si avvicinano e si intensificano. Nessuna lista di controllo è perfetta, quindi contatta il tuo team di maternità ogni volta che non sei sicuro, soprattutto prima delle 37 settimane.",
         "locale": "it",
@@ -12442,6 +12652,12 @@ export const GENERATED: GeneratedContent = {
           "description": "Braxton Hicks vs contrazioni: confronta tempi, intensità e progressione e scopri quando le contrazioni o altri sintomi richiedono una chiamata urgente.",
           "noindex": false,
           "ogDescription": null,
+          "ogImage": {
+            "src": "https://cdn.sanity.io/images/hphu8zlu/production/12d05b79c0ea1be928c90eb0bacf1ac19d3b0db8-1672x941.png?w=1600&fit=max&auto=format",
+            "alt": "",
+            "width": 1672,
+            "height": 941
+          },
           "ogTitle": null,
           "primaryKeyword": "Braxton Hicks o contrazioni vere",
           "secondaryKeywords": [
@@ -12584,11 +12800,11 @@ export const GENERATED: GeneratedContent = {
         "featured": false,
         "heading": null,
         "heroImage": {
-          "src": "https://cdn.sanity.io/images/hphu8zlu/production/6d78a2d9fab220b1011f00f0dcd425368386e83b-1536x1024.webp?w=1600&fit=max&auto=format",
+          "src": "https://cdn.sanity.io/images/hphu8zlu/production/53c6d16f2137419df1857a55bd07d706466820ea-1672x941.png?w=1600&fit=max&auto=format",
           "alt": "Donna incinta che esamina una guida ai sintomi della gravidanza in una camera da letto luminosa",
-          "width": 1536,
-          "height": 1024,
-          "credit": "HelloMommy editorial image"
+          "width": 1672,
+          "height": 941,
+          "credit": "HelloMommy editorial image generated with OpenAI"
         },
         "intro": "Una maggiore secrezione vaginale è normale durante la gravidanza. Le secrezioni sane sono generalmente sottili, chiare o di colore bianco lattiginoso e non hanno un odore sgradevole. Secrezioni verdi, gialle, grigie, maleodoranti, pruriginose o dolorose possono suggerire un'infezione, mentre perdite acquose o qualsiasi sanguinamento richiedono un consiglio di maternità.",
         "locale": "it",
@@ -12603,6 +12819,12 @@ export const GENERATED: GeneratedContent = {
           "description": "Spiegazione della dimissione di gravidanza: cosa possono significare perdite chiare, bianche, gialle, verdi, marroni o rosa e quando chiamare l'equipe maternità.",
           "noindex": false,
           "ogDescription": null,
+          "ogImage": {
+            "src": "https://cdn.sanity.io/images/hphu8zlu/production/53c6d16f2137419df1857a55bd07d706466820ea-1672x941.png?w=1600&fit=max&auto=format",
+            "alt": "",
+            "width": 1672,
+            "height": 941
+          },
           "ogTitle": null,
           "primaryKeyword": "perdite in gravidanza",
           "secondaryKeywords": [
@@ -12747,11 +12969,11 @@ export const GENERATED: GeneratedContent = {
         "featured": false,
         "heading": null,
         "heroImage": {
-          "src": "https://cdn.sanity.io/images/hphu8zlu/production/a4cacf00216953178b477d327ea78bca3589b267-1536x1024.webp?w=1600&fit=max&auto=format",
+          "src": "https://cdn.sanity.io/images/hphu8zlu/production/d67f903fc2fed40ad1b304baeef091131d7cbbac-1672x941.png?w=1600&fit=max&auto=format",
           "alt": "Donna incinta che parla con un medico al suo primo appuntamento prenatale",
-          "width": 1536,
-          "height": 1024,
-          "credit": "HelloMommy editorial image"
+          "width": 1672,
+          "height": 941,
+          "credit": "HelloMommy editorial image generated with OpenAI"
         },
         "intro": "Contatta un fornitore di servizi di maternità non appena sai o pensi di essere incinta. Il primo appuntamento effettivo è spesso programmato intorno alle 8-12 settimane, ma i tempi variano a seconda del paese, del servizio e dell'anamnesi medica. Potrebbe essere necessaria una valutazione precoce in caso di dolore, sanguinamento, sintomi gravi, complicazioni precedenti o condizioni di salute in corso.",
         "locale": "it",
@@ -12766,6 +12988,12 @@ export const GENERATED: GeneratedContent = {
           "description": "Quando dovresti prenotare il tuo primo appuntamento prenatale? Scopri cosa succede, quali test possono essere offerti e quali informazioni portare alla tua visita.",
           "noindex": false,
           "ogDescription": null,
+          "ogImage": {
+            "src": "https://cdn.sanity.io/images/hphu8zlu/production/d67f903fc2fed40ad1b304baeef091131d7cbbac-1672x941.png?w=1600&fit=max&auto=format",
+            "alt": "",
+            "width": 1672,
+            "height": 941
+          },
           "ogTitle": null,
           "primaryKeyword": "prima visita in gravidanza",
           "secondaryKeywords": [
@@ -12908,11 +13136,11 @@ export const GENERATED: GeneratedContent = {
         "featured": false,
         "heading": null,
         "heroImage": {
-          "src": "https://cdn.sanity.io/images/hphu8zlu/production/469aece9b9339f9ab1b88fb1122b1c141e36a811-1536x1024.webp?w=1600&fit=max&auto=format",
+          "src": "https://cdn.sanity.io/images/hphu8zlu/production/4a20dfa9f5a0970d4b3bc8b585814ef97aaf5fc0-1672x941.png?w=1600&fit=max&auto=format",
           "alt": "Donna incinta che fa un esercizio delicato supportato in uno studio luminoso",
-          "width": 1536,
-          "height": 1024,
-          "credit": "HelloMommy editorial image"
+          "width": 1672,
+          "height": 941,
+          "credit": "HelloMommy editorial image generated with OpenAI"
         },
         "intro": "Per la maggior parte delle persone sane con una gravidanza senza complicazioni, l’esercizio fisico regolare è sicuro e benefico. Un obiettivo comune è almeno 150 minuti di attività aerobica moderata ogni settimana, adattata al fitness e ai consigli medici. Scegli attività a basso rischio, mantieniti fresco e idratato ed evita gli sport ad alto rischio di cadute, collisioni o lesioni addominali.",
         "locale": "it",
@@ -12926,6 +13154,12 @@ export const GENERATED: GeneratedContent = {
           "description": "Attività fisica in gravidanza: impara le attività sicure, l'obiettivo settimanale dei 150 minuti, le modifiche utili, cosa evitare e i segnali d'allarme per smettere.",
           "noindex": false,
           "ogDescription": null,
+          "ogImage": {
+            "src": "https://cdn.sanity.io/images/hphu8zlu/production/4a20dfa9f5a0970d4b3bc8b585814ef97aaf5fc0-1672x941.png?w=1600&fit=max&auto=format",
+            "alt": "",
+            "width": 1672,
+            "height": 941
+          },
           "ogTitle": null,
           "primaryKeyword": "esercizio fisico in gravidanza",
           "secondaryKeywords": [
@@ -13069,11 +13303,11 @@ export const GENERATED: GeneratedContent = {
         "featured": false,
         "heading": null,
         "heroImage": {
-          "src": "https://cdn.sanity.io/images/hphu8zlu/production/991b50468e2b9bbf7ab8e163168e1b31b899983b-1536x1024.webp?w=1600&fit=max&auto=format",
+          "src": "https://cdn.sanity.io/images/hphu8zlu/production/6cf099aad233538d1a513039646e5d56c786d835-1672x941.png?w=1600&fit=max&auto=format",
           "alt": "Segnali del travaglio: primi sintomi e quando andare in ospedale",
-          "width": 1536,
-          "height": 1024,
-          "credit": "HelloMommy editorial image"
+          "width": 1672,
+          "height": 941,
+          "credit": "HelloMommy editorial image generated with OpenAI"
         },
         "intro": "Contrazioni regolari, perdita del tappo mucoso, mal di schiena, pressione pelvica e rottura delle acque possono indicare il travaglio. La fase iniziale può durare ore o giorni. Segui sempre le istruzioni del tuo punto nascita.",
         "locale": "it",
@@ -13088,6 +13322,12 @@ export const GENERATED: GeneratedContent = {
           "description": "Contrazioni regolari, perdita del tappo mucoso, mal di schiena, pressione pelvica e rottura delle acque possono indicare il travaglio. La fase iniziale può durare ore o giorni. Segui sempre ",
           "noindex": false,
           "ogDescription": null,
+          "ogImage": {
+            "src": "https://cdn.sanity.io/images/hphu8zlu/production/6cf099aad233538d1a513039646e5d56c786d835-1672x941.png?w=1600&fit=max&auto=format",
+            "alt": "",
+            "width": 1672,
+            "height": 941
+          },
           "ogTitle": null,
           "primaryKeyword": "segnali del travaglio",
           "secondaryKeywords": [],
@@ -13212,11 +13452,11 @@ export const GENERATED: GeneratedContent = {
         "featured": false,
         "heading": null,
         "heroImage": {
-          "src": "https://cdn.sanity.io/images/hphu8zlu/production/6d78a2d9fab220b1011f00f0dcd425368386e83b-1536x1024.webp?w=1600&fit=max&auto=format",
+          "src": "https://cdn.sanity.io/images/hphu8zlu/production/d47eec5d685dc447dfcecab3da6ea96cfa8f39fe-1672x941.png?w=1600&fit=max&auto=format",
           "alt": "Nausea in gravidanza: quando inizia, finisce e cosa aiuta",
-          "width": 1536,
-          "height": 1024,
-          "credit": "HelloMommy editorial image"
+          "width": 1672,
+          "height": 941,
+          "credit": "HelloMommy editorial image generated with OpenAI"
         },
         "intro": "La nausea inizia spesso tra la 4ª e la 7ª settimana e di solito migliora entro 16–20 settimane. Può presentarsi in qualunque momento. Piccoli pasti, liquidi, riposo e farmaci adatti possono aiutare.",
         "locale": "it",
@@ -13231,6 +13471,12 @@ export const GENERATED: GeneratedContent = {
           "description": "La nausea inizia spesso tra la 4ª e la 7ª settimana e di solito migliora entro 16–20 settimane. Può presentarsi in qualunque momento. Piccoli pasti, liquidi, riposo e farmaci adatti possono ",
           "noindex": false,
           "ogDescription": null,
+          "ogImage": {
+            "src": "https://cdn.sanity.io/images/hphu8zlu/production/d47eec5d685dc447dfcecab3da6ea96cfa8f39fe-1672x941.png?w=1600&fit=max&auto=format",
+            "alt": "",
+            "width": 1672,
+            "height": 941
+          },
           "ogTitle": null,
           "primaryKeyword": "quando inizia la nausea in gravidanza",
           "secondaryKeywords": [],
@@ -13361,11 +13607,11 @@ export const GENERATED: GeneratedContent = {
         "featured": false,
         "heading": null,
         "heroImage": {
-          "src": "https://cdn.sanity.io/images/hphu8zlu/production/70bc664b2dbaf60c84be93c538fa1b85d8b2bee4-1536x1024.webp?w=1600&fit=max&auto=format",
+          "src": "https://cdn.sanity.io/images/hphu8zlu/production/7dcf9b72422a28072fbf7a07ed3fd1c050188889-1672x941.png?w=1600&fit=max&auto=format",
           "alt": "Donna incinta che nota i movimenti del bambino al telefono mentre riposa su un fianco",
-          "width": 1536,
-          "height": 1024,
-          "credit": "HelloMommy editorial image"
+          "width": 1672,
+          "height": 941,
+          "credit": "HelloMommy editorial image generated with OpenAI"
         },
         "intro": "Alcuni team di maternità raccomandano una routine strutturata di conteggio dei calci, mentre le linee guida del servizio sanitario nazionale si concentrano sulla conoscenza del modello individuale del tuo bambino piuttosto che sul raggiungimento di un numero universale. Segui il metodo del tuo medico. Qualunque sia il sistema utilizzato, il movimento ridotto, modificato o assente richiede una chiamata immediata, non aspettare mai fino al giorno successivo.",
         "locale": "it",
@@ -13380,6 +13626,12 @@ export const GENERATED: GeneratedContent = {
           "description": "Spiegazione del conteggio dei calci: come funzionano i metodi di tracciamento comuni, perché gli schemi di movimento sono importanti e quando movimenti ridotti o modificati richiedono una chiamata urgente.",
           "noindex": false,
           "ogDescription": null,
+          "ogImage": {
+            "src": "https://cdn.sanity.io/images/hphu8zlu/production/7dcf9b72422a28072fbf7a07ed3fd1c050188889-1672x941.png?w=1600&fit=max&auto=format",
+            "alt": "",
+            "width": 1672,
+            "height": 941
+          },
           "ogTitle": null,
           "primaryKeyword": "contare i movimenti fetali",
           "secondaryKeywords": [
@@ -13528,11 +13780,11 @@ export const GENERATED: GeneratedContent = {
         "featured": false,
         "heading": null,
         "heroImage": {
-          "src": "https://cdn.sanity.io/images/hphu8zlu/production/469aece9b9339f9ab1b88fb1122b1c141e36a811-1536x1024.webp?w=1600&fit=max&auto=format",
+          "src": "https://cdn.sanity.io/images/hphu8zlu/production/cc96fb9d4fce25c1812b5296dc79509307dc57b1-1672x941.png?w=1600&fit=max&auto=format",
           "alt": "Donna incinta che riceve un campione di sangue per un test del diabete gestazionale",
-          "width": 1536,
-          "height": 1024,
-          "credit": "HelloMommy editorial image"
+          "width": 1672,
+          "height": 941,
+          "credit": "HelloMommy editorial image generated with OpenAI"
         },
         "intro": "Lo screening del diabete gestazionale viene comunemente offerto tra le 24 e le 28 settimane, con test anticipati per alcuni fattori di rischio. I percorsi di test differiscono: alcuni sistemi utilizzano un test del glucosio non a digiuno seguito da un test diagnostico, mentre altri utilizzano un test di tolleranza al glucosio orale a digiuno. Segui le istruzioni esatte della tua clinica.",
         "locale": "it",
@@ -13547,6 +13799,12 @@ export const GENERATED: GeneratedContent = {
           "description": "Quando fare il test del diabete gestazionale? Scopri come funzionano lo screening del glucosio e l'OGTT, la preparazione al digiuno, i risultati e cosa succede dopo la diagnosi.",
           "noindex": false,
           "ogDescription": null,
+          "ogImage": {
+            "src": "https://cdn.sanity.io/images/hphu8zlu/production/cc96fb9d4fce25c1812b5296dc79509307dc57b1-1672x941.png?w=1600&fit=max&auto=format",
+            "alt": "",
+            "width": 1672,
+            "height": 941
+          },
           "ogTitle": null,
           "primaryKeyword": "test diabete gestazionale",
           "secondaryKeywords": [
@@ -13690,11 +13948,11 @@ export const GENERATED: GeneratedContent = {
         "featured": false,
         "heading": null,
         "heroImage": {
-          "src": "https://cdn.sanity.io/images/hphu8zlu/production/469aece9b9339f9ab1b88fb1122b1c141e36a811-1536x1024.webp?w=1600&fit=max&auto=format",
+          "src": "https://cdn.sanity.io/images/hphu8zlu/production/0f98234fb1625e38a6adf17de7b066ab3659366c-1672x941.png?w=1600&fit=max&auto=format",
           "alt": "Donna incinta discute di un sano aumento di peso con un medico specializzato in maternità",
-          "width": 1536,
-          "height": 1024,
-          "credit": "HelloMommy editorial image"
+          "width": 1672,
+          "height": 941,
+          "credit": "HelloMommy editorial image generated with OpenAI"
         },
         "intro": "Un obiettivo salutare di aumento di peso dipende principalmente dal tuo indice di massa corporea pre-gravidanza, dal fatto che tu porti uno o più bambini e dalla tua salute individuale. Per una gravidanza singola, le linee guida statunitensi raccomandano un totale di 12,7-18,1 kg in caso di sottopeso, 11,3-15,9 kg con un BMI sano, 6,8-11,3 kg in sovrappeso e 5-9,1 kg in caso di obesità. Le raccomandazioni locali potrebbero differire.",
         "locale": "it",
@@ -13709,6 +13967,12 @@ export const GENERATED: GeneratedContent = {
           "description": "Aumento di peso in gravidanza per trimestre: visualizza gli intervalli totali salutari in base al BMI pre-gravidanza, all'aumento settimanale tipico e quando un cambiamento improvviso richiede un consiglio medico.",
           "noindex": false,
           "ogDescription": null,
+          "ogImage": {
+            "src": "https://cdn.sanity.io/images/hphu8zlu/production/0f98234fb1625e38a6adf17de7b066ab3659366c-1672x941.png?w=1600&fit=max&auto=format",
+            "alt": "",
+            "width": 1672,
+            "height": 941
+          },
           "ogTitle": null,
           "primaryKeyword": "aumento di peso in gravidanza",
           "secondaryKeywords": [
@@ -15212,11 +15476,11 @@ export const GENERATED: GeneratedContent = {
         "featured": false,
         "heading": null,
         "heroImage": {
-          "src": "https://cdn.sanity.io/images/hphu8zlu/production/a4cacf00216953178b477d327ea78bca3589b267-1536x1024.webp?w=1600&fit=max&auto=format",
+          "src": "https://cdn.sanity.io/images/hphu8zlu/production/d67f903fc2fed40ad1b304baeef091131d7cbbac-1672x941.png?w=1600&fit=max&auto=format",
           "alt": "Mulher grávida conversando com um médico em sua primeira consulta pré-natal",
-          "width": 1536,
-          "height": 1024,
-          "credit": "HelloMommy editorial image"
+          "width": 1672,
+          "height": 941,
+          "credit": "HelloMommy editorial image generated with OpenAI"
         },
         "intro": "Contate um prestador de cuidados de maternidade assim que souber ou pensar que está grávida. A primeira consulta real geralmente é agendada para cerca de 8 a 12 semanas, mas o tempo varia de acordo com o país, o serviço e o histórico médico. Uma avaliação precoce pode ser necessária para dor, sangramento, sintomas graves, complicações anteriores ou um problema de saúde contínuo.",
         "locale": "pt",
@@ -15231,6 +15495,12 @@ export const GENERATED: GeneratedContent = {
           "description": "Quando você deve marcar sua primeira consulta pré-natal? Saiba o que acontece, quais exames podem ser oferecidos e quais informações levar na sua visita.",
           "noindex": false,
           "ogDescription": null,
+          "ogImage": {
+            "src": "https://cdn.sanity.io/images/hphu8zlu/production/d67f903fc2fed40ad1b304baeef091131d7cbbac-1672x941.png?w=1600&fit=max&auto=format",
+            "alt": "",
+            "width": 1672,
+            "height": 941
+          },
           "ogTitle": null,
           "primaryKeyword": "primeira consulta pré-natal",
           "secondaryKeywords": [
@@ -15373,11 +15643,11 @@ export const GENERATED: GeneratedContent = {
         "featured": false,
         "heading": null,
         "heroImage": {
-          "src": "https://cdn.sanity.io/images/hphu8zlu/production/6d78a2d9fab220b1011f00f0dcd425368386e83b-1536x1024.webp?w=1600&fit=max&auto=format",
+          "src": "https://cdn.sanity.io/images/hphu8zlu/production/53c6d16f2137419df1857a55bd07d706466820ea-1672x941.png?w=1600&fit=max&auto=format",
           "alt": "Mulher grávida revisando um guia de sintomas de gravidez em um quarto iluminado",
-          "width": 1536,
-          "height": 1024,
-          "credit": "HelloMommy editorial image"
+          "width": 1672,
+          "height": 941,
+          "credit": "HelloMommy editorial image generated with OpenAI"
         },
         "intro": "Mais corrimento vaginal é normal na gravidez. O corrimento saudável geralmente é fino, transparente ou branco leitoso e não tem cheiro desagradável. Corrimento verde, amarelo, cinza, fétido, com coceira ou dor pode sugerir infecção, enquanto vazamento aquoso ou qualquer sangramento precisa de aconselhamento de maternidade.",
         "locale": "pt",
@@ -15392,6 +15662,12 @@ export const GENERATED: GeneratedContent = {
           "description": "Explicação do corrimento da gravidez: o que pode significar corrimento claro, branco, amarelo, verde, marrom ou rosa e quando ligar para a maternidade.",
           "noindex": false,
           "ogDescription": null,
+          "ogImage": {
+            "src": "https://cdn.sanity.io/images/hphu8zlu/production/53c6d16f2137419df1857a55bd07d706466820ea-1672x941.png?w=1600&fit=max&auto=format",
+            "alt": "",
+            "width": 1672,
+            "height": 941
+          },
           "ogTitle": null,
           "primaryKeyword": "corrimento na gravidez",
           "secondaryKeywords": [
@@ -15536,11 +15812,11 @@ export const GENERATED: GeneratedContent = {
         "featured": false,
         "heading": null,
         "heroImage": {
-          "src": "https://cdn.sanity.io/images/hphu8zlu/production/469aece9b9339f9ab1b88fb1122b1c141e36a811-1536x1024.webp?w=1600&fit=max&auto=format",
+          "src": "https://cdn.sanity.io/images/hphu8zlu/production/0f98234fb1625e38a6adf17de7b066ab3659366c-1672x941.png?w=1600&fit=max&auto=format",
           "alt": "Mulher grávida discutindo ganho de peso saudável com uma maternidade",
-          "width": 1536,
-          "height": 1024,
-          "credit": "HelloMommy editorial image"
+          "width": 1672,
+          "height": 941,
+          "credit": "HelloMommy editorial image generated with OpenAI"
         },
         "intro": "Uma meta de ganho de peso saudável depende principalmente do seu IMC antes da gravidez, se você carrega um bebê ou vários, e da sua saúde individual. Para uma gravidez única, a orientação dos EUA recomenda um total de 12,7–18,1 kg se estiver abaixo do peso, 11,3–15,9 kg com um IMC saudável, 6,8–11,3 kg se estiver acima do peso e 5–9,1 kg com obesidade. As recomendações locais podem ser diferentes.",
         "locale": "pt",
@@ -15555,6 +15831,12 @@ export const GENERATED: GeneratedContent = {
           "description": "Ganho de peso na gravidez por trimestre: veja faixas totais saudáveis ​​por IMC pré-gravidez, ganho semanal típico e quando uma mudança repentina precisa de orientação médica.",
           "noindex": false,
           "ogDescription": null,
+          "ogImage": {
+            "src": "https://cdn.sanity.io/images/hphu8zlu/production/0f98234fb1625e38a6adf17de7b066ab3659366c-1672x941.png?w=1600&fit=max&auto=format",
+            "alt": "",
+            "width": 1672,
+            "height": 941
+          },
           "ogTitle": null,
           "primaryKeyword": "aumento de peso na gravidez",
           "secondaryKeywords": [
@@ -15699,11 +15981,11 @@ export const GENERATED: GeneratedContent = {
         "featured": false,
         "heading": null,
         "heroImage": {
-          "src": "https://cdn.sanity.io/images/hphu8zlu/production/70bc664b2dbaf60c84be93c538fa1b85d8b2bee4-1536x1024.webp?w=1600&fit=max&auto=format",
+          "src": "https://cdn.sanity.io/images/hphu8zlu/production/0d1b8335370391c43ff943e1f4d700dfa983ade9-1672x941.png?w=1600&fit=max&auto=format",
           "alt": "Movimentos do bebé: quando começam, o que é normal e quando ligar",
-          "width": 1536,
-          "height": 1024,
-          "credit": "HelloMommy editorial image"
+          "width": 1672,
+          "height": 941,
+          "credit": "HelloMommy editorial image generated with OpenAI"
         },
         "intro": "A maioria sente o bebé entre as 16 e as 24 semanas. No início parecem bolhas ou borboletas e depois tornam-se pontapés e voltas. Não existe um número universal: importa conhecer o padrão habitual do seu bebé.",
         "locale": "pt",
@@ -15718,6 +16000,12 @@ export const GENERATED: GeneratedContent = {
           "description": "A maioria sente o bebé entre as 16 e as 24 semanas. No início parecem bolhas ou borboletas e depois tornam-se pontapés e voltas. Não existe um número universal: importa conhecer o padrão hab",
           "noindex": false,
           "ogDescription": null,
+          "ogImage": {
+            "src": "https://cdn.sanity.io/images/hphu8zlu/production/0d1b8335370391c43ff943e1f4d700dfa983ade9-1672x941.png?w=1600&fit=max&auto=format",
+            "alt": "",
+            "width": 1672,
+            "height": 941
+          },
           "ogTitle": null,
           "primaryKeyword": "quando se sentem os movimentos do bebé",
           "secondaryKeywords": [],
@@ -15843,11 +16131,11 @@ export const GENERATED: GeneratedContent = {
         "featured": false,
         "heading": null,
         "heroImage": {
-          "src": "https://cdn.sanity.io/images/hphu8zlu/production/991b50468e2b9bbf7ab8e163168e1b31b899983b-1536x1024.webp?w=1600&fit=max&auto=format",
+          "src": "https://cdn.sanity.io/images/hphu8zlu/production/6cf099aad233538d1a513039646e5d56c786d835-1672x941.png?w=1600&fit=max&auto=format",
           "alt": "Sinais de trabalho de parto: sintomas iniciais e quando ir ao hospital",
-          "width": 1536,
-          "height": 1024,
-          "credit": "HelloMommy editorial image"
+          "width": 1672,
+          "height": 941,
+          "credit": "HelloMommy editorial image generated with OpenAI"
         },
         "intro": "Contrações regulares, saída do tampão mucoso, dor nas costas, pressão pélvica e rotura das águas podem anunciar o parto. A fase inicial pode durar horas ou dias. Siga sempre as orientações da sua maternidade.",
         "locale": "pt",
@@ -15862,6 +16150,12 @@ export const GENERATED: GeneratedContent = {
           "description": "Contrações regulares, saída do tampão mucoso, dor nas costas, pressão pélvica e rotura das águas podem anunciar o parto. A fase inicial pode durar horas ou dias. Siga sempre as orientações d",
           "noindex": false,
           "ogDescription": null,
+          "ogImage": {
+            "src": "https://cdn.sanity.io/images/hphu8zlu/production/6cf099aad233538d1a513039646e5d56c786d835-1672x941.png?w=1600&fit=max&auto=format",
+            "alt": "",
+            "width": 1672,
+            "height": 941
+          },
           "ogTitle": null,
           "primaryKeyword": "sinais de trabalho de parto",
           "secondaryKeywords": [],
@@ -15986,11 +16280,11 @@ export const GENERATED: GeneratedContent = {
         "featured": false,
         "heading": null,
         "heroImage": {
-          "src": "https://cdn.sanity.io/images/hphu8zlu/production/6d78a2d9fab220b1011f00f0dcd425368386e83b-1536x1024.webp?w=1600&fit=max&auto=format",
+          "src": "https://cdn.sanity.io/images/hphu8zlu/production/d47eec5d685dc447dfcecab3da6ea96cfa8f39fe-1672x941.png?w=1600&fit=max&auto=format",
           "alt": "Náuseas na gravidez: quando começam, terminam e o que ajuda",
-          "width": 1536,
-          "height": 1024,
-          "credit": "HelloMommy editorial image"
+          "width": 1672,
+          "height": 941,
+          "credit": "HelloMommy editorial image generated with OpenAI"
         },
         "intro": "As náuseas começam frequentemente entre as 4 e as 7 semanas e costumam melhorar pelas 16–20 semanas. Podem surgir a qualquer hora. Pequenas refeições, líquidos, descanso e medicamentos adequados podem ajudar.",
         "locale": "pt",
@@ -16005,6 +16299,12 @@ export const GENERATED: GeneratedContent = {
           "description": "As náuseas começam frequentemente entre as 4 e as 7 semanas e costumam melhorar pelas 16–20 semanas. Podem surgir a qualquer hora. Pequenas refeições, líquidos, descanso e medicamentos adequ",
           "noindex": false,
           "ogDescription": null,
+          "ogImage": {
+            "src": "https://cdn.sanity.io/images/hphu8zlu/production/d47eec5d685dc447dfcecab3da6ea96cfa8f39fe-1672x941.png?w=1600&fit=max&auto=format",
+            "alt": "",
+            "width": 1672,
+            "height": 941
+          },
           "ogTitle": null,
           "primaryKeyword": "quando começam as náuseas na gravidez",
           "secondaryKeywords": [],
@@ -16135,11 +16435,11 @@ export const GENERATED: GeneratedContent = {
         "featured": false,
         "heading": null,
         "heroImage": {
-          "src": "https://cdn.sanity.io/images/hphu8zlu/production/991b50468e2b9bbf7ab8e163168e1b31b899983b-1536x1024.webp?w=1600&fit=max&auto=format",
+          "src": "https://cdn.sanity.io/images/hphu8zlu/production/12d05b79c0ea1be928c90eb0bacf1ac19d3b0db8-1672x941.png?w=1600&fit=max&auto=format",
           "alt": "Mulher grávida cronometrando apertos abdominais para comparar contrações",
-          "width": 1536,
-          "height": 1024,
-          "credit": "HelloMommy editorial image"
+          "width": 1672,
+          "height": 941,
+          "credit": "HelloMommy editorial image generated with OpenAI"
         },
         "intro": "Os apertos de Braxton Hicks são geralmente irregulares, curtos e não ficam cada vez mais fortes. As contrações laborais desenvolvem um padrão, duram mais, aproximam-se e intensificam-se. Nenhuma lista de verificação é perfeita, por isso contacte a sua equipa de maternidade sempre que não tiver a certeza – especialmente antes das 37 semanas.",
         "locale": "pt",
@@ -16154,6 +16454,12 @@ export const GENERATED: GeneratedContent = {
           "description": "Braxton Hicks vs contrações: compare o tempo, a intensidade e a progressão, além de aprender quando as contrações ou outros sintomas precisam de uma chamada urgente.",
           "noindex": false,
           "ogDescription": null,
+          "ogImage": {
+            "src": "https://cdn.sanity.io/images/hphu8zlu/production/12d05b79c0ea1be928c90eb0bacf1ac19d3b0db8-1672x941.png?w=1600&fit=max&auto=format",
+            "alt": "",
+            "width": 1672,
+            "height": 941
+          },
           "ogTitle": null,
           "primaryKeyword": "Braxton Hicks ou contrações reais",
           "secondaryKeywords": [
@@ -16296,11 +16602,11 @@ export const GENERATED: GeneratedContent = {
         "featured": false,
         "heading": null,
         "heroImage": {
-          "src": "https://cdn.sanity.io/images/hphu8zlu/production/469aece9b9339f9ab1b88fb1122b1c141e36a811-1536x1024.webp?w=1600&fit=max&auto=format",
+          "src": "https://cdn.sanity.io/images/hphu8zlu/production/cc96fb9d4fce25c1812b5296dc79509307dc57b1-1672x941.png?w=1600&fit=max&auto=format",
           "alt": "Mulher grávida tendo uma amostra de sangue coletada para um teste de diabetes gestacional",
-          "width": 1536,
-          "height": 1024,
-          "credit": "HelloMommy editorial image"
+          "width": 1672,
+          "height": 941,
+          "credit": "HelloMommy editorial image generated with OpenAI"
         },
         "intro": "O rastreamento do diabetes gestacional é comumente oferecido entre 24 e 28 semanas, com testes precoces para alguns fatores de risco. As vias de teste diferem: alguns sistemas utilizam um teste de glicemia sem jejum seguido de um teste de diagnóstico, enquanto outros utilizam um teste oral de tolerância à glicose em jejum. Siga as instruções exatas da sua clínica.",
         "locale": "pt",
@@ -16315,6 +16621,12 @@ export const GENERATED: GeneratedContent = {
           "description": "Quando é o teste de diabetes gestacional? Saiba como funcionam o rastreio de glicose e o TOTG, preparação do jejum, resultados e o que acontece após o diagnóstico.",
           "noindex": false,
           "ogDescription": null,
+          "ogImage": {
+            "src": "https://cdn.sanity.io/images/hphu8zlu/production/cc96fb9d4fce25c1812b5296dc79509307dc57b1-1672x941.png?w=1600&fit=max&auto=format",
+            "alt": "",
+            "width": 1672,
+            "height": 941
+          },
           "ogTitle": null,
           "primaryKeyword": "teste de diabetes gestacional",
           "secondaryKeywords": [
@@ -16458,11 +16770,11 @@ export const GENERATED: GeneratedContent = {
         "featured": false,
         "heading": null,
         "heroImage": {
-          "src": "https://cdn.sanity.io/images/hphu8zlu/production/6d78a2d9fab220b1011f00f0dcd425368386e83b-1536x1024.webp?w=1600&fit=max&auto=format",
+          "src": "https://cdn.sanity.io/images/hphu8zlu/production/c8134a212ba033cafc822354b5551b25a386b252-1672x941.png?w=1600&fit=max&auto=format",
           "alt": "Sintomas da gravidez por trimestre: o que esperar",
-          "width": 1536,
-          "height": 1024,
-          "credit": "HelloMommy editorial image"
+          "width": 1672,
+          "height": 941,
+          "credit": "HelloMommy editorial image generated with OpenAI"
         },
         "intro": "No primeiro trimestre são comuns cansaço, náuseas e sensibilidade mamária; no segundo crescem a barriga e os movimentos; no terceiro aumentam pressão, refluxo e dificuldade em dormir. Cada gravidez é diferente.",
         "locale": "pt",
@@ -16478,6 +16790,12 @@ export const GENERATED: GeneratedContent = {
           "description": "No primeiro trimestre são comuns cansaço, náuseas e sensibilidade mamária; no segundo crescem a barriga e os movimentos; no terceiro aumentam pressão, refluxo e dificuldade em dormir. Cada g",
           "noindex": false,
           "ogDescription": null,
+          "ogImage": {
+            "src": "https://cdn.sanity.io/images/hphu8zlu/production/c8134a212ba033cafc822354b5551b25a386b252-1672x941.png?w=1600&fit=max&auto=format",
+            "alt": "",
+            "width": 1672,
+            "height": 941
+          },
           "ogTitle": null,
           "primaryKeyword": "sintomas da gravidez por trimestre",
           "secondaryKeywords": [],
@@ -16610,11 +16928,11 @@ export const GENERATED: GeneratedContent = {
         "featured": false,
         "heading": null,
         "heroImage": {
-          "src": "https://cdn.sanity.io/images/hphu8zlu/production/469aece9b9339f9ab1b88fb1122b1c141e36a811-1536x1024.webp?w=1600&fit=max&auto=format",
+          "src": "https://cdn.sanity.io/images/hphu8zlu/production/4a20dfa9f5a0970d4b3bc8b585814ef97aaf5fc0-1672x941.png?w=1600&fit=max&auto=format",
           "alt": "Mulher grávida fazendo um exercício suave e apoiado em um estúdio leve",
-          "width": 1536,
-          "height": 1024,
-          "credit": "HelloMommy editorial image"
+          "width": 1672,
+          "height": 941,
+          "credit": "HelloMommy editorial image generated with OpenAI"
         },
         "intro": "Para a maioria das pessoas saudáveis ​​com uma gravidez sem complicações, o exercício regular é seguro e benéfico. Um objetivo comum é pelo menos 150 minutos de atividade aeróbica moderada por semana, adaptada ao condicionamento físico e ao aconselhamento médico. Escolha atividades de baixo risco, mantenha-se fresco e hidratado e evite esportes com alto risco de queda, colisão ou lesão abdominal.",
         "locale": "pt",
@@ -16628,6 +16946,12 @@ export const GENERATED: GeneratedContent = {
           "description": "Exercício durante a gravidez: aprenda atividades seguras, a meta semanal de 150 minutos, modificações úteis, o que evitar e sinais de alerta para parar.",
           "noindex": false,
           "ogDescription": null,
+          "ogImage": {
+            "src": "https://cdn.sanity.io/images/hphu8zlu/production/4a20dfa9f5a0970d4b3bc8b585814ef97aaf5fc0-1672x941.png?w=1600&fit=max&auto=format",
+            "alt": "",
+            "width": 1672,
+            "height": 941
+          },
           "ogTitle": null,
           "primaryKeyword": "exercício durante a gravidez",
           "secondaryKeywords": [
@@ -16771,11 +17095,11 @@ export const GENERATED: GeneratedContent = {
         "featured": false,
         "heading": null,
         "heroImage": {
-          "src": "https://cdn.sanity.io/images/hphu8zlu/production/70bc664b2dbaf60c84be93c538fa1b85d8b2bee4-1536x1024.webp?w=1600&fit=max&auto=format",
+          "src": "https://cdn.sanity.io/images/hphu8zlu/production/7dcf9b72422a28072fbf7a07ed3fd1c050188889-1672x941.png?w=1600&fit=max&auto=format",
           "alt": "Mulher grávida observando os movimentos do bebê em um telefone enquanto descansa de lado",
-          "width": 1536,
-          "height": 1024,
-          "credit": "HelloMommy editorial image"
+          "width": 1672,
+          "height": 941,
+          "credit": "HelloMommy editorial image generated with OpenAI"
         },
         "intro": "Algumas equipas de maternidade recomendam uma rotina estruturada de contagem de pontapés, enquanto a orientação do NHS centra-se em conhecer o padrão individual do seu bebé, em vez de atingir um número universal. Siga o método do seu próprio médico. Seja qual for o sistema que você usa, o movimento reduzido, alterado ou ausente requer uma chamada imediata – nunca espere até o dia seguinte.",
         "locale": "pt",
@@ -16790,6 +17114,12 @@ export const GENERATED: GeneratedContent = {
           "description": "Explicação da contagem de chutes: como funcionam os métodos comuns de rastreamento, por que os padrões de movimento são importantes e quando movimentos reduzidos ou alterados precisam de uma chamada urgente.",
           "noindex": false,
           "ogDescription": null,
+          "ogImage": {
+            "src": "https://cdn.sanity.io/images/hphu8zlu/production/7dcf9b72422a28072fbf7a07ed3fd1c050188889-1672x941.png?w=1600&fit=max&auto=format",
+            "alt": "",
+            "width": 1672,
+            "height": 941
+          },
           "ogTitle": null,
           "primaryKeyword": "contar movimentos do bebé",
           "secondaryKeywords": [
@@ -18297,11 +18627,11 @@ export const GENERATED: GeneratedContent = {
         "featured": false,
         "heading": null,
         "heroImage": {
-          "src": "https://cdn.sanity.io/images/hphu8zlu/production/6d78a2d9fab220b1011f00f0dcd425368386e83b-1536x1024.webp?w=1600&fit=max&auto=format",
+          "src": "https://cdn.sanity.io/images/hphu8zlu/production/c8134a212ba033cafc822354b5551b25a386b252-1672x941.png?w=1600&fit=max&auto=format",
           "alt": "Schwangere zeigt die Entwicklung ihres Bauches in drei Trimestern",
-          "width": 1536,
-          "height": 1024,
-          "credit": "HelloMommy editorial image"
+          "width": 1672,
+          "height": 941,
+          "credit": "HelloMommy editorial image generated with OpenAI"
         },
         "intro": "Im ersten Trimester sind Müdigkeit, Übelkeit und Brustspannen häufig. Im zweiten wachsen Bauch und Bewegungen werden spürbar. Im dritten nehmen Druck, Sodbrennen und Schlafprobleme oft zu. Jede Schwangerschaft verläuft anders.",
         "locale": "de",
@@ -18317,6 +18647,12 @@ export const GENERATED: GeneratedContent = {
           "description": "Schwangerschaftssymptome im 1., 2. und 3. Trimester: typische Veränderungen, hilfreiche Tipps und wichtige Warnzeichen im Überblick.",
           "noindex": false,
           "ogDescription": null,
+          "ogImage": {
+            "src": "https://cdn.sanity.io/images/hphu8zlu/production/c8134a212ba033cafc822354b5551b25a386b252-1672x941.png?w=1600&fit=max&auto=format",
+            "alt": "",
+            "width": 1672,
+            "height": 941
+          },
           "ogTitle": null,
           "primaryKeyword": "Schwangerschaftssymptome nach Trimester",
           "secondaryKeywords": [
@@ -18467,11 +18803,11 @@ export const GENERATED: GeneratedContent = {
         "featured": false,
         "heading": null,
         "heroImage": {
-          "src": "https://cdn.sanity.io/images/hphu8zlu/production/a4cacf00216953178b477d327ea78bca3589b267-1536x1024.webp?w=1600&fit=max&auto=format",
+          "src": "https://cdn.sanity.io/images/hphu8zlu/production/d67f903fc2fed40ad1b304baeef091131d7cbbac-1672x941.png?w=1600&fit=max&auto=format",
           "alt": "Schwangere Frau spricht bei ihrem ersten vorgeburtlichen Termin mit einem Arzt",
-          "width": 1536,
-          "height": 1024,
-          "credit": "HelloMommy editorial image"
+          "width": 1672,
+          "height": 941,
+          "credit": "HelloMommy editorial image generated with OpenAI"
         },
         "intro": "Wenden Sie sich an einen Geburtshelfer, sobald Sie wissen oder glauben, dass Sie schwanger sind. Der tatsächliche erste Termin wird häufig in der 8. bis 12. Woche angesetzt, der Zeitpunkt variiert jedoch je nach Land, Dienst und Krankengeschichte. Bei Schmerzen, Blutungen, schweren Symptomen, früheren Komplikationen oder einem anhaltenden Gesundheitszustand kann eine frühere Beurteilung erforderlich sein.",
         "locale": "de",
@@ -18486,6 +18822,12 @@ export const GENERATED: GeneratedContent = {
           "description": "Wann sollten Sie Ihren ersten vorgeburtlichen Termin vereinbaren? Erfahren Sie, was passiert, welche Tests angeboten werden können und welche Informationen Sie zu Ihrem Besuch mitbringen sollten.",
           "noindex": false,
           "ogDescription": null,
+          "ogImage": {
+            "src": "https://cdn.sanity.io/images/hphu8zlu/production/d67f903fc2fed40ad1b304baeef091131d7cbbac-1672x941.png?w=1600&fit=max&auto=format",
+            "alt": "",
+            "width": 1672,
+            "height": 941
+          },
           "ogTitle": null,
           "primaryKeyword": "erste Vorsorgeuntersuchung Schwangerschaft",
           "secondaryKeywords": [
@@ -18628,11 +18970,11 @@ export const GENERATED: GeneratedContent = {
         "featured": false,
         "heading": null,
         "heroImage": {
-          "src": "https://cdn.sanity.io/images/hphu8zlu/production/6d78a2d9fab220b1011f00f0dcd425368386e83b-1536x1024.webp?w=1600&fit=max&auto=format",
+          "src": "https://cdn.sanity.io/images/hphu8zlu/production/53c6d16f2137419df1857a55bd07d706466820ea-1672x941.png?w=1600&fit=max&auto=format",
           "alt": "Schwangere Frau liest in einem hellen Schlafzimmer einen Ratgeber zu Schwangerschaftssymptomen durch",
-          "width": 1536,
-          "height": 1024,
-          "credit": "HelloMommy editorial image"
+          "width": 1672,
+          "height": 941,
+          "credit": "HelloMommy editorial image generated with OpenAI"
         },
         "intro": "In der Schwangerschaft ist mehr vaginaler Ausfluss normal. Gesunder Ausfluss ist in der Regel dünnflüssig, klar oder milchig weiß und riecht nicht unangenehm. Grüner, gelber, grauer, übelriechender, juckender oder schmerzhafter Ausfluss kann auf eine Infektion hindeuten, während wässriger Ausfluss oder Blutungen eine Beratung bei der Schwangerschaft erfordern.",
         "locale": "de",
@@ -18647,6 +18989,12 @@ export const GENERATED: GeneratedContent = {
           "description": "Schwangerschaftsausfluss erklärt: Was klarer, weißer, gelber, grüner, brauner oder rosafarbener Ausfluss bedeuten kann und wann Sie Ihr Entbindungsteam anrufen sollten.",
           "noindex": false,
           "ogDescription": null,
+          "ogImage": {
+            "src": "https://cdn.sanity.io/images/hphu8zlu/production/53c6d16f2137419df1857a55bd07d706466820ea-1672x941.png?w=1600&fit=max&auto=format",
+            "alt": "",
+            "width": 1672,
+            "height": 941
+          },
           "ogTitle": null,
           "primaryKeyword": "Ausfluss Schwangerschaft",
           "secondaryKeywords": [
@@ -18791,11 +19139,11 @@ export const GENERATED: GeneratedContent = {
         "featured": false,
         "heading": null,
         "heroImage": {
-          "src": "https://cdn.sanity.io/images/hphu8zlu/production/469aece9b9339f9ab1b88fb1122b1c141e36a811-1536x1024.webp?w=1600&fit=max&auto=format",
+          "src": "https://cdn.sanity.io/images/hphu8zlu/production/4a20dfa9f5a0970d4b3bc8b585814ef97aaf5fc0-1672x941.png?w=1600&fit=max&auto=format",
           "alt": "Schwangere Frau macht eine sanfte, unterstützte Übung in einem Lichtstudio",
-          "width": 1536,
-          "height": 1024,
-          "credit": "HelloMommy editorial image"
+          "width": 1672,
+          "height": 941,
+          "credit": "HelloMommy editorial image generated with OpenAI"
         },
         "intro": "Für die meisten gesunden Menschen mit einer unkomplizierten Schwangerschaft ist regelmäßige Bewegung sicher und vorteilhaft. Ein gemeinsames Ziel sind mindestens 150 Minuten moderate aerobe Aktivität pro Woche, angepasst an Fitness und medizinische Beratung. Wählen Sie Aktivitäten mit geringem Risiko, bleiben Sie kühl und hydriert und vermeiden Sie Sportarten mit einem hohen Risiko für Stürze, Kollisionen oder Bauchverletzungen.",
         "locale": "de",
@@ -18809,6 +19157,12 @@ export const GENERATED: GeneratedContent = {
           "description": "Sport während der Schwangerschaft: Lernen Sie sichere Aktivitäten, das 150-Minuten-Wochenziel, nützliche Modifikationen, was Sie vermeiden sollten und Warnzeichen, mit denen Sie aufhören sollten.",
           "noindex": false,
           "ogDescription": null,
+          "ogImage": {
+            "src": "https://cdn.sanity.io/images/hphu8zlu/production/4a20dfa9f5a0970d4b3bc8b585814ef97aaf5fc0-1672x941.png?w=1600&fit=max&auto=format",
+            "alt": "",
+            "width": 1672,
+            "height": 941
+          },
           "ogTitle": null,
           "primaryKeyword": "Sport in der Schwangerschaft",
           "secondaryKeywords": [
@@ -18952,11 +19306,11 @@ export const GENERATED: GeneratedContent = {
         "featured": false,
         "heading": null,
         "heroImage": {
-          "src": "https://cdn.sanity.io/images/hphu8zlu/production/70bc664b2dbaf60c84be93c538fa1b85d8b2bee4-1536x1024.webp?w=1600&fit=max&auto=format",
+          "src": "https://cdn.sanity.io/images/hphu8zlu/production/0d1b8335370391c43ff943e1f4d700dfa983ade9-1672x941.png?w=1600&fit=max&auto=format",
           "alt": "Schwangere legt die Hände auf ihren Bauch und nimmt Kindsbewegungen wahr",
-          "width": 1536,
-          "height": 1024,
-          "credit": "HelloMommy editorial image"
+          "width": 1672,
+          "height": 941,
+          "credit": "HelloMommy editorial image generated with OpenAI"
         },
         "intro": "Die meisten Schwangeren spüren ihr Baby erstmals zwischen der 16. und 24. Woche. Anfangs sind es oft Flattern oder sanfte Wirbel, später deutliche Tritte und Rollen. Entscheidend ist nicht eine feste Zahl, sondern das gewohnte Bewegungsmuster Ihres Babys.",
         "locale": "de",
@@ -18971,6 +19325,12 @@ export const GENERATED: GeneratedContent = {
           "description": "Wann spürt man das Baby? Alles über erste Tritte, normale Bewegungsmuster und Warnzeichen, bei denen Sie sofort die Geburtsklinik anrufen sollten.",
           "noindex": false,
           "ogDescription": null,
+          "ogImage": {
+            "src": "https://cdn.sanity.io/images/hphu8zlu/production/0d1b8335370391c43ff943e1f4d700dfa983ade9-1672x941.png?w=1600&fit=max&auto=format",
+            "alt": "",
+            "width": 1672,
+            "height": 941
+          },
           "ogTitle": null,
           "primaryKeyword": "wann spürt man das Baby",
           "secondaryKeywords": [
@@ -19114,11 +19474,11 @@ export const GENERATED: GeneratedContent = {
         "featured": false,
         "heading": null,
         "heroImage": {
-          "src": "https://cdn.sanity.io/images/hphu8zlu/production/991b50468e2b9bbf7ab8e163168e1b31b899983b-1536x1024.webp?w=1600&fit=max&auto=format",
+          "src": "https://cdn.sanity.io/images/hphu8zlu/production/6cf099aad233538d1a513039646e5d56c786d835-1672x941.png?w=1600&fit=max&auto=format",
           "alt": "Schwangere misst zu Hause Wehen neben ihrer gepackten Kliniktasche",
-          "width": 1536,
-          "height": 1024,
-          "credit": "HelloMommy editorial image"
+          "width": 1672,
+          "height": 941,
+          "credit": "HelloMommy editorial image generated with OpenAI"
         },
         "intro": "Zu den Geburtsanzeichen gehören regelmäßiger werdende Wehen, ein Schleimpfropf, Rückenschmerzen, Beckendruck und ein Blasensprung. Die frühe Phase kann Stunden oder Tage dauern. Die Hinweise Ihrer Geburtsklinik haben immer Vorrang.",
         "locale": "de",
@@ -19133,6 +19493,12 @@ export const GENERATED: GeneratedContent = {
           "description": "Die wichtigsten Geburtsanzeichen, Unterschiede zu Übungswehen und klare Hinweise, wann Sie die Geburtsklinik oder den Notruf kontaktieren sollten.",
           "noindex": false,
           "ogDescription": null,
+          "ogImage": {
+            "src": "https://cdn.sanity.io/images/hphu8zlu/production/6cf099aad233538d1a513039646e5d56c786d835-1672x941.png?w=1600&fit=max&auto=format",
+            "alt": "",
+            "width": 1672,
+            "height": 941
+          },
           "ogTitle": null,
           "primaryKeyword": "Geburtsanzeichen",
           "secondaryKeywords": [
@@ -19275,11 +19641,11 @@ export const GENERATED: GeneratedContent = {
         "featured": false,
         "heading": null,
         "heroImage": {
-          "src": "https://cdn.sanity.io/images/hphu8zlu/production/6d78a2d9fab220b1011f00f0dcd425368386e83b-1536x1024.webp?w=1600&fit=max&auto=format",
+          "src": "https://cdn.sanity.io/images/hphu8zlu/production/d47eec5d685dc447dfcecab3da6ea96cfa8f39fe-1672x941.png?w=1600&fit=max&auto=format",
           "alt": "Schwangere ruht sich mit Wasser und einem milden Snack aus",
-          "width": 1536,
-          "height": 1024,
-          "credit": "HelloMommy editorial image"
+          "width": 1672,
+          "height": 941,
+          "credit": "HelloMommy editorial image generated with OpenAI"
         },
         "intro": "Schwangerschaftsübelkeit beginnt meist zwischen Woche 4 und 7 und bessert sich häufig bis Woche 16 bis 20. Sie kann zu jeder Tageszeit auftreten. Kleine Mahlzeiten, Flüssigkeit, Ruhe und bei Bedarf sichere Medikamente können helfen.",
         "locale": "de",
@@ -19294,6 +19660,12 @@ export const GENERATED: GeneratedContent = {
           "description": "Wann beginnt und endet Schwangerschaftsübelkeit? Praktische Hilfe gegen Übelkeit und Warnzeichen für Hyperemesis gravidarum und Austrocknung.",
           "noindex": false,
           "ogDescription": null,
+          "ogImage": {
+            "src": "https://cdn.sanity.io/images/hphu8zlu/production/d47eec5d685dc447dfcecab3da6ea96cfa8f39fe-1672x941.png?w=1600&fit=max&auto=format",
+            "alt": "",
+            "width": 1672,
+            "height": 941
+          },
           "ogTitle": null,
           "primaryKeyword": "wann beginnt Schwangerschaftsübelkeit",
           "secondaryKeywords": [
@@ -19442,11 +19814,11 @@ export const GENERATED: GeneratedContent = {
         "featured": false,
         "heading": null,
         "heroImage": {
-          "src": "https://cdn.sanity.io/images/hphu8zlu/production/991b50468e2b9bbf7ab8e163168e1b31b899983b-1536x1024.webp?w=1600&fit=max&auto=format",
+          "src": "https://cdn.sanity.io/images/hphu8zlu/production/12d05b79c0ea1be928c90eb0bacf1ac19d3b0db8-1672x941.png?w=1600&fit=max&auto=format",
           "alt": "Schwangere Frau legt den Zeitpunkt der Bauchstraffung fest, um die Wehen zu vergleichen",
-          "width": 1536,
-          "height": 1024,
-          "credit": "HelloMommy editorial image"
+          "width": 1672,
+          "height": 941,
+          "credit": "HelloMommy editorial image generated with OpenAI"
         },
         "intro": "Braxton-Hicks-Verspannungen sind in der Regel unregelmäßig, kurz und werden nicht stetig stärker. Wehen entwickeln ein Muster, dauern länger, rücken näher zusammen und verstärken sich. Keine Checkliste ist perfekt. Wenden Sie sich daher immer an Ihr Entbindungsteam, wenn Sie unsicher sind – insbesondere vor der 37. Woche.",
         "locale": "de",
@@ -19461,6 +19833,12 @@ export const GENERATED: GeneratedContent = {
           "description": "Braxton Hicks vs. Wehen: Vergleichen Sie Zeitpunkt, Intensität und Verlauf und erfahren Sie, wann Wehen oder andere Symptome einen dringenden Anruf erfordern.",
           "noindex": false,
           "ogDescription": null,
+          "ogImage": {
+            "src": "https://cdn.sanity.io/images/hphu8zlu/production/12d05b79c0ea1be928c90eb0bacf1ac19d3b0db8-1672x941.png?w=1600&fit=max&auto=format",
+            "alt": "",
+            "width": 1672,
+            "height": 941
+          },
           "ogTitle": null,
           "primaryKeyword": "Übungswehen oder echte Wehen",
           "secondaryKeywords": [
@@ -19603,11 +19981,11 @@ export const GENERATED: GeneratedContent = {
         "featured": false,
         "heading": null,
         "heroImage": {
-          "src": "https://cdn.sanity.io/images/hphu8zlu/production/70bc664b2dbaf60c84be93c538fa1b85d8b2bee4-1536x1024.webp?w=1600&fit=max&auto=format",
+          "src": "https://cdn.sanity.io/images/hphu8zlu/production/7dcf9b72422a28072fbf7a07ed3fd1c050188889-1672x941.png?w=1600&fit=max&auto=format",
           "alt": "Schwangere Frau notiert die Bewegungen des Babys auf einem Telefon, während sie auf der Seite ruht",
-          "width": 1536,
-          "height": 1024,
-          "credit": "HelloMommy editorial image"
+          "width": 1672,
+          "height": 941,
+          "credit": "HelloMommy editorial image generated with OpenAI"
         },
         "intro": "Einige Entbindungsteams empfehlen eine strukturierte Kick-Count-Routine, während sich die NHS-Anleitung darauf konzentriert, das individuelle Muster Ihres Babys zu kennen, anstatt eine universelle Zahl zu erreichen. Befolgen Sie die Methode Ihres eigenen Arztes. Unabhängig davon, welches System Sie verwenden, erfordert eine reduzierte, geänderte oder fehlende Bewegung einen sofortigen Anruf – warten Sie nie bis zum nächsten Tag.",
         "locale": "de",
@@ -19622,6 +20000,12 @@ export const GENERATED: GeneratedContent = {
           "description": "Kick Counts erklärt: Wie gängige Tracking-Methoden funktionieren, warum Bewegungsmuster wichtig sind und wann reduzierte oder veränderte Bewegungen einen dringenden Anruf erfordern.",
           "noindex": false,
           "ogDescription": null,
+          "ogImage": {
+            "src": "https://cdn.sanity.io/images/hphu8zlu/production/7dcf9b72422a28072fbf7a07ed3fd1c050188889-1672x941.png?w=1600&fit=max&auto=format",
+            "alt": "",
+            "width": 1672,
+            "height": 941
+          },
           "ogTitle": null,
           "primaryKeyword": "Kindsbewegungen zählen",
           "secondaryKeywords": [
@@ -19770,11 +20154,11 @@ export const GENERATED: GeneratedContent = {
         "featured": false,
         "heading": null,
         "heroImage": {
-          "src": "https://cdn.sanity.io/images/hphu8zlu/production/469aece9b9339f9ab1b88fb1122b1c141e36a811-1536x1024.webp?w=1600&fit=max&auto=format",
+          "src": "https://cdn.sanity.io/images/hphu8zlu/production/cc96fb9d4fce25c1812b5296dc79509307dc57b1-1672x941.png?w=1600&fit=max&auto=format",
           "alt": "Schwangere Frau lässt sich eine Blutprobe für einen Schwangerschaftsdiabetestest entnehmen",
-          "width": 1536,
-          "height": 1024,
-          "credit": "HelloMommy editorial image"
+          "width": 1672,
+          "height": 941,
+          "credit": "HelloMommy editorial image generated with OpenAI"
         },
         "intro": "Ein Schwangerschaftsdiabetes-Screening wird üblicherweise zwischen der 24. und 28. Woche angeboten, wobei einige Risikofaktoren früher getestet werden. Die Testverfahren unterscheiden sich: Einige Systeme verwenden eine nicht nüchterne Glukoseprovokation, gefolgt von einem diagnostischen Test, während andere einen oralen nüchternen Glukosetoleranztest verwenden. Befolgen Sie die genauen Anweisungen Ihrer Klinik.",
         "locale": "de",
@@ -19789,6 +20173,12 @@ export const GENERATED: GeneratedContent = {
           "description": "Wann findet der Schwangerschaftsdiabetes-Test statt? Erfahren Sie, wie Glukosescreening und OGTT funktionieren, Fastenvorbereitung, Ergebnisse und was nach der Diagnose passiert.",
           "noindex": false,
           "ogDescription": null,
+          "ogImage": {
+            "src": "https://cdn.sanity.io/images/hphu8zlu/production/cc96fb9d4fce25c1812b5296dc79509307dc57b1-1672x941.png?w=1600&fit=max&auto=format",
+            "alt": "",
+            "width": 1672,
+            "height": 941
+          },
           "ogTitle": null,
           "primaryKeyword": "Schwangerschaftsdiabetes Test",
           "secondaryKeywords": [
@@ -19932,11 +20322,11 @@ export const GENERATED: GeneratedContent = {
         "featured": false,
         "heading": null,
         "heroImage": {
-          "src": "https://cdn.sanity.io/images/hphu8zlu/production/469aece9b9339f9ab1b88fb1122b1c141e36a811-1536x1024.webp?w=1600&fit=max&auto=format",
+          "src": "https://cdn.sanity.io/images/hphu8zlu/production/0f98234fb1625e38a6adf17de7b066ab3659366c-1672x941.png?w=1600&fit=max&auto=format",
           "alt": "Schwangere Frau bespricht gesunde Gewichtszunahme mit einem Geburtshelfer",
-          "width": 1536,
-          "height": 1024,
-          "credit": "HelloMommy editorial image"
+          "width": 1672,
+          "height": 941,
+          "credit": "HelloMommy editorial image generated with OpenAI"
         },
         "intro": "Ein gesundes Gewichtszunahmeziel hängt hauptsächlich von Ihrem BMI vor der Schwangerschaft ab, davon, ob Sie ein Kind oder mehrere Kinder tragen, und von Ihrem individuellen Gesundheitszustand. Für eine Einlingsschwangerschaft empfehlen die US-Leitlinien insgesamt 12,7–18,1 kg bei Untergewicht, 11,3–15,9 kg bei einem gesunden BMI, 6,8–11,3 kg bei Übergewicht und 5–9,1 kg bei Adipositas. Lokale Empfehlungen können abweichen.",
         "locale": "de",
@@ -19951,6 +20341,12 @@ export const GENERATED: GeneratedContent = {
           "description": "Gewichtszunahme während der Schwangerschaft nach Trimester: Sehen Sie sich gesunde Gesamtbereiche nach BMI vor der Schwangerschaft, typischer wöchentlicher Gewichtszunahme und wann eine plötzliche Veränderung ärztlichen Rat erfordert.",
           "noindex": false,
           "ogDescription": null,
+          "ogImage": {
+            "src": "https://cdn.sanity.io/images/hphu8zlu/production/0f98234fb1625e38a6adf17de7b066ab3659366c-1672x941.png?w=1600&fit=max&auto=format",
+            "alt": "",
+            "width": 1672,
+            "height": 941
+          },
           "ogTitle": null,
           "primaryKeyword": "Gewichtszunahme Schwangerschaft",
           "secondaryKeywords": [
@@ -21454,11 +21850,11 @@ export const GENERATED: GeneratedContent = {
         "featured": false,
         "heading": null,
         "heroImage": {
-          "src": "https://cdn.sanity.io/images/hphu8zlu/production/70bc664b2dbaf60c84be93c538fa1b85d8b2bee4-1536x1024.webp?w=1600&fit=max&auto=format",
+          "src": "https://cdn.sanity.io/images/hphu8zlu/production/0d1b8335370391c43ff943e1f4d700dfa983ade9-1672x941.png?w=1600&fit=max&auto=format",
           "alt": "Movimientos del bebé: cuándo empiezan, qué es normal y cuándo llamar",
-          "width": 1536,
-          "height": 1024,
-          "credit": "HelloMommy editorial image"
+          "width": 1672,
+          "height": 941,
+          "credit": "HelloMommy editorial image generated with OpenAI"
         },
         "intro": "La mayoría siente al bebé entre las semanas 16 y 24. Al principio pueden parecer burbujas o mariposas y después se convierten en patadas y giros. No existe una cifra universal: importa conocer el patrón habitual de tu bebé.",
         "locale": "es",
@@ -21473,6 +21869,12 @@ export const GENERATED: GeneratedContent = {
           "description": "La mayoría siente al bebé entre las semanas 16 y 24. Al principio pueden parecer burbujas o mariposas y después se convierten en patadas y giros. No existe una cifra universal: importa conoc",
           "noindex": false,
           "ogDescription": null,
+          "ogImage": {
+            "src": "https://cdn.sanity.io/images/hphu8zlu/production/0d1b8335370391c43ff943e1f4d700dfa983ade9-1672x941.png?w=1600&fit=max&auto=format",
+            "alt": "",
+            "width": 1672,
+            "height": 941
+          },
           "ogTitle": null,
           "primaryKeyword": "cuándo se sienten los movimientos del bebé",
           "secondaryKeywords": [],
@@ -21598,11 +22000,11 @@ export const GENERATED: GeneratedContent = {
         "featured": false,
         "heading": null,
         "heroImage": {
-          "src": "https://cdn.sanity.io/images/hphu8zlu/production/a4cacf00216953178b477d327ea78bca3589b267-1536x1024.webp?w=1600&fit=max&auto=format",
+          "src": "https://cdn.sanity.io/images/hphu8zlu/production/d67f903fc2fed40ad1b304baeef091131d7cbbac-1672x941.png?w=1600&fit=max&auto=format",
           "alt": "Mujer embarazada hablando con un médico en su primera cita prenatal",
-          "width": 1536,
-          "height": 1024,
-          "credit": "HelloMommy editorial image"
+          "width": 1672,
+          "height": 941,
+          "credit": "HelloMommy editorial image generated with OpenAI"
         },
         "intro": "Comuníquese con un proveedor de atención de maternidad tan pronto como sepa o crea que está embarazada. La primera cita suele programarse entre las 8 y 12 semanas, pero el tiempo varía según el país, el servicio y el historial médico. Es posible que sea necesaria una evaluación temprana para detectar dolor, sangrado, síntomas graves, complicaciones previas o una afección de salud actual.",
         "locale": "es",
@@ -21617,6 +22019,12 @@ export const GENERATED: GeneratedContent = {
           "description": "¿Cuándo debería reservar su primera cita prenatal? Conozca qué sucede, qué pruebas se pueden ofrecer y qué información llevar a su visita.",
           "noindex": false,
           "ogDescription": null,
+          "ogImage": {
+            "src": "https://cdn.sanity.io/images/hphu8zlu/production/d67f903fc2fed40ad1b304baeef091131d7cbbac-1672x941.png?w=1600&fit=max&auto=format",
+            "alt": "",
+            "width": 1672,
+            "height": 941
+          },
           "ogTitle": null,
           "primaryKeyword": "primera cita prenatal",
           "secondaryKeywords": [
@@ -21759,11 +22167,11 @@ export const GENERATED: GeneratedContent = {
         "featured": false,
         "heading": null,
         "heroImage": {
-          "src": "https://cdn.sanity.io/images/hphu8zlu/production/991b50468e2b9bbf7ab8e163168e1b31b899983b-1536x1024.webp?w=1600&fit=max&auto=format",
+          "src": "https://cdn.sanity.io/images/hphu8zlu/production/12d05b79c0ea1be928c90eb0bacf1ac19d3b0db8-1672x941.png?w=1600&fit=max&auto=format",
           "alt": "Mujer embarazada cronometrar los estiramientos abdominales para comparar las contracciones",
-          "width": 1536,
-          "height": 1024,
-          "credit": "HelloMommy editorial image"
+          "width": 1672,
+          "height": 941,
+          "credit": "HelloMommy editorial image generated with OpenAI"
         },
         "intro": "Los aprietes de Braxton Hicks suelen ser irregulares, cortos y no se vuelven más fuertes de manera constante. Las contracciones del parto desarrollan un patrón, duran más, se acercan y se intensifican. Ninguna lista de verificación es perfecta, así que comuníquese con su equipo de maternidad cuando no esté segura, especialmente antes de las 37 semanas.",
         "locale": "es",
@@ -21778,6 +22186,12 @@ export const GENERATED: GeneratedContent = {
           "description": "Braxton Hicks versus contracciones: compare el tiempo, la intensidad y la progresión, además aprenda cuándo las contracciones u otros síntomas necesitan una llamada urgente.",
           "noindex": false,
           "ogDescription": null,
+          "ogImage": {
+            "src": "https://cdn.sanity.io/images/hphu8zlu/production/12d05b79c0ea1be928c90eb0bacf1ac19d3b0db8-1672x941.png?w=1600&fit=max&auto=format",
+            "alt": "",
+            "width": 1672,
+            "height": 941
+          },
           "ogTitle": null,
           "primaryKeyword": "Braxton Hicks o contracciones reales",
           "secondaryKeywords": [
@@ -21920,11 +22334,11 @@ export const GENERATED: GeneratedContent = {
         "featured": false,
         "heading": null,
         "heroImage": {
-          "src": "https://cdn.sanity.io/images/hphu8zlu/production/70bc664b2dbaf60c84be93c538fa1b85d8b2bee4-1536x1024.webp?w=1600&fit=max&auto=format",
+          "src": "https://cdn.sanity.io/images/hphu8zlu/production/7dcf9b72422a28072fbf7a07ed3fd1c050188889-1672x941.png?w=1600&fit=max&auto=format",
           "alt": "Mujer embarazada que nota los movimientos del bebé en un teléfono mientras descansa de lado",
-          "width": 1536,
-          "height": 1024,
-          "credit": "HelloMommy editorial image"
+          "width": 1672,
+          "height": 941,
+          "credit": "HelloMommy editorial image generated with OpenAI"
         },
         "intro": "Algunos equipos de maternidad recomiendan una rutina estructurada de conteo de patadas, mientras que las pautas del NHS se centran en conocer el patrón individual de su bebé en lugar de alcanzar un número universal. Siga el método de su propio médico. Cualquiera que sea el sistema que utilice, un movimiento reducido, modificado o ausente requiere una llamada inmediata; nunca espere hasta el día siguiente.",
         "locale": "es",
@@ -21939,6 +22353,12 @@ export const GENERATED: GeneratedContent = {
           "description": "Explicación del conteo de patadas: cómo funcionan los métodos de seguimiento comunes, por qué son importantes los patrones de movimiento y cuándo es necesario llamar urgentemente para reducir o cambiar los movimientos.",
           "noindex": false,
           "ogDescription": null,
+          "ogImage": {
+            "src": "https://cdn.sanity.io/images/hphu8zlu/production/7dcf9b72422a28072fbf7a07ed3fd1c050188889-1672x941.png?w=1600&fit=max&auto=format",
+            "alt": "",
+            "width": 1672,
+            "height": 941
+          },
           "ogTitle": null,
           "primaryKeyword": "contar patadas del bebé",
           "secondaryKeywords": [
@@ -22087,11 +22507,11 @@ export const GENERATED: GeneratedContent = {
         "featured": false,
         "heading": null,
         "heroImage": {
-          "src": "https://cdn.sanity.io/images/hphu8zlu/production/991b50468e2b9bbf7ab8e163168e1b31b899983b-1536x1024.webp?w=1600&fit=max&auto=format",
+          "src": "https://cdn.sanity.io/images/hphu8zlu/production/6cf099aad233538d1a513039646e5d56c786d835-1672x941.png?w=1600&fit=max&auto=format",
           "alt": "Señales de parto: primeros síntomas y cuándo ir al hospital",
-          "width": 1536,
-          "height": 1024,
-          "credit": "HelloMommy editorial image"
+          "width": 1672,
+          "height": 941,
+          "credit": "HelloMommy editorial image generated with OpenAI"
         },
         "intro": "Contracciones regulares, expulsión del tapón mucoso, dolor de espalda, presión pélvica y rotura de aguas pueden anunciar el parto. La fase inicial puede durar horas o días. Sigue siempre las indicaciones de tu maternidad.",
         "locale": "es",
@@ -22106,6 +22526,12 @@ export const GENERATED: GeneratedContent = {
           "description": "Contracciones regulares, expulsión del tapón mucoso, dolor de espalda, presión pélvica y rotura de aguas pueden anunciar el parto. La fase inicial puede durar horas o días. Sigue siempre las",
           "noindex": false,
           "ogDescription": null,
+          "ogImage": {
+            "src": "https://cdn.sanity.io/images/hphu8zlu/production/6cf099aad233538d1a513039646e5d56c786d835-1672x941.png?w=1600&fit=max&auto=format",
+            "alt": "",
+            "width": 1672,
+            "height": 941
+          },
           "ogTitle": null,
           "primaryKeyword": "señales de parto",
           "secondaryKeywords": [],
@@ -22230,11 +22656,11 @@ export const GENERATED: GeneratedContent = {
         "featured": false,
         "heading": null,
         "heroImage": {
-          "src": "https://cdn.sanity.io/images/hphu8zlu/production/6d78a2d9fab220b1011f00f0dcd425368386e83b-1536x1024.webp?w=1600&fit=max&auto=format",
+          "src": "https://cdn.sanity.io/images/hphu8zlu/production/d47eec5d685dc447dfcecab3da6ea96cfa8f39fe-1672x941.png?w=1600&fit=max&auto=format",
           "alt": "Náuseas del embarazo: cuándo empiezan, terminan y qué ayuda",
-          "width": 1536,
-          "height": 1024,
-          "credit": "HelloMommy editorial image"
+          "width": 1672,
+          "height": 941,
+          "credit": "HelloMommy editorial image generated with OpenAI"
         },
         "intro": "Las náuseas suelen empezar entre las semanas 4 y 7 y mejorar hacia las semanas 16–20. Pueden aparecer a cualquier hora. Las comidas pequeñas, los líquidos, el descanso y medicamentos adecuados pueden ayudar.",
         "locale": "es",
@@ -22249,6 +22675,12 @@ export const GENERATED: GeneratedContent = {
           "description": "Las náuseas suelen empezar entre las semanas 4 y 7 y mejorar hacia las semanas 16–20. Pueden aparecer a cualquier hora. Las comidas pequeñas, los líquidos, el descanso y medicamentos adecuad",
           "noindex": false,
           "ogDescription": null,
+          "ogImage": {
+            "src": "https://cdn.sanity.io/images/hphu8zlu/production/d47eec5d685dc447dfcecab3da6ea96cfa8f39fe-1672x941.png?w=1600&fit=max&auto=format",
+            "alt": "",
+            "width": 1672,
+            "height": 941
+          },
           "ogTitle": null,
           "primaryKeyword": "cuándo empiezan las náuseas del embarazo",
           "secondaryKeywords": [],
@@ -22379,11 +22811,11 @@ export const GENERATED: GeneratedContent = {
         "featured": false,
         "heading": null,
         "heroImage": {
-          "src": "https://cdn.sanity.io/images/hphu8zlu/production/6d78a2d9fab220b1011f00f0dcd425368386e83b-1536x1024.webp?w=1600&fit=max&auto=format",
+          "src": "https://cdn.sanity.io/images/hphu8zlu/production/c8134a212ba033cafc822354b5551b25a386b252-1672x941.png?w=1600&fit=max&auto=format",
           "alt": "Síntomas del embarazo por trimestre: qué esperar",
-          "width": 1536,
-          "height": 1024,
-          "credit": "HelloMommy editorial image"
+          "width": 1672,
+          "height": 941,
+          "credit": "HelloMommy editorial image generated with OpenAI"
         },
         "intro": "En el primer trimestre son frecuentes el cansancio, las náuseas y la sensibilidad mamaria; en el segundo crecen la barriga y los movimientos; en el tercero aumentan la presión, el reflujo y los problemas de sueño.",
         "locale": "es",
@@ -22399,6 +22831,12 @@ export const GENERATED: GeneratedContent = {
           "description": "En el primer trimestre son frecuentes el cansancio, las náuseas y la sensibilidad mamaria; en el segundo crecen la barriga y los movimientos; en el tercero aumentan la presión, el reflujo y ",
           "noindex": false,
           "ogDescription": null,
+          "ogImage": {
+            "src": "https://cdn.sanity.io/images/hphu8zlu/production/c8134a212ba033cafc822354b5551b25a386b252-1672x941.png?w=1600&fit=max&auto=format",
+            "alt": "",
+            "width": 1672,
+            "height": 941
+          },
           "ogTitle": null,
           "primaryKeyword": "síntomas del embarazo por trimestre",
           "secondaryKeywords": [],
@@ -22531,11 +22969,11 @@ export const GENERATED: GeneratedContent = {
         "featured": false,
         "heading": null,
         "heroImage": {
-          "src": "https://cdn.sanity.io/images/hphu8zlu/production/6d78a2d9fab220b1011f00f0dcd425368386e83b-1536x1024.webp?w=1600&fit=max&auto=format",
+          "src": "https://cdn.sanity.io/images/hphu8zlu/production/53c6d16f2137419df1857a55bd07d706466820ea-1672x941.png?w=1600&fit=max&auto=format",
           "alt": "Mujer embarazada revisando una guía de síntomas del embarazo en un dormitorio luminoso",
-          "width": 1536,
-          "height": 1024,
-          "credit": "HelloMommy editorial image"
+          "width": 1672,
+          "height": 941,
+          "credit": "HelloMommy editorial image generated with OpenAI"
         },
         "intro": "Más flujo vaginal es normal durante el embarazo. La secreción saludable suele ser fina, transparente o de color blanco lechoso y no huele desagradable. La secreción verde, amarilla, gris, maloliente, con picazón o dolorosa puede sugerir una infección, mientras que la fuga de agua o cualquier sangrado requiere consejo de maternidad.",
         "locale": "es",
@@ -22550,6 +22988,12 @@ export const GENERATED: GeneratedContent = {
           "description": "Explicación del alta del embarazo: qué puede significar una secreción clara, blanca, amarilla, verde, marrón o rosada y cuándo llamar a su equipo de maternidad.",
           "noindex": false,
           "ogDescription": null,
+          "ogImage": {
+            "src": "https://cdn.sanity.io/images/hphu8zlu/production/53c6d16f2137419df1857a55bd07d706466820ea-1672x941.png?w=1600&fit=max&auto=format",
+            "alt": "",
+            "width": 1672,
+            "height": 941
+          },
           "ogTitle": null,
           "primaryKeyword": "flujo en el embarazo",
           "secondaryKeywords": [
@@ -22694,11 +23138,11 @@ export const GENERATED: GeneratedContent = {
         "featured": false,
         "heading": null,
         "heroImage": {
-          "src": "https://cdn.sanity.io/images/hphu8zlu/production/469aece9b9339f9ab1b88fb1122b1c141e36a811-1536x1024.webp?w=1600&fit=max&auto=format",
+          "src": "https://cdn.sanity.io/images/hphu8zlu/production/4a20dfa9f5a0970d4b3bc8b585814ef97aaf5fc0-1672x941.png?w=1600&fit=max&auto=format",
           "alt": "Mujer embarazada haciendo un ejercicio suave con apoyo en un estudio de luz",
-          "width": 1536,
-          "height": 1024,
-          "credit": "HelloMommy editorial image"
+          "width": 1672,
+          "height": 941,
+          "credit": "HelloMommy editorial image generated with OpenAI"
         },
         "intro": "Para la mayoría de las personas sanas con un embarazo sin complicaciones, el ejercicio regular es seguro y beneficioso. Un objetivo común es realizar al menos 150 minutos de actividad aeróbica moderada cada semana, adaptada al estado físico y al consejo médico. Elija actividades de bajo riesgo, manténgase fresco e hidratado y evite deportes con alto riesgo de caídas, colisiones o lesiones abdominales.",
         "locale": "es",
@@ -22712,6 +23156,12 @@ export const GENERATED: GeneratedContent = {
           "description": "Haga ejercicio durante el embarazo: aprenda actividades seguras, el objetivo de 150 minutos semanales, modificaciones útiles, qué evitar y señales de advertencia para detenerse.",
           "noindex": false,
           "ogDescription": null,
+          "ogImage": {
+            "src": "https://cdn.sanity.io/images/hphu8zlu/production/4a20dfa9f5a0970d4b3bc8b585814ef97aaf5fc0-1672x941.png?w=1600&fit=max&auto=format",
+            "alt": "",
+            "width": 1672,
+            "height": 941
+          },
           "ogTitle": null,
           "primaryKeyword": "ejercicio durante el embarazo",
           "secondaryKeywords": [
@@ -22855,11 +23305,11 @@ export const GENERATED: GeneratedContent = {
         "featured": false,
         "heading": null,
         "heroImage": {
-          "src": "https://cdn.sanity.io/images/hphu8zlu/production/469aece9b9339f9ab1b88fb1122b1c141e36a811-1536x1024.webp?w=1600&fit=max&auto=format",
+          "src": "https://cdn.sanity.io/images/hphu8zlu/production/cc96fb9d4fce25c1812b5296dc79509307dc57b1-1672x941.png?w=1600&fit=max&auto=format",
           "alt": "Mujer embarazada a la que le toman una muestra de sangre para una prueba de diabetes gestacional",
-          "width": 1536,
-          "height": 1024,
-          "credit": "HelloMommy editorial image"
+          "width": 1672,
+          "height": 941,
+          "credit": "HelloMommy editorial image generated with OpenAI"
         },
         "intro": "La detección de diabetes gestacional se ofrece comúnmente entre las semanas 24 y 28, con pruebas más tempranas para detectar algunos factores de riesgo. Las vías de prueba difieren: algunos sistemas utilizan una prueba de glucosa sin ayuno seguida de una prueba de diagnóstico, mientras que otros utilizan una prueba de tolerancia a la glucosa oral en ayunas. Siga las instrucciones exactas de su clínica.",
         "locale": "es",
@@ -22874,6 +23324,12 @@ export const GENERATED: GeneratedContent = {
           "description": "¿Cuándo es la prueba de diabetes gestacional? Conozca cómo funcionan la prueba de glucosa y la OGTT, la preparación del ayuno, los resultados y qué sucede después del diagnóstico.",
           "noindex": false,
           "ogDescription": null,
+          "ogImage": {
+            "src": "https://cdn.sanity.io/images/hphu8zlu/production/cc96fb9d4fce25c1812b5296dc79509307dc57b1-1672x941.png?w=1600&fit=max&auto=format",
+            "alt": "",
+            "width": 1672,
+            "height": 941
+          },
           "ogTitle": null,
           "primaryKeyword": "prueba de diabetes gestacional",
           "secondaryKeywords": [
@@ -23017,11 +23473,11 @@ export const GENERATED: GeneratedContent = {
         "featured": false,
         "heading": null,
         "heroImage": {
-          "src": "https://cdn.sanity.io/images/hphu8zlu/production/469aece9b9339f9ab1b88fb1122b1c141e36a811-1536x1024.webp?w=1600&fit=max&auto=format",
+          "src": "https://cdn.sanity.io/images/hphu8zlu/production/0f98234fb1625e38a6adf17de7b066ab3659366c-1672x941.png?w=1600&fit=max&auto=format",
           "alt": "Mujer embarazada discutiendo sobre el aumento de peso saludable con un médico de maternidad",
-          "width": 1536,
-          "height": 1024,
-          "credit": "HelloMommy editorial image"
+          "width": 1672,
+          "height": 941,
+          "credit": "HelloMommy editorial image generated with OpenAI"
         },
         "intro": "Un objetivo de aumento de peso saludable depende principalmente de su IMC antes del embarazo, de si tiene un bebé o varios y de su salud individual. Para un embarazo único, las directrices de EE. UU. recomiendan un total de 12,7 a 18,1 kg si el peso es bajo, de 11,3 a 15,9 kg con un IMC saludable, de 6,8 a 11,3 kg si se tiene sobrepeso y de 5 a 9,1 kg con obesidad. Las recomendaciones locales pueden diferir.",
         "locale": "es",
@@ -23036,6 +23492,12 @@ export const GENERATED: GeneratedContent = {
           "description": "Aumento de peso durante el embarazo por trimestre: vea los rangos totales saludables según el IMC antes del embarazo, el aumento semanal típico y cuando un cambio repentino requiere asesoramiento médico.",
           "noindex": false,
           "ogDescription": null,
+          "ogImage": {
+            "src": "https://cdn.sanity.io/images/hphu8zlu/production/0f98234fb1625e38a6adf17de7b066ab3659366c-1672x941.png?w=1600&fit=max&auto=format",
+            "alt": "",
+            "width": 1672,
+            "height": 941
+          },
           "ogTitle": null,
           "primaryKeyword": "aumento de peso en el embarazo",
           "secondaryKeywords": [
