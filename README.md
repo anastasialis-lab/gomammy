@@ -86,15 +86,17 @@ hreflang, so a language can be published on its own schedule.
 
 ## CMS
 
-The Sanity Studio is embedded at `/studio` (its own root layout, `noindex`).
-Schemas live in `src/sanity/schemas`.
+The Sanity Studio is a standalone application in the sibling
+`studio-hellomommy` repository. This Next.js app only contains the Sanity client,
+GROQ queries, and the build-time content pull.
 
-1. Create a project at sanity.io, put the ID in `NEXT_PUBLIC_SANITY_PROJECT_ID`.
-2. Open `/studio` and add content. Documents carry a `locale` and a
+1. Run `npm run dev` in `studio-hellomommy` and open `http://localhost:3333`.
+2. Add content there. Documents carry a `locale` and a
    `translationKey`; matching keys across languages become hreflang siblings.
 3. `npm run content:pull` writes everything published into
    `src/content/generated/index.ts`, which the site imports statically.
-4. Deploy on a Sanity webhook to publish.
+4. Deploy this app on a Sanity webhook to publish. Set
+   `NEXT_PUBLIC_SANITY_PROJECT_ID=hphu8zlu` and `NEXT_PUBLIC_SANITY_DATASET=production`.
 
 Content is pulled at build time rather than fetched per request so every page
 stays static HTML — that is what keeps LCP low on the mobile traffic this site

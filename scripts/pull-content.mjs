@@ -7,21 +7,23 @@
  * cleanly and leaves the committed seed content in place, so a missing token
  * can never blank the site.
  */
-import { createClient } from 'next-sanity';
-import imageUrlBuilder from '@sanity/image-url';
-import { writeFileSync } from 'node:fs';
-import { fileURLToPath } from 'node:url';
-import { dirname, resolve } from 'node:path';
+import { createClient } from "next-sanity";
+import { createImageUrlBuilder } from "@sanity/image-url";
+import { writeFileSync } from "node:fs";
+import { fileURLToPath } from "node:url";
+import { dirname, resolve } from "node:path";
 
 const here = dirname(fileURLToPath(import.meta.url));
-const OUT = resolve(here, '../src/content/generated/index.ts');
+const OUT = resolve(here, "../src/content/generated/index.ts");
 
-const projectId = process.env.NEXT_PUBLIC_SANITY_PROJECT_ID;
-const dataset = process.env.NEXT_PUBLIC_SANITY_DATASET ?? 'production';
-const apiVersion = process.env.NEXT_PUBLIC_SANITY_API_VERSION ?? '2026-01-01';
+const projectId = process.env.NEXT_PUBLIC_SANITY_PROJECT_ID ?? "hphu8zlu";
+const dataset = process.env.NEXT_PUBLIC_SANITY_DATASET ?? "production";
+const apiVersion = process.env.NEXT_PUBLIC_SANITY_API_VERSION ?? "2026-01-01";
 
 if (!projectId) {
-  console.log('[content:pull] No NEXT_PUBLIC_SANITY_PROJECT_ID — keeping seed content.');
+  console.log(
+    "[content:pull] No NEXT_PUBLIC_SANITY_PROJECT_ID — keeping seed content.",
+  );
   process.exit(0);
 }
 
@@ -30,22 +32,27 @@ const client = createClient({
   dataset,
   apiVersion,
   useCdn: false,
-  perspective: 'published',
+  perspective: "published",
   token: process.env.SANITY_API_READ_TOKEN,
 });
 
-const builder = imageUrlBuilder({ projectId, dataset });
+const builder = createImageUrlBuilder({ projectId, dataset });
 
 const {
   CATEGORIES_QUERY,
   CTAS_QUERY,
   APPS_QUERY,
+  AUTHORS_QUERY,
   ARTICLES_QUERY,
+  WEEKS_QUERY,
   LEGAL_QUERY,
-} = await import('../src/sanity/queries.ts').catch(async () => {
+} = await import("../src/sanity/queries.ts").catch(async () => {
   // The queries file is TypeScript; when run without a loader, read it as text.
-  const { readFileSync } = await import('node:fs');
-  const source = readFileSync(resolve(here, '../src/sanity/queries.ts'), 'utf8');
+  const { readFileSync } = await import("node:fs");
+  const source = readFileSync(
+    resolve(here, "../src/sanity/queries.ts"),
+    "utf8",
+  );
   const exported = {};
   for (const match of source.matchAll(/export const (\w+) = `([\s\S]*?)`;/g)) {
     exported[match[1]] = match[2];
@@ -55,21 +62,53 @@ const {
 
 /** Keep in sync with src/content/data/articles/helpers.ts. */
 const TRANSLITERATE = {
-  а: 'a', б: 'b', в: 'v', г: 'h', ґ: 'g', д: 'd', е: 'e', є: 'ie', ж: 'zh',
-  з: 'z', и: 'y', і: 'i', ї: 'i', й: 'i', к: 'k', л: 'l', м: 'm', н: 'n',
-  о: 'o', п: 'p', р: 'r', с: 's', т: 't', у: 'u', ф: 'f', х: 'kh', ц: 'ts',
-  ч: 'ch', ш: 'sh', щ: 'shch', ь: '', ю: 'iu', я: 'ia',
-  ы: 'y', э: 'e', ъ: '', ё: 'e',
+  а: "a",
+  б: "b",
+  в: "v",
+  г: "h",
+  ґ: "g",
+  д: "d",
+  е: "e",
+  є: "ie",
+  ж: "zh",
+  з: "z",
+  и: "y",
+  і: "i",
+  ї: "i",
+  й: "i",
+  к: "k",
+  л: "l",
+  м: "m",
+  н: "n",
+  о: "o",
+  п: "p",
+  р: "r",
+  с: "s",
+  т: "t",
+  у: "u",
+  ф: "f",
+  х: "kh",
+  ц: "ts",
+  ч: "ch",
+  ш: "sh",
+  щ: "shch",
+  ь: "",
+  ю: "iu",
+  я: "ia",
+  ы: "y",
+  э: "e",
+  ъ: "",
+  ё: "e",
 };
 
 function slugifyHeading(text) {
   const slug = [...text.toLowerCase()]
     .map((char) => TRANSLITERATE[char] ?? char)
-    .join('')
-    .normalize('NFD')
-    .replace(/[\u0300-\u036f]/g, '')
-    .replace(/[^a-z0-9]+/g, '-')
-    .replace(/^-+|-+$/g, '')
+    .join("")
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-+|-+$/g, "")
     .slice(0, 60);
 
   if (slug) return slug;
@@ -80,10 +119,10 @@ function slugifyHeading(text) {
   return `section-${Math.abs(hash).toString(36)}`;
 }
 
-function image(node, fallbackAlt = '') {
+function image(node, fallbackAlt = "") {
   if (!node) return undefined;
   const src = node.ref
-    ? builder.image(node.ref).width(1600).fit('max').auto('format').url()
+    ? builder.image(node.ref).width(1600).fit("max").auto("format").url()
     : node.url;
   return {
     src,
@@ -99,11 +138,11 @@ function inline(children = [], markDefs = []) {
     const marks = child.marks ?? [];
     const link = marks
       .map((mark) => markDefs.find((def) => def._key === mark))
-      .find((def) => def && def._type === 'link');
+      .find((def) => def && def._type === "link");
     return {
-      text: child.text ?? '',
-      bold: marks.includes('strong') || undefined,
-      italic: marks.includes('em') || undefined,
+      text: child.text ?? "",
+      bold: marks.includes("strong") || undefined,
+      italic: marks.includes("em") || undefined,
       href: link?.href,
     };
   });
@@ -120,47 +159,52 @@ function toBlocks(portable = []) {
   };
 
   for (const node of portable) {
-    if (node._type === 'block') {
+    if (node._type === "block") {
       if (node.listItem) {
-        const style = node.listItem === 'number' ? 'number' : 'bullet';
+        const style = node.listItem === "number" ? "number" : "bullet";
         if (!list || list.style !== style) {
           flush();
-          list = { type: 'list', style, items: [] };
+          list = { type: "list", style, items: [] };
         }
         list.items.push(inline(node.children, node.markDefs));
         continue;
       }
       flush();
 
-      const text = (node.children ?? []).map((child) => child.text ?? '').join('');
-      if (node.style === 'h2' || node.style === 'h3') {
+      const text = (node.children ?? [])
+        .map((child) => child.text ?? "")
+        .join("");
+      if (node.style === "h2" || node.style === "h3") {
         blocks.push({
-          type: 'heading',
-          level: node.style === 'h2' ? 2 : 3,
+          type: "heading",
+          level: node.style === "h2" ? 2 : 3,
           text,
           id: slugifyHeading(text),
         });
-      } else if (node.style === 'blockquote') {
-        blocks.push({ type: 'quote', text });
+      } else if (node.style === "blockquote") {
+        blocks.push({ type: "quote", text });
       } else {
-        blocks.push({ type: 'paragraph', content: inline(node.children, node.markDefs) });
+        blocks.push({
+          type: "paragraph",
+          content: inline(node.children, node.markDefs),
+        });
       }
       continue;
     }
 
     flush();
-    if (node._type === 'callout') {
+    if (node._type === "callout") {
       blocks.push({
-        type: 'callout',
-        tone: node.tone ?? 'info',
+        type: "callout",
+        tone: node.tone ?? "info",
         title: node.title,
-        text: node.text ?? '',
+        text: node.text ?? "",
       });
-    } else if (node._type === 'ctaEmbed' && node.ctaId) {
-      blocks.push({ type: 'cta', ctaId: node.ctaId });
-    } else if (node._type === 'image') {
+    } else if (node._type === "ctaEmbed" && node.ctaId) {
+      blocks.push({ type: "cta", ctaId: node.ctaId });
+    } else if (node._type === "image") {
       const asset = image(node);
-      if (asset) blocks.push({ type: 'image', image: asset });
+      if (asset) blocks.push({ type: "image", image: asset });
     }
   }
 
@@ -177,13 +221,16 @@ function groupByLocale(rows, map) {
   return grouped;
 }
 
-const [categories, ctas, apps, articles, legal] = await Promise.all([
-  client.fetch(CATEGORIES_QUERY),
-  client.fetch(CTAS_QUERY),
-  client.fetch(APPS_QUERY),
-  client.fetch(ARTICLES_QUERY),
-  client.fetch(LEGAL_QUERY),
-]);
+const [categories, ctas, apps, authors, articles, weeks, legal] =
+  await Promise.all([
+    client.fetch(CATEGORIES_QUERY),
+    client.fetch(CTAS_QUERY),
+    client.fetch(APPS_QUERY),
+    client.fetch(AUTHORS_QUERY),
+    client.fetch(ARTICLES_QUERY),
+    client.fetch(WEEKS_QUERY),
+    client.fetch(LEGAL_QUERY),
+  ]);
 
 const payload = {
   generatedAt: new Date().toISOString(),
@@ -200,15 +247,19 @@ const payload = {
     icon: image(row.icon, row.name),
     screenshots: (row.screenshots ?? []).map((shot) => image(shot, row.name)),
     features: row.features ?? [],
-    relatedArticleKeys: [],
+    relatedArticleKeys: row.relatedArticleKeys ?? [],
     seo: { ...row.seo, ogImage: image(row.seo?.ogImage) },
+  })),
+  authors: groupByLocale(authors, (row) => ({
+    ...row,
+    avatar: image(row.avatar, row.name),
   })),
   articles: groupByLocale(articles, (row) => ({
     ...row,
     tagKeys: row.tagKeys ?? [],
     heroImage: image(row.heroImage, row.title),
-    publishedAt: (row.publishedAt ?? '').slice(0, 10),
-    updatedAt: (row.updatedAt ?? row.publishedAt ?? '').slice(0, 10),
+    publishedAt: (row.publishedAt ?? "").slice(0, 10),
+    updatedAt: (row.updatedAt ?? row.publishedAt ?? "").slice(0, 10),
     blocks: toBlocks(row.body),
     body: undefined,
     faq: row.faq ?? [],
@@ -217,9 +268,15 @@ const payload = {
     relatedKeys: row.relatedKeys ?? [],
     seo: { ...row.seo, ogImage: image(row.seo?.ogImage) },
   })),
+  weeks: groupByLocale(weeks, (row) => ({
+    ...row,
+    facts: { ...row.facts, image: image(row.facts?.image, row.sizeLabel) },
+    faq: row.faq ?? [],
+    seo: { ...row.seo, ogImage: image(row.seo?.ogImage) },
+  })),
   legal: groupByLocale(legal, (row) => ({
     ...row,
-    updatedAt: (row.updatedAt ?? '').slice(0, 10),
+    updatedAt: (row.updatedAt ?? "").slice(0, 10),
     blocks: toBlocks(row.body),
     body: undefined,
     seo: { ...row.seo, ogImage: image(row.seo?.ogImage) },
@@ -227,7 +284,15 @@ const payload = {
 };
 
 const header = `import type { Locale } from '@/lib/i18n/config';
-import type { AppProduct, Article, Category, CtaBlock, LegalPage } from '@/lib/content/types';
+import type {
+  AppProduct,
+  Article,
+  Author,
+  Category,
+  CtaBlock,
+  LegalPage,
+  WeekPage,
+} from '@/lib/content/types';
 
 /**
  * GENERATED FILE — do not edit by hand.
@@ -239,7 +304,9 @@ export type GeneratedContent = {
   categories: Partial<Record<Locale, Category[]>>;
   ctas: Partial<Record<Locale, CtaBlock[]>>;
   apps: Partial<Record<Locale, AppProduct[]>>;
+  authors: Partial<Record<Locale, Author[]>>;
   legal: Partial<Record<Locale, LegalPage[]>>;
+  weeks: Partial<Record<Locale, WeekPage[]>>;
 };
 
 export const GENERATED: GeneratedContent = ${JSON.stringify(payload, null, 2)} as unknown as GeneratedContent;
@@ -258,7 +325,7 @@ export function generatedFor<K extends keyof Omit<GeneratedContent, 'generatedAt
 writeFileSync(OUT, header);
 
 const counts = Object.entries(payload)
-  .filter(([key]) => key !== 'generatedAt')
+  .filter(([key]) => key !== "generatedAt")
   .map(([key, value]) => `${key}: ${Object.values(value).flat().length}`)
-  .join(', ');
+  .join(", ");
 console.log(`[content:pull] Wrote ${OUT} (${counts})`);

@@ -1,5 +1,6 @@
 import type { Locale } from '@/lib/i18n/config';
 import type { Author, SiteSettings } from '@/lib/content/types';
+import { generatedFor } from '@/content/generated';
 
 export const BRAND = {
   name: 'HelloMommy',
@@ -121,6 +122,8 @@ const authorCopy: Record<Locale, Record<string, { role: string; bio: string }>> 
 };
 
 export function getAuthors(locale: Locale): Author[] {
+  const fromCms = generatedFor('authors', locale);
+  if (fromCms) return fromCms;
   const copy = authorCopy[locale];
   return [
     {

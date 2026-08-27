@@ -11,8 +11,8 @@ export default function robots(): MetadataRoute.Robots {
       {
         userAgent: '*',
         allow: '/',
-        // Internal search results and the CMS have no business in the index.
-        disallow: ['/api/', '/studio', '/*/search', '/og'],
+        // Internal search results and generated endpoints have no business in the index.
+        disallow: ['/api/', '/*/search', '/og'],
       },
     ],
     sitemap: absoluteUrl('/sitemap.xml'),

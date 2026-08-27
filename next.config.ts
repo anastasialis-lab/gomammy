@@ -10,6 +10,13 @@ const nextConfig: NextConfig = {
     contentDispositionType: 'attachment',
     contentSecurityPolicy: "default-src 'self'; script-src 'none'; sandbox;",
     deviceSizes: [360, 480, 640, 828, 1080, 1200, 1600, 1920],
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'cdn.sanity.io',
+        pathname: '/images/hphu8zlu/production/**',
+      },
+    ],
   },
   poweredByHeader: false,
   compress: true,

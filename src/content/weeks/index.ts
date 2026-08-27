@@ -1,15 +1,20 @@
-import type { Locale } from '@/lib/i18n/config';
-import { getDictionary, t } from '@/lib/i18n/dictionaries';
-import type { FaqItem, WeekFacts, WeekPage } from '@/lib/content/types';
-import { WEEK_FACTS, TOTAL_WEEKS, getWeekFacts } from './facts';
-import { WEEK_PHRASEBOOKS } from './phrasebook';
+import type { Locale } from "@/lib/i18n/config";
+import { getDictionary, t } from "@/lib/i18n/dictionaries";
+import type { FaqItem, WeekFacts, WeekPage } from "@/lib/content/types";
+import { generatedFor } from "@/content/generated";
+import { WEEK_FACTS, TOTAL_WEEKS, getWeekFacts } from "./facts";
+import { WEEK_PHRASEBOOKS } from "./phrasebook";
 
 export { WEEK_FACTS, TOTAL_WEEKS, getWeekFacts };
 
 /** Average weeks per calendar month, used for the "how many months" answer. */
 const WEEKS_PER_MONTH = 4.345;
 
-function formatNumber(locale: Locale, value: number, maximumFractionDigits = 1): string {
+function formatNumber(
+  locale: Locale,
+  value: number,
+  maximumFractionDigits = 1,
+): string {
   return new Intl.NumberFormat(locale, { maximumFractionDigits }).format(value);
 }
 
@@ -20,27 +25,27 @@ function formatNumber(locale: Locale, value: number, maximumFractionDigits = 1):
 function formatUnit(
   locale: Locale,
   value: number,
-  unit: 'millimeter' | 'centimeter' | 'gram' | 'kilogram',
+  unit: "millimeter" | "centimeter" | "gram" | "kilogram",
   maximumFractionDigits: number,
 ): string {
   return new Intl.NumberFormat(locale, {
-    style: 'unit',
+    style: "unit",
     unit,
-    unitDisplay: 'short',
+    unitDisplay: "short",
     maximumFractionDigits,
   }).format(value);
 }
 
 function formatLength(locale: Locale, lengthCm: number | null): string {
-  if (lengthCm === null) return '—';
-  if (lengthCm < 1) return formatUnit(locale, lengthCm * 10, 'millimeter', 1);
-  return formatUnit(locale, lengthCm, 'centimeter', 1);
+  if (lengthCm === null) return "—";
+  if (lengthCm < 1) return formatUnit(locale, lengthCm * 10, "millimeter", 1);
+  return formatUnit(locale, lengthCm, "centimeter", 1);
 }
 
 function formatWeight(locale: Locale, weightG: number | null): string {
-  if (weightG === null) return '—';
-  if (weightG >= 1000) return formatUnit(locale, weightG / 1000, 'kilogram', 2);
-  return formatUnit(locale, weightG, 'gram', 0);
+  if (weightG === null) return "—";
+  if (weightG >= 1000) return formatUnit(locale, weightG / 1000, "kilogram", 2);
+  return formatUnit(locale, weightG, "gram", 0);
 }
 
 function monthsFor(week: number): number {
@@ -48,14 +53,24 @@ function monthsFor(week: number): number {
 }
 
 export function weekSlug(locale: Locale, week: number): string {
-  return t(WEEK_PHRASEBOOKS[locale].slugTemplate, { n: week });
+  const generated = generatedFor("weeks", locale)?.find(
+    (page) => page.week === week,
+  );
+  return (
+    generated?.slug ?? t(WEEK_PHRASEBOOKS[locale].slugTemplate, { n: week })
+  );
 }
 
 /** Parses a localised week slug back into a week number, or null. */
 export function weekFromSlug(locale: Locale, slug: string): number | null {
+  const generated = generatedFor("weeks", locale)?.find(
+    (page) => page.slug === slug,
+  );
+  if (generated) return generated.week;
+
   const template = WEEK_PHRASEBOOKS[locale].slugTemplate;
   const pattern = new RegExp(
-    `^${template.replace(/[.*+?^${}()|[\]\\]/g, '\\$&').replace('\\{n\\}', '(\\d{1,2})')}$`,
+    `^${template.replace(/[.*+?^${}()|[\]\\]/g, "\\$&").replace("\\{n\\}", "(\\d{1,2})")}$`,
   );
   const match = slug.match(pattern);
   if (!match) return null;
@@ -70,7 +85,9 @@ function buildFaq(locale: Locale, facts: WeekFacts): FaqItem[] {
     size: book.sizes[facts.sizeKey],
     length: formatLength(locale, facts.lengthCm),
     weight: formatWeight(locale, facts.weightG),
-    months: t(book.monthsLabel, { months: formatNumber(locale, monthsFor(facts.week)) }),
+    months: t(book.monthsLabel, {
+      months: formatNumber(locale, monthsFor(facts.week)),
+    }),
   };
   return book.faq.map((item) => ({
     question: t(item.question, values),
@@ -79,6 +96,11 @@ function buildFaq(locale: Locale, facts: WeekFacts): FaqItem[] {
 }
 
 export function buildWeekPage(locale: Locale, week: number): WeekPage | null {
+  const generated = generatedFor("weeks", locale)?.find(
+    (page) => page.week === week,
+  );
+  if (generated) return generated;
+
   const facts = getWeekFacts(week);
   if (!facts) return null;
 
@@ -86,7 +108,7 @@ export function buildWeekPage(locale: Locale, week: number): WeekPage | null {
   const dict = getDictionary(locale);
   const sizeLabel = book.sizes[facts.sizeKey];
   const trimesterInline = book.trimesterInline[facts.trimester - 1];
-  const hasBaby = facts.sizeKey !== 'not_yet';
+  const hasBaby = facts.sizeKey !== "not_yet";
 
   const intro = hasBaby
     ? t(book.intro, { n: week, size: sizeLabel, trimester: trimesterInline })
@@ -122,15 +144,32 @@ export function buildWeekPage(locale: Locale, week: number): WeekPage | null {
 }
 
 export function milestoneFor(locale: Locale, facts: WeekFacts): string | null {
+  const generated = generatedFor("weeks", locale)?.find(
+    (page) => page.week === facts.week,
+  );
+  if (generated) return generated.milestone ?? null;
   if (!facts.milestoneKey) return null;
   return WEEK_PHRASEBOOKS[locale].milestones[facts.milestoneKey] ?? null;
 }
 
-export function formatWeekLength(locale: Locale, lengthCm: number | null): string {
+export function listWeekFacts(locale: Locale): WeekFacts[] {
+  const generated = generatedFor("weeks", locale);
+  return generated
+    ? [...generated].sort((a, b) => a.week - b.week).map((page) => page.facts)
+    : WEEK_FACTS;
+}
+
+export function formatWeekLength(
+  locale: Locale,
+  lengthCm: number | null,
+): string {
   return formatLength(locale, lengthCm);
 }
 
-export function formatWeekWeight(locale: Locale, weightG: number | null): string {
+export function formatWeekWeight(
+  locale: Locale,
+  weightG: number | null,
+): string {
   return formatWeight(locale, weightG);
 }
 

@@ -1,4 +1,4 @@
-import type { Locale } from '@/lib/i18n/config';
+import type { Locale } from "@/lib/i18n/config";
 
 /* ------------------------------------------------------------------ */
 /* Shared primitives                                                   */
@@ -53,37 +53,47 @@ export interface FaqItem {
 /* Article body blocks                                                 */
 /* ------------------------------------------------------------------ */
 
-export type InlineMark = { text: string; bold?: boolean; italic?: boolean; href?: string };
+export type InlineMark = {
+  text: string;
+  bold?: boolean;
+  italic?: boolean;
+  href?: string;
+};
 
 export type Block =
-  | { type: 'heading'; level: 2 | 3; text: string; id: string }
-  | { type: 'paragraph'; content: InlineMark[] }
-  | { type: 'list'; style: 'bullet' | 'number'; items: InlineMark[][] }
-  | { type: 'quote'; text: string; attribution?: string }
-  | { type: 'callout'; tone: 'info' | 'care' | 'warning'; title?: string; text: string }
-  | { type: 'image'; image: ImageAsset }
-  | { type: 'cta'; ctaId: string };
+  | { type: "heading"; level: 2 | 3; text: string; id: string }
+  | { type: "paragraph"; content: InlineMark[] }
+  | { type: "list"; style: "bullet" | "number"; items: InlineMark[][] }
+  | { type: "quote"; text: string; attribution?: string }
+  | {
+      type: "callout";
+      tone: "info" | "care" | "warning";
+      title?: string;
+      text: string;
+    }
+  | { type: "image"; image: ImageAsset }
+  | { type: "cta"; ctaId: string };
 
 /* ------------------------------------------------------------------ */
 /* CTA / promo blocks                                                  */
 /* ------------------------------------------------------------------ */
 
 export type CtaKind =
-  | 'app-ios'
-  | 'app-android'
-  | 'app-both'
-  | 'banner'
-  | 'text'
-  | 'related-article'
-  | 'product';
+  | "app-ios"
+  | "app-android"
+  | "app-both"
+  | "banner"
+  | "text"
+  | "related-article"
+  | "product";
 
 export type CtaPlacement =
-  | 'after-intro'
-  | 'mid-article'
-  | 'after-content'
-  | 'before-faq'
-  | 'end'
-  | 'sidebar';
+  | "after-intro"
+  | "mid-article"
+  | "after-content"
+  | "before-faq"
+  | "end"
+  | "sidebar";
 
 export interface CtaBlock {
   id: string;
@@ -146,7 +156,7 @@ export interface Tag {
 /* Articles                                                            */
 /* ------------------------------------------------------------------ */
 
-export type ArticleStatus = 'draft' | 'scheduled' | 'published';
+export type ArticleStatus = "draft" | "scheduled" | "published";
 
 export interface Article {
   translationKey: TranslationKey;
@@ -197,6 +207,8 @@ export interface WeekFacts {
   symptomKeys: string[];
   tipKeys: string[];
   milestoneKey?: string;
+  /** Shared generated size-comparison image stored in Sanity. */
+  image?: ImageAsset;
 }
 
 export interface WeekPage {
@@ -207,6 +219,8 @@ export interface WeekPage {
   intro: string;
   facts: WeekFacts;
   sizeLabel: string;
+  /** Localised landmark callout for selected weeks. */
+  milestone?: string;
   development: string[];
   body: string[];
   symptoms: string[];

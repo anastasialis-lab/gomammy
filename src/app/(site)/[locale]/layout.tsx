@@ -12,7 +12,8 @@ import { Header, type NavItem } from '@/components/layout/Header';
 import { Footer } from '@/components/layout/Footer';
 import { ConsentProvider } from '@/components/consent/ConsentProvider';
 import { CookieBanner } from '@/components/consent/CookieBanner';
-import { AnalyticsLoader, ConsentModeDefaults } from '@/components/analytics/AnalyticsLoader';
+import { AnalyticsLoader } from '@/components/analytics/AnalyticsLoader';
+import { ConsentModeDefaults } from '@/components/analytics/ConsentModeDefaults';
 import { LEGAL_KEYS, getLegalPage } from '@/content/data/legal';
 
 /**
@@ -89,7 +90,7 @@ export async function generateMetadata({
       // SVG where it is supported, a PNG for the browsers that ignore it, and
       // an opaque 180px square for the iOS home screen.
       icon: [
-        { url: '/icon.svg', type: 'image/svg+xml' },
+        { url: '/icon.svg?v=2', type: 'image/svg+xml' },
         { url: '/icon-32.png', sizes: '32x32', type: 'image/png' },
       ],
       apple: [{ url: '/apple-touch-icon.png', sizes: '180x180', type: 'image/png' }],

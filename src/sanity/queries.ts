@@ -26,7 +26,7 @@ export const CATEGORIES_QUERY = `*[_type == "category"] | order(order asc) {
 }`;
 
 export const CTAS_QUERY = `*[_type == "ctaBlock"] {
-  locale, "id": ctaId, kind, trackingId, eyebrow, title, body, buttonLabel, href,
+  locale, "id": ctaId, kind, trackingId, eyebrow, title, body, buttonLabel, note, href,
   "appId": app->translationKey,
   "image": image${IMAGE}
 }`;
@@ -36,8 +36,14 @@ export const APPS_QUERY = `*[_type == "appProduct"] {
   "icon": icon${IMAGE},
   "screenshots": screenshots[]${IMAGE},
   features[]{ title, body },
-  appStoreUrl, googlePlayUrl, campaign,
+  appStoreUrl, googlePlayUrl, campaign, disclaimer,
+  "relatedArticleKeys": relatedArticles[]->translationKey,
   seo${SEO}
+}`;
+
+export const AUTHORS_QUERY = `*[_type == "author"] {
+  locale, "id": authorId, name, role, bio,
+  "avatar": avatar${IMAGE}, url
 }`;
 
 export const ARTICLES_QUERY = `*[_type == "article" && status == "published"] | order(publishedAt desc) {
@@ -54,6 +60,18 @@ export const ARTICLES_QUERY = `*[_type == "article" && status == "published"] | 
   "ctas": ctas[]{ placement, "ctaId": cta->ctaId },
   "relatedKeys": related[]->translationKey,
   seo${SEO}
+}`;
+
+export const WEEKS_QUERY = `*[_type == "pregnancyWeekPage"] | order(locale asc, weekNumber asc) {
+  locale, "week": weekNumber, "slug": slug.current, title, intro, sizeLabel, milestone,
+  development, body, symptoms, tips, expect,
+  faq[]{ question, answer },
+  seo${SEO},
+  "facts": week->{
+    week, trimester, sizeKey, lengthCm, weightG,
+    developmentKeys, bodyKeys, symptomKeys, tipKeys, milestoneKey,
+    "image": image${IMAGE}
+  }
 }`;
 
 export const LEGAL_QUERY = `*[_type == "legalPage"] {

@@ -17,7 +17,6 @@ GitHub Pages віддає лише статичні файли — там нем
 | `hellomommy.co/` | редірект на потрібну мову робить `proxy.ts` — на Pages його нема, головна віддає 404 |
 | OG-зображення | `/og` малює картинку на льоту; довелося б згенерувати 280+ файлів наперед |
 | Пошук по сайту | сторінка читає `?q=` на сервері |
-| `/studio` | CMS потребує сервера |
 | Оптимізація зображень | `next/image` довелося б вимкнути → без WebP/AVIF і адаптивних розмірів, а це прямо б'є по LCP і Core Web Vitals |
 | Заголовки безпеки | Pages ігнорує `headers()` з `next.config.ts` |
 | Оновлення з CMS | немає перезбірки по вебхуку |
@@ -205,9 +204,11 @@ App Store Connect → **App Analytics → Acquisition → Campaigns** → там
 Поки весь контент — типізовані файли в репозиторії, редагувати може розробник.
 Щоб контент-менеджер працював сам:
 
-1. sanity.io → створіть проєкт, скопіюйте **Project ID**.
-2. Vercel → змінні: `NEXT_PUBLIC_SANITY_PROJECT_ID`, `NEXT_PUBLIC_SANITY_DATASET=production`.
-3. Redeploy → студія відкриється на `вашдомен.com/studio`.
+1. У сусідньому репозиторії `studio-hellomommy` запустіть `npm run dev` і
+   відкрийте standalone Studio на `http://localhost:3333`.
+2. Vercel → змінні: `NEXT_PUBLIC_SANITY_PROJECT_ID=hphu8zlu`,
+   `NEXT_PUBLIC_SANITY_DATASET=production`.
+3. Задеплойте standalone Studio окремо командою `npm run deploy`.
 4. Sanity → **API → Webhooks** → додайте Vercel Deploy Hook, щоб публікація
    в CMS автоматично пересобирала сайт.
 

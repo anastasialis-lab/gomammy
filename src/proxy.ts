@@ -17,7 +17,6 @@ export default function proxy(request: NextRequest) {
   if (
     pathname.startsWith('/api') ||
     pathname.startsWith('/_next') ||
-    pathname.startsWith('/studio') ||
     pathname === '/og' ||
     PUBLIC_FILE.test(pathname)
   ) {
