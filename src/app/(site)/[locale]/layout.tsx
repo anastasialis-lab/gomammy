@@ -87,14 +87,14 @@ export async function generateMetadata({
     description: settings.siteDescription,
     applicationName: settings.siteName,
     icons: {
-      // SVG where it is supported, a PNG for the browsers that ignore it, and
-      // an opaque 180px square for the iOS home screen.
+      // Versioned PNG/ICO assets prevent browsers from retaining an older
+      // favicon, while the larger image keeps bookmarks and home screens crisp.
       icon: [
-        { url: '/favicon.ico?v=3', sizes: 'any' },
-        { url: '/icon.svg?v=2', type: 'image/svg+xml' },
-        { url: '/icon-32.png', sizes: '32x32', type: 'image/png' },
+        { url: '/favicon.ico?v=4', sizes: 'any' },
+        { url: '/icon-32.png?v=4', sizes: '32x32', type: 'image/png' },
+        { url: '/favicon-192.png?v=4', sizes: '192x192', type: 'image/png' },
       ],
-      apple: [{ url: '/apple-touch-icon.png', sizes: '180x180', type: 'image/png' }],
+      apple: [{ url: '/apple-touch-icon.png?v=4', sizes: '180x180', type: 'image/png' }],
     },
     formatDetection: { telephone: false },
   };
