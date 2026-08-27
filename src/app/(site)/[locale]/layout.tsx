@@ -90,6 +90,7 @@ export async function generateMetadata({
       // SVG where it is supported, a PNG for the browsers that ignore it, and
       // an opaque 180px square for the iOS home screen.
       icon: [
+        { url: '/favicon.ico', sizes: 'any' },
         { url: '/icon.svg?v=2', type: 'image/svg+xml' },
         { url: '/icon-32.png', sizes: '32x32', type: 'image/png' },
       ],
