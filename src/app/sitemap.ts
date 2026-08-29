@@ -1,10 +1,15 @@
-import type { MetadataRoute } from 'next';
-import { DEFAULT_LOCALE, LOCALES, type Locale } from '@/lib/i18n/config';
-import { APPS_SLUG, listApps, listArticles, listCategories } from '@/lib/content/source';
-import { alternatesFor, resolveRoute, routes } from '@/lib/routes';
-import { absoluteUrl } from '@/lib/seo/site';
-import { LEGAL_KEYS, getLegalPage } from '@/content/data/legal';
-import { TOTAL_WEEKS, weekSlug } from '@/content/weeks';
+import type { MetadataRoute } from "next";
+import { DEFAULT_LOCALE, LOCALES, type Locale } from "@/lib/i18n/config";
+import {
+  APPS_SLUG,
+  listApps,
+  listArticles,
+  listCategories,
+} from "@/lib/content/source";
+import { alternatesFor, resolveRoute, routes } from "@/lib/routes";
+import { absoluteUrl } from "@/lib/seo/site";
+import { LEGAL_KEYS, getLegalPage } from "@/content/data/legal";
+import { TOTAL_WEEKS, weekSlug } from "@/content/weeks";
 
 type Entry = MetadataRoute.Sitemap[number];
 
@@ -12,7 +17,7 @@ type Entry = MetadataRoute.Sitemap[number];
 function withAlternates(
   path: string,
   alternates: Partial<Record<Locale, string>>,
-  extra: Omit<Entry, 'url' | 'alternates'>,
+  extra: Omit<Entry, "url" | "alternates">,
 ): Entry {
   const languages: Record<string, string> = {};
   for (const locale of LOCALES) {
@@ -20,7 +25,7 @@ function withAlternates(
     if (target) languages[locale] = absoluteUrl(target);
   }
   const fallback = alternates[DEFAULT_LOCALE] ?? Object.values(alternates)[0];
-  if (fallback) languages['x-default'] = absoluteUrl(fallback);
+  if (fallback) languages["x-default"] = absoluteUrl(fallback);
 
   return { url: absoluteUrl(path), alternates: { languages }, ...extra };
 }
@@ -36,34 +41,56 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   for (const locale of LOCALES) {
     entries.push(
-      withAlternates(`/${locale}`, alternatesFor('home'), {
+      withAlternates(`/${locale}`, alternatesFor("home"), {
         lastModified,
-        changeFrequency: 'weekly',
+        changeFrequency: "weekly",
         priority: 1,
       }),
     );
+
+    const blogRoute = resolveRoute(locale, [
+      routes.blog(locale).split("/").at(-1)!,
+    ]);
+    if (blogRoute) {
+      entries.push(
+        withAlternates(routes.blog(locale), alternatesFor(blogRoute), {
+          lastModified,
+          changeFrequency: "weekly",
+          priority: 0.9,
+        }),
+      );
+    }
 
     for (const category of listCategories(locale)) {
       const route = resolveRoute(locale, [category.slug]);
       if (!route) continue;
       entries.push(
-        withAlternates(routes.category(locale, category), alternatesFor(route), {
-          lastModified,
-          changeFrequency: 'weekly',
-          priority: category.isWeekIndex ? 0.9 : 0.8,
-        }),
+        withAlternates(
+          routes.category(locale, category),
+          alternatesFor(route),
+          {
+            lastModified,
+            changeFrequency: "weekly",
+            priority: category.isWeekIndex ? 0.9 : 0.8,
+          },
+        ),
       );
     }
 
-    const weekCategory = listCategories(locale).find((category) => category.isWeekIndex);
+    const weekCategory = listCategories(locale).find(
+      (category) => category.isWeekIndex,
+    );
     if (weekCategory) {
       for (let week = 1; week <= TOTAL_WEEKS; week += 1) {
-        const route = resolveRoute(locale, [weekCategory.slug, weekSlug(locale, week)]);
+        const route = resolveRoute(locale, [
+          weekCategory.slug,
+          weekSlug(locale, week),
+        ]);
         if (!route) continue;
         entries.push(
           withAlternates(routes.week(locale, week), alternatesFor(route), {
             lastModified,
-            changeFrequency: 'monthly',
+            changeFrequency: "monthly",
             priority: 0.8,
           }),
         );
@@ -81,7 +108,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       entries.push(
         withAlternates(routes.article(locale, article), alternatesFor(route), {
           lastModified: new Date(article.updatedAt),
-          changeFrequency: 'monthly',
+          changeFrequency: "monthly",
           priority: 0.7,
         }),
       );
@@ -92,7 +119,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       entries.push(
         withAlternates(routes.apps(locale), alternatesFor(appsRoute), {
           lastModified,
-          changeFrequency: 'monthly',
+          changeFrequency: "monthly",
           priority: 0.7,
         }),
       );
@@ -104,7 +131,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       entries.push(
         withAlternates(routes.app(locale, app), alternatesFor(route), {
           lastModified,
-          changeFrequency: 'monthly',
+          changeFrequency: "monthly",
           priority: 0.6,
         }),
       );
@@ -118,7 +145,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       entries.push(
         withAlternates(`/${locale}/${page.slug}`, alternatesFor(route), {
           lastModified: new Date(page.updatedAt),
-          changeFrequency: 'yearly',
+          changeFrequency: "yearly",
           priority: 0.3,
         }),
       );

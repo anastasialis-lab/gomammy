@@ -8,6 +8,7 @@ export type Dictionary = {
     health: string;
     birth: string;
     baby: string;
+    blog: string;
     apps: string;
     menu: string;
     closeMenu: string;
@@ -75,6 +76,11 @@ export type Dictionary = {
     exploreTopics: string;
     trustTitle: string;
     trustBody: string;
+  };
+  blog: {
+    title: string;
+    intro: string;
+    newestFirst: string;
   };
   search: {
     title: string;

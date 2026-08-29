@@ -1,20 +1,20 @@
-import type { Metadata, Viewport } from 'next';
-import { notFound } from 'next/navigation';
-import { Fraunces, Manrope, Playfair_Display } from 'next/font/google';
-import '../../globals.css';
+import type { Metadata, Viewport } from "next";
+import { notFound } from "next/navigation";
+import { Fraunces, Manrope, Playfair_Display } from "next/font/google";
+import "../../globals.css";
 
-import { LOCALES, LOCALE_TAGS, isLocale, type Locale } from '@/lib/i18n/config';
-import { getDictionary } from '@/lib/i18n/dictionaries';
-import { listCategories, APPS_SLUG, siteSettings } from '@/lib/content/source';
-import { routes } from '@/lib/routes';
-import { siteUrl } from '@/lib/seo/site';
-import { Header, type NavItem } from '@/components/layout/Header';
-import { Footer } from '@/components/layout/Footer';
-import { ConsentProvider } from '@/components/consent/ConsentProvider';
-import { CookieBanner } from '@/components/consent/CookieBanner';
-import { AnalyticsLoader } from '@/components/analytics/AnalyticsLoader';
-import { ConsentModeDefaults } from '@/components/analytics/ConsentModeDefaults';
-import { LEGAL_KEYS, getLegalPage } from '@/content/data/legal';
+import { LOCALES, LOCALE_TAGS, isLocale, type Locale } from "@/lib/i18n/config";
+import { getDictionary } from "@/lib/i18n/dictionaries";
+import { listCategories, APPS_SLUG, siteSettings } from "@/lib/content/source";
+import { routes } from "@/lib/routes";
+import { siteUrl } from "@/lib/seo/site";
+import { Header, type NavItem } from "@/components/layout/Header";
+import { Footer } from "@/components/layout/Footer";
+import { ConsentProvider } from "@/components/consent/ConsentProvider";
+import { CookieBanner } from "@/components/consent/CookieBanner";
+import { AnalyticsLoader } from "@/components/analytics/AnalyticsLoader";
+import { ConsentModeDefaults } from "@/components/analytics/ConsentModeDefaults";
+import { LEGAL_KEYS, getLegalPage } from "@/content/data/legal";
 
 /**
  * Two font pairs, chosen per locale.
@@ -26,33 +26,33 @@ import { LEGAL_KEYS, getLegalPage } from '@/content/data/legal';
  * never download those glyphs.
  */
 const displayLatin = Fraunces({
-  subsets: ['latin', 'latin-ext'],
-  variable: '--font-display',
-  display: 'swap',
+  subsets: ["latin", "latin-ext"],
+  variable: "--font-display",
+  display: "swap",
   // Variable font: the whole optical range in one file, no weight list.
-  axes: ['SOFT', 'WONK'],
+  axes: ["SOFT", "WONK"],
 });
 
 const displayCyrillic = Playfair_Display({
-  subsets: ['latin', 'cyrillic'],
-  variable: '--font-display',
-  display: 'swap',
+  subsets: ["latin", "cyrillic"],
+  variable: "--font-display",
+  display: "swap",
 });
 
 const bodyLatin = Manrope({
-  subsets: ['latin', 'latin-ext'],
-  variable: '--font-body',
-  display: 'swap',
+  subsets: ["latin", "latin-ext"],
+  variable: "--font-body",
+  display: "swap",
 });
 
 const bodyCyrillic = Manrope({
-  subsets: ['latin', 'cyrillic'],
-  variable: '--font-body',
-  display: 'swap',
+  subsets: ["latin", "cyrillic"],
+  variable: "--font-body",
+  display: "swap",
 });
 
 /** Locales written in Cyrillic need the fonts that actually contain the glyphs. */
-const CYRILLIC_LOCALES: readonly Locale[] = ['uk'];
+const CYRILLIC_LOCALES: readonly Locale[] = ["uk"];
 
 function fontsFor(locale: Locale): string {
   return CYRILLIC_LOCALES.includes(locale)
@@ -61,8 +61,8 @@ function fontsFor(locale: Locale): string {
 }
 
 export const viewport: Viewport = {
-  themeColor: '#faf8f5',
-  colorScheme: 'light',
+  themeColor: "#faf8f5",
+  colorScheme: "light",
 };
 
 export function generateStaticParams() {
@@ -90,11 +90,17 @@ export async function generateMetadata({
       // Versioned PNG/ICO assets prevent browsers from retaining an older
       // favicon, while the larger image keeps bookmarks and home screens crisp.
       icon: [
-        { url: '/favicon.ico?v=4', sizes: 'any' },
-        { url: '/icon-32.png?v=4', sizes: '32x32', type: 'image/png' },
-        { url: '/favicon-192.png?v=4', sizes: '192x192', type: 'image/png' },
+        { url: "/favicon.ico?v=4", sizes: "any" },
+        { url: "/icon-32.png?v=4", sizes: "32x32", type: "image/png" },
+        { url: "/favicon-192.png?v=4", sizes: "192x192", type: "image/png" },
       ],
-      apple: [{ url: '/apple-touch-icon.png?v=4', sizes: '180x180', type: 'image/png' }],
+      apple: [
+        {
+          url: "/apple-touch-icon.png?v=4",
+          sizes: "180x180",
+          type: "image/png",
+        },
+      ],
     },
     formatDetection: { telephone: false },
   };
@@ -119,6 +125,7 @@ export default async function LocaleLayout({
       label: category.navLabel,
       href: routes.category(locale, category),
     })),
+    { label: dict.nav.blog, href: routes.blog(locale) },
     { label: dict.nav.apps, href: `/${locale}/${APPS_SLUG[locale]}` },
   ];
 
@@ -127,6 +134,7 @@ export default async function LocaleLayout({
       label: category.title,
       href: routes.category(locale, category),
     })),
+    { label: dict.nav.blog, href: routes.blog(locale) },
     { label: dict.nav.apps, href: `/${locale}/${APPS_SLUG[locale]}` },
     { label: dict.actions.search, href: routes.search(locale) },
   ];
@@ -153,11 +161,16 @@ export default async function LocaleLayout({
         <ConsentProvider>
           <Header locale={locale} dict={dict} items={nav} />
           <main id="main">{children}</main>
-          <Footer locale={locale} dict={dict} explore={footerExplore} legal={footerLegal} />
+          <Footer
+            locale={locale}
+            dict={dict}
+            explore={footerExplore}
+            legal={footerLegal}
+          />
           <CookieBanner
             dict={dict}
             locale={locale}
-            privacyHref={`/${locale}/${getLegalPage(locale, 'privacy').slug}`}
+            privacyHref={`/${locale}/${getLegalPage(locale, "privacy").slug}`}
           />
           <AnalyticsLoader />
         </ConsentProvider>
