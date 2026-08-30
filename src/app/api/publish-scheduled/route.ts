@@ -26,6 +26,16 @@ const SCHEDULE: Record<string, string> = {
   "2026-11-06": "at-home-date-night-for-expectant-parents",
   "2026-11-11": "prepare-older-child-for-new-sibling",
   "2026-11-16": "pregnancy-milestones-first-sound-movement-photo",
+  "2026-11-21": "when-baby-heart-starts-beating",
+  "2026-11-26": "fetal-heart-rate-by-week",
+  "2026-12-01": "first-trimester-ultrasound",
+  "2026-12-06": "first-ultrasound-when-and-prepare",
+  "2026-12-11": "when-first-baby-movements-start",
+  "2026-12-16": "baby-development-second-trimester",
+  "2026-12-21": "pregnancy-weeks-18-22",
+  "2026-12-26": "what-to-bring-prenatal-appointment",
+  "2026-12-31": "anxiety-between-prenatal-visits",
+  "2027-01-05": "urgent-pregnancy-warning-signs",
 };
 
 function dateInKyiv(date: Date): string {
