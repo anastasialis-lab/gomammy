@@ -13,10 +13,6 @@ import { TOTAL_WEEKS, weekSlug } from "@/content/weeks";
 
 type Entry = MetadataRoute.Sitemap[number];
 
-// Keep scheduled articles out until publishedAt, then refresh their sitemap
-// entries without requiring a manual deployment.
-export const revalidate = 60;
-
 /** Every entry carries the full hreflang cluster, as Google recommends. */
 function withAlternates(
   path: string,

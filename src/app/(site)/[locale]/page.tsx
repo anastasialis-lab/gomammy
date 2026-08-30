@@ -25,9 +25,6 @@ import { getLegalPage } from "@/content/data/legal";
 
 type Props = { params: Promise<{ locale: string }> };
 
-// Refresh the homepage article cards when a future-dated article becomes live.
-export const revalidate = 60;
-
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale: raw } = await params;
   if (!isLocale(raw)) return {};
