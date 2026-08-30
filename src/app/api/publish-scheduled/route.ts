@@ -16,6 +16,16 @@ const SCHEDULE: Record<string, string> = {
   "2026-09-21": "anterior-placenta-heartbeat-audio",
   "2026-09-24": "save-share-heartbeat-recording",
   "2026-09-27": "pregnancy-app-privacy",
+  "2026-10-02": "talk-to-baby-during-pregnancy",
+  "2026-10-07": "seven-daily-bonding-rituals",
+  "2026-10-12": "letter-to-future-baby",
+  "2026-10-17": "digital-time-capsule-for-baby",
+  "2026-10-22": "weekly-pregnancy-journal-prompts",
+  "2026-10-27": "announce-pregnancy-to-grandparents-recording",
+  "2026-11-01": "long-distance-pregnancy-partner-connection",
+  "2026-11-06": "at-home-date-night-for-expectant-parents",
+  "2026-11-11": "prepare-older-child-for-new-sibling",
+  "2026-11-16": "pregnancy-milestones-first-sound-movement-photo",
 };
 
 function dateInKyiv(date: Date): string {
