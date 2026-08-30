@@ -38,6 +38,10 @@ import { BLOG_SLUG } from "@/lib/routes";
 
 type Props = { params: Promise<{ locale: string; path: string[] }> };
 
+// Future-dated articles are already bundled at build time. ISR re-evaluates
+// their visibility shortly after the scheduled publication timestamp.
+export const revalidate = 60;
+
 /** Pre-renders every content URL in every language at build time. */
 export function generateStaticParams() {
   const params: { locale: string; path: string[] }[] = [];

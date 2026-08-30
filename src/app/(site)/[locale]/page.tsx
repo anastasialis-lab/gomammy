@@ -1,29 +1,32 @@
-import type { Metadata } from 'next';
-import Image from 'next/image';
-import Link from 'next/link';
-import { notFound } from 'next/navigation';
+import type { Metadata } from "next";
+import Image from "next/image";
+import Link from "next/link";
+import { notFound } from "next/navigation";
 
-import { isLocale, type Locale } from '@/lib/i18n/config';
-import { getDictionary, t } from '@/lib/i18n/dictionaries';
+import { isLocale, type Locale } from "@/lib/i18n/config";
+import { getDictionary, t } from "@/lib/i18n/dictionaries";
 import {
   getFeaturedArticle,
   listArticles,
   listCategories,
   findCta,
   siteSettings,
-} from '@/lib/content/source';
-import { alternatesFor, routes } from '@/lib/routes';
-import { buildMetadata } from '@/lib/seo/metadata';
-import { graph, organizationSchema, websiteSchema } from '@/lib/seo/schema';
-import { POPULAR_WEEKS, buildWeekPage } from '@/content/weeks';
-import { ArticleCard } from '@/components/ui/ArticleCard';
-import { LinkButton } from '@/components/ui/Button';
-import { Section } from '@/components/ui/Section';
-import { CtaView } from '@/components/cta/CtaView';
-import { JsonLd } from '@/components/seo/JsonLd';
-import { getLegalPage } from '@/content/data/legal';
+} from "@/lib/content/source";
+import { alternatesFor, routes } from "@/lib/routes";
+import { buildMetadata } from "@/lib/seo/metadata";
+import { graph, organizationSchema, websiteSchema } from "@/lib/seo/schema";
+import { POPULAR_WEEKS, buildWeekPage } from "@/content/weeks";
+import { ArticleCard } from "@/components/ui/ArticleCard";
+import { LinkButton } from "@/components/ui/Button";
+import { Section } from "@/components/ui/Section";
+import { CtaView } from "@/components/cta/CtaView";
+import { JsonLd } from "@/components/seo/JsonLd";
+import { getLegalPage } from "@/content/data/legal";
 
 type Props = { params: Promise<{ locale: string }> };
+
+// Refresh the homepage article cards when a future-dated article becomes live.
+export const revalidate = 60;
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale: raw } = await params;
@@ -37,7 +40,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     title: `${settings.siteName} — ${dict.home.heroTitle}`,
     description: settings.siteDescription,
     path: `/${locale}`,
-    alternates: alternatesFor('home'),
+    alternates: alternatesFor("home"),
   });
 }
 
@@ -50,15 +53,20 @@ export default async function HomePage({ params }: Props) {
   const categories = listCategories(locale);
   const articles = listArticles(locale);
   const featured = getFeaturedArticle(locale);
-  const latest = articles.filter((a) => a.translationKey !== featured?.translationKey).slice(0, 3);
+  const latest = articles
+    .filter((a) => a.translationKey !== featured?.translationKey)
+    .slice(0, 3);
   const weekCategory = categories.find((category) => category.isWeekIndex)!;
-  const editorialHref = `/${locale}/${getLegalPage(locale, 'editorial').slug}`;
-  const appCta = findCta(locale, 'bubbi-inline');
+  const editorialHref = `/${locale}/${getLegalPage(locale, "editorial").slug}`;
+  const appCta = findCta(locale, "bubbi-inline");
 
   return (
     <>
       <JsonLd
-        data={graph([organizationSchema(), websiteSchema(locale, routes.search(locale))])}
+        data={graph([
+          organizationSchema(),
+          websiteSchema(locale, routes.search(locale)),
+        ])}
       />
 
       {/* Hero */}
@@ -69,7 +77,9 @@ export default async function HomePage({ params }: Props) {
             <h1 className="mt-4 text-[2.5rem] leading-[1.08] md:text-[3.5rem]">
               {dict.home.heroTitle}
             </h1>
-            <p className="mt-5 max-w-md text-lg text-muted">{dict.home.heroSubtitle}</p>
+            <p className="mt-5 max-w-md text-lg text-muted">
+              {dict.home.heroSubtitle}
+            </p>
             <div className="mt-8 flex flex-wrap gap-3">
               <LinkButton href={routes.category(locale, weekCategory)}>
                 {dict.home.heroCtaPrimary}
@@ -96,7 +106,10 @@ export default async function HomePage({ params }: Props) {
       {/* Popular weeks */}
       <Section
         title={dict.home.popularWeeks}
-        action={{ label: dict.actions.viewAll, href: routes.category(locale, weekCategory) }}
+        action={{
+          label: dict.actions.viewAll,
+          href: routes.category(locale, weekCategory),
+        }}
       >
         <ul className="grid grid-cols-2 gap-3 sm:grid-cols-5">
           {POPULAR_WEEKS.map((week) => {
@@ -108,7 +121,9 @@ export default async function HomePage({ params }: Props) {
                   href={routes.week(locale, week)}
                   className="card-soft group flex min-h-[13rem] h-full flex-col overflow-hidden p-4 transition-colors hover:border-rose-200 sm:min-h-[14rem]"
                 >
-                  <span className="font-serif text-2xl">{t(dict.week.shortLabel, { n: week })}</span>
+                  <span className="font-serif text-2xl">
+                    {t(dict.week.shortLabel, { n: week })}
+                  </span>
                   <span className="relative my-2 min-h-0 flex-1" aria-hidden>
                     <Image
                       src={`/images/weeks/week-${week}.webp`}
@@ -118,7 +133,9 @@ export default async function HomePage({ params }: Props) {
                       className="object-contain p-1 drop-shadow-[0_8px_12px_rgba(74,70,64,0.14)] transition-transform duration-500 ease-[cubic-bezier(0.22,0.61,0.36,1)] group-hover:scale-105"
                     />
                   </span>
-                  <span className="text-xs leading-snug text-muted">{page.sizeLabel}</span>
+                  <span className="text-xs leading-snug text-muted">
+                    {page.sizeLabel}
+                  </span>
                 </Link>
               </li>
             );
@@ -135,7 +152,9 @@ export default async function HomePage({ params }: Props) {
               href: routes.article(locale, featured),
               title: featured.title,
               excerpt: featured.excerpt,
-              eyebrow: categories.find((c) => c.translationKey === featured.categoryKey)?.title,
+              eyebrow: categories.find(
+                (c) => c.translationKey === featured.categoryKey,
+              )?.title,
               image: featured.heroImage,
               meta: `${featured.readingMinutes} ${dict.article.minRead}`,
             }}
@@ -172,7 +191,9 @@ export default async function HomePage({ params }: Props) {
                     href: routes.article(locale, article),
                     title: article.title,
                     excerpt: article.excerpt,
-                    eyebrow: categories.find((c) => c.translationKey === article.categoryKey)?.title,
+                    eyebrow: categories.find(
+                      (c) => c.translationKey === article.categoryKey,
+                    )?.title,
                     image: article.heroImage,
                     meta: `${article.readingMinutes} ${dict.article.minRead}`,
                   }}
@@ -196,7 +217,10 @@ export default async function HomePage({ params }: Props) {
           <h2 className="text-2xl md:text-3xl">{dict.home.trustTitle}</h2>
           <p className="mt-4 text-muted">{dict.home.trustBody}</p>
           <p className="mt-6">
-            <Link href={editorialHref} className="link-underline text-sm text-muted hover:text-ink">
+            <Link
+              href={editorialHref}
+              className="link-underline text-sm text-muted hover:text-ink"
+            >
               {dict.footer.editorialPolicy}
             </Link>
           </p>

@@ -258,8 +258,10 @@ const payload = {
     ...row,
     tagKeys: row.tagKeys ?? [],
     heroImage: image(row.heroImage, row.title),
-    publishedAt: (row.publishedAt ?? "").slice(0, 10),
-    updatedAt: (row.updatedAt ?? row.publishedAt ?? "").slice(0, 10),
+    // Keep the full ISO timestamp so scheduled articles can become visible at
+    // the intended hour instead of at midnight.
+    publishedAt: row.publishedAt ?? "",
+    updatedAt: row.updatedAt ?? row.publishedAt ?? "",
     blocks: toBlocks(row.body),
     body: undefined,
     faq: row.faq ?? [],
