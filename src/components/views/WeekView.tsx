@@ -11,13 +11,23 @@ import {
   formatWeekLength,
   formatWeekWeight,
   milestoneFor,
+  pregnancyMonthFor,
 } from '@/content/weeks';
 import { Breadcrumbs } from '@/components/ui/Breadcrumbs';
 import { Faq } from '@/components/article/Faq';
 import { CtaView } from '@/components/cta/CtaView';
-import { ScrollDepthTracker, ViewTracker } from '@/components/analytics/Trackers';
+import {
+  ScrollDepthTracker,
+  ViewTracker,
+} from '@/components/analytics/Trackers';
 
-function SectionBlock({ title, children }: { title: string; children: React.ReactNode }) {
+function SectionBlock({
+  title,
+  children,
+}: {
+  title: string;
+  children: React.ReactNode;
+}) {
   return (
     <section className="mt-12">
       <h2 className="text-2xl md:text-[1.75rem]">{title}</h2>
@@ -42,6 +52,19 @@ function Bullets({ items }: { items: string[] }) {
   );
 }
 
+const monthContext: Record<Locale, (month: number) => string> = {
+  en: (month) => `In the pregnancy calendar, this falls in month ${month}.`,
+  de: (month) =>
+    `Im Schwangerschaftskalender entspricht das dem ${month}. Monat.`,
+  it: (month) =>
+    `Nel calendario della gravidanza sei quindi nel ${month}º mese.`,
+  es: (month) => `En el calendario del embarazo corresponde al ${month}.º mes.`,
+  pt: (month) => `No calendário da gravidez, estás portanto no ${month}.º mês.`,
+  fr: (month) =>
+    `Dans le calendrier de grossesse, cela correspond au ${month}e mois.`,
+  uk: (month) => `За календарем вагітності це приблизно ${month}-й місяць.`,
+};
+
 export function WeekView({
   locale,
   dict,
@@ -58,18 +81,28 @@ export function WeekView({
   const cta = findCta(locale, 'bubbi-inline');
   const sidebarCta = findCta(locale, 'bubbi-sidebar');
   const context = `week_${page.week}`;
+  const [monthsFaq, ...remainingFaq] = page.faq;
 
-  const nearby = [page.week - 2, page.week - 1, page.week + 1, page.week + 2].filter(
-    (week) => week >= 1 && week <= TOTAL_WEEKS,
-  );
+  const nearby = [
+    page.week - 2,
+    page.week - 1,
+    page.week + 1,
+    page.week + 2,
+  ].filter((week) => week >= 1 && week <= TOTAL_WEEKS);
 
   return (
     <div className="container-page pt-8">
       <ViewTracker
         event="week_view"
-        params={{ week: page.week, trimester: facts.trimester, language: locale }}
+        params={{
+          week: page.week,
+          trimester: facts.trimester,
+          language: locale,
+        }}
       />
-      <ScrollDepthTracker params={{ week: page.week, article_id: `week_${page.week}` }} />
+      <ScrollDepthTracker
+        params={{ week: page.week, article_id: `week_${page.week}` }}
+      />
 
       <Breadcrumbs
         items={[
@@ -83,9 +116,24 @@ export function WeekView({
         <div className="min-w-0 max-w-measure">
           <header className="grid gap-6 sm:grid-cols-[minmax(0,1fr)_11rem] sm:items-center">
             <div>
-              <span className="eyebrow">{dict.week.trimesterNames[facts.trimester - 1]}</span>
-              <h1 className="mt-3 text-[2.25rem] leading-tight md:text-[3rem]">{page.title}</h1>
+              <span className="eyebrow">
+                {dict.week.trimesterNames[facts.trimester - 1]}
+              </span>
+              <h1 className="mt-3 text-[2.25rem] leading-tight md:text-[3rem]">
+                {page.title}
+              </h1>
               <p className="mt-5 text-lg text-muted">{page.intro}</p>
+              {monthsFaq ? (
+                <section className="mt-5 rounded-md border border-line-soft bg-ivory-deep/60 px-5 py-4">
+                  <h2 className="text-base font-semibold">
+                    {monthsFaq.question}
+                  </h2>
+                  <p className="mt-1.5 text-sm text-ink-soft">
+                    {monthsFaq.answer}{' '}
+                    {monthContext[locale](pregnancyMonthFor(page.week))}
+                  </p>
+                </section>
+              ) : null}
               {milestone ? (
                 <p className="mt-5 rounded-md border-l-2 border-sage-300 bg-sage-50 px-5 py-3 text-[0.98rem] text-ink-soft">
                   {milestone}
@@ -108,16 +156,26 @@ export function WeekView({
           <dl className="mt-8 grid grid-cols-2 gap-px overflow-hidden rounded-lg border border-line-soft bg-line-soft sm:grid-cols-4">
             {[
               { label: dict.week.sizeOf, value: page.sizeLabel },
-              { label: dict.week.length, value: formatWeekLength(locale, facts.lengthCm) },
-              { label: dict.week.weight, value: formatWeekWeight(locale, facts.weightG) },
+              {
+                label: dict.week.length,
+                value: formatWeekLength(locale, facts.lengthCm),
+              },
+              {
+                label: dict.week.weight,
+                value: formatWeekWeight(locale, facts.weightG),
+              },
               {
                 label: dict.week.trimester,
                 value: String(facts.trimester),
               },
             ].map((item) => (
               <div key={item.label} className="bg-card px-4 py-4">
-                <dt className="text-xs uppercase tracking-wider text-muted">{item.label}</dt>
-                <dd className="mt-1 font-serif text-lg leading-snug">{item.value}</dd>
+                <dt className="text-xs uppercase tracking-wider text-muted">
+                  {item.label}
+                </dt>
+                <dd className="mt-1 font-serif text-lg leading-snug">
+                  {item.value}
+                </dd>
               </div>
             ))}
           </dl>
@@ -130,7 +188,9 @@ export function WeekView({
             <Bullets items={page.body} />
           </SectionBlock>
 
-          {cta ? <CtaView cta={cta} locale={locale} dict={dict} context={context} /> : null}
+          {cta ? (
+            <CtaView cta={cta} locale={locale} dict={dict} context={context} />
+          ) : null}
 
           <SectionBlock title={dict.week.commonSymptoms}>
             <Bullets items={page.symptoms} />
@@ -144,18 +204,24 @@ export function WeekView({
             <Bullets items={page.tips} />
           </SectionBlock>
 
-          <Faq items={page.faq} title={dict.article.faqTitle} />
+          <Faq items={remainingFaq} title={dict.article.faqTitle} />
 
           <p className="mt-10 rounded-md bg-ivory-deep/60 p-5 text-sm text-muted">
             {dict.week.dueDateNote}
           </p>
-          <p className="mt-4 text-xs leading-relaxed text-muted">{dict.article.disclaimer}</p>
+          <p className="mt-4 text-xs leading-relaxed text-muted">
+            {dict.article.disclaimer}
+          </p>
 
           {/* Prev / next */}
           <nav className="mt-12 flex items-center justify-between gap-4 border-t border-line-soft pt-6">
             {page.week > 1 ? (
-              <Link href={routes.week(locale, page.week - 1)} className="link-underline text-sm">
-                ← {dict.week.previousWeek}: {t(dict.week.shortLabel, { n: page.week - 1 })}
+              <Link
+                href={routes.week(locale, page.week - 1)}
+                className="link-underline text-sm"
+              >
+                ← {dict.week.previousWeek}:{' '}
+                {t(dict.week.shortLabel, { n: page.week - 1 })}
               </Link>
             ) : (
               <span />
@@ -165,7 +231,8 @@ export function WeekView({
                 href={routes.week(locale, page.week + 1)}
                 className="link-underline text-right text-sm"
               >
-                {dict.week.nextWeek}: {t(dict.week.shortLabel, { n: page.week + 1 })} →
+                {dict.week.nextWeek}:{' '}
+                {t(dict.week.shortLabel, { n: page.week + 1 })} →
               </Link>
             ) : (
               <span />

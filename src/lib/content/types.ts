@@ -29,11 +29,16 @@ export interface SeoFields {
 
 export interface Author {
   id: string;
+  entityType?: "person" | "organization";
   name: string;
   role: string;
+  credentials?: string;
+  specialty?: string;
+  affiliation?: string;
   bio: string;
   avatar?: ImageAsset;
   url?: string;
+  sameAs?: string[];
 }
 
 export interface Source {

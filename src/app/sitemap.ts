@@ -13,6 +13,11 @@ import { TOTAL_WEEKS, weekSlug } from "@/content/weeks";
 
 type Entry = MetadataRoute.Sitemap[number];
 
+// Scheduled articles become live based on Date.now(). Metadata routes are
+// otherwise cached by default, which can leave newly published URLs out of the
+// sitemap until the next deployment.
+export const dynamic = "force-dynamic";
+
 /** Every entry carries the full hreflang cluster, as Google recommends. */
 function withAlternates(
   path: string,
@@ -37,12 +42,10 @@ function withAlternates(
  */
 export default function sitemap(): MetadataRoute.Sitemap {
   const entries: Entry[] = [];
-  const lastModified = new Date();
 
   for (const locale of LOCALES) {
     entries.push(
       withAlternates(`/${locale}`, alternatesFor("home"), {
-        lastModified,
         changeFrequency: "weekly",
         priority: 1,
       }),
@@ -54,7 +57,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     if (blogRoute) {
       entries.push(
         withAlternates(routes.blog(locale), alternatesFor(blogRoute), {
-          lastModified,
           changeFrequency: "weekly",
           priority: 0.9,
         }),
@@ -69,7 +71,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
           routes.category(locale, category),
           alternatesFor(route),
           {
-            lastModified,
             changeFrequency: "weekly",
             priority: category.isWeekIndex ? 0.9 : 0.8,
           },
@@ -89,7 +90,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
         if (!route) continue;
         entries.push(
           withAlternates(routes.week(locale, week), alternatesFor(route), {
-            lastModified,
             changeFrequency: "monthly",
             priority: 0.8,
           }),
@@ -118,7 +118,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     if (appsRoute) {
       entries.push(
         withAlternates(routes.apps(locale), alternatesFor(appsRoute), {
-          lastModified,
           changeFrequency: "monthly",
           priority: 0.7,
         }),
@@ -130,7 +129,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
       if (!route) continue;
       entries.push(
         withAlternates(routes.app(locale, app), alternatesFor(route), {
-          lastModified,
           changeFrequency: "monthly",
           priority: 0.6,
         }),

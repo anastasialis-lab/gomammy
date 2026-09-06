@@ -25,7 +25,7 @@ import {
   softwareApplicationSchema,
 } from "@/lib/seo/schema";
 import { LEGAL_KEYS, getLegalPage } from "@/content/data/legal";
-import { TOTAL_WEEKS, weekSlug } from "@/content/weeks";
+import { TOTAL_WEEKS, pregnancyMonthFor, weekSlug } from "@/content/weeks";
 import { JsonLd } from "@/components/seo/JsonLd";
 import { ArticleView } from "@/components/views/ArticleView";
 import { CategoryView } from "@/components/views/CategoryView";
@@ -37,6 +37,34 @@ import { BlogView } from "@/components/views/BlogView";
 import { BLOG_SLUG } from "@/lib/routes";
 
 type Props = { params: Promise<{ locale: string; path: string[] }> };
+
+function weekSearchMetadata(
+  locale: Locale,
+  week: number,
+  fallback: { title: string; description: string },
+): { title: string; description: string } {
+  const month = pregnancyMonthFor(week);
+
+  switch (locale) {
+    case "it":
+      return {
+        title: `${week} settimane: quanti mesi sono, sintomi e sviluppo`,
+        description: `${week} settimane corrispondono al ${month}º mese di gravidanza. Scopri sviluppo del bambino, sintomi, cambiamenti del corpo e consigli.`,
+      };
+    case "pt":
+      return {
+        title: `${week} semanas: quantos meses são, sintomas e desenvolvimento`,
+        description: `${week} semanas correspondem ao ${month}.º mês de gravidez. Vê o desenvolvimento do bebé, sintomas, mudanças no corpo e dicas.`,
+      };
+    case "uk":
+      return {
+        title: `${week} тиждень: скільки це місяців, розвиток і симптоми`,
+        description: `${week}-й тиждень — це приблизно ${month}-й місяць вагітності. Дізнайтеся про розвиток дитини, симптоми, зміни тіла й поради.`,
+      };
+    default:
+      return fallback;
+  }
+}
 
 /** Pre-renders every content URL in every language at build time. */
 export function generateStaticParams() {
@@ -102,11 +130,15 @@ function metaFor(locale: Locale, route: ResolvedRoute, path: string): Metadata {
         alternates,
         image: route.category.featuredImage?.src,
       });
-    case "week":
-      return buildMetadata({
-        locale,
+    case "week": {
+      const searchMetadata = weekSearchMetadata(locale, route.page.week, {
         title: route.page.seo.title,
         description: route.page.seo.description,
+      });
+      return buildMetadata({
+        locale,
+        title: searchMetadata.title,
+        description: searchMetadata.description,
         path,
         alternates,
         image: ogImageUrl({
@@ -115,6 +147,7 @@ function metaFor(locale: Locale, route: ResolvedRoute, path: string): Metadata {
           eyebrow: route.category.title,
         }),
       });
+    }
     case "article":
       return buildMetadata({
         locale,

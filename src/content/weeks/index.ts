@@ -52,6 +52,19 @@ function monthsFor(week: number): number {
   return Math.round((week / WEEKS_PER_MONTH) * 2) / 2;
 }
 
+/** Conventional pregnancy month for a completed gestational week. */
+export function pregnancyMonthFor(week: number): number {
+  if (week <= 4) return 1;
+  if (week <= 8) return 2;
+  if (week <= 13) return 3;
+  if (week <= 17) return 4;
+  if (week <= 21) return 5;
+  if (week <= 26) return 6;
+  if (week <= 30) return 7;
+  if (week <= 35) return 8;
+  return 9;
+}
+
 export function weekSlug(locale: Locale, week: number): string {
   const generated = generatedFor("weeks", locale)?.find(
     (page) => page.week === week,

@@ -11,6 +11,29 @@ export function formatDate(locale: Locale, iso: string): string {
   }).format(new Date(iso));
 }
 
+function ProfileName({ profile }: { profile: Author }) {
+  const name = profile.url ? (
+    <a href={profile.url} className="link-underline" rel="author">
+      {profile.name}
+    </a>
+  ) : (
+    profile.name
+  );
+
+  const qualification = [profile.credentials, profile.role]
+    .filter(Boolean)
+    .join(' · ');
+
+  return (
+    <span>
+      <span className="text-ink">{name}</span>
+      {qualification ? (
+        <span className="block text-xs">{qualification}</span>
+      ) : null}
+    </span>
+  );
+}
+
 export function ArticleMeta({
   locale,
   dict,
@@ -43,7 +66,7 @@ export function ArticleMeta({
           ) : null}
           <span>
             <span className="text-ink">{dict.article.writtenBy} </span>
-            {author.role}
+            <ProfileName profile={author} />
           </span>
         </span>
       ) : null}
@@ -61,7 +84,7 @@ export function ArticleMeta({
           ) : null}
           <span>
             <span className="text-ink">{dict.article.reviewedBy} </span>
-            {reviewer.role}
+            <ProfileName profile={reviewer} />
           </span>
         </span>
       ) : null}
@@ -72,7 +95,8 @@ export function ArticleMeta({
       </span>
 
       <span className="sr-only">
-        {dict.article.publishedOn} <time dateTime={publishedAt}>{formatDate(locale, publishedAt)}</time>
+        {dict.article.publishedOn}{' '}
+        <time dateTime={publishedAt}>{formatDate(locale, publishedAt)}</time>
       </span>
 
       <span>
@@ -95,7 +119,9 @@ export function Sources({
     <section className="mt-16 rounded-lg bg-ivory-deep/60 p-6">
       {sources.length > 0 ? (
         <>
-          <h2 className="text-xs font-semibold uppercase tracking-wider text-muted">{title}</h2>
+          <h2 className="text-xs font-semibold uppercase tracking-wider text-muted">
+            {title}
+          </h2>
           <ul className="mt-3 grid gap-2 text-sm">
             {sources.map((source) => (
               <li key={source.url}>

@@ -6,6 +6,35 @@ import { absoluteUrl } from './site';
 
 type JsonLdObject = Record<string, unknown>;
 
+function authorSchema(author: Author): JsonLdObject {
+  if (author.entityType === 'person') {
+    return {
+      '@type': 'Person',
+      name: author.name,
+      jobTitle: author.credentials
+        ? `${author.role}, ${author.credentials}`
+        : author.role,
+      description: author.bio,
+      url: author.url,
+      image: author.avatar?.src,
+      sameAs: author.sameAs,
+      affiliation: author.affiliation
+        ? { '@type': 'Organization', name: author.affiliation }
+        : undefined,
+      knowsAbout: author.specialty ? [author.specialty] : undefined,
+    };
+  }
+
+  return {
+    '@type': 'Organization',
+    name: author.name,
+    description: author.bio,
+    url: author.url ?? absoluteUrl('/'),
+    logo: author.avatar?.src,
+    sameAs: author.sameAs,
+  };
+}
+
 export function organizationSchema(): JsonLdObject {
   return {
     '@type': 'Organization',
@@ -25,7 +54,10 @@ export function organizationSchema(): JsonLdObject {
  * WebSite markup on the homepage tells Google the preferred site name and
  * exposes the internal search endpoint.
  */
-export function websiteSchema(locale: Locale, searchPath: string): JsonLdObject {
+export function websiteSchema(
+  locale: Locale,
+  searchPath: string,
+): JsonLdObject {
   return {
     '@type': 'WebSite',
     '@id': `${absoluteUrl('/')}#website`,
@@ -45,7 +77,9 @@ export function websiteSchema(locale: Locale, searchPath: string): JsonLdObject 
   };
 }
 
-export function breadcrumbSchema(items: { name: string; path: string }[]): JsonLdObject {
+export function breadcrumbSchema(
+  items: { name: string; path: string }[],
+): JsonLdObject {
   return {
     '@type': 'BreadcrumbList',
     itemListElement: items.map((item, index) => ({
@@ -77,18 +111,16 @@ export function articleSchema(input: {
     mainEntityOfPage: absoluteUrl(input.path),
     headline: input.headline,
     description: input.description,
-    image: [input.image.startsWith('http') ? input.image : absoluteUrl(input.image)],
+    image: [
+      input.image.startsWith('http') ? input.image : absoluteUrl(input.image),
+    ],
     inLanguage: LOCALE_TAGS[input.locale],
     datePublished: input.publishedAt,
     dateModified: input.updatedAt,
     articleSection: input.section,
     keywords: input.keywords?.join(', '),
-    author: input.author
-      ? { '@type': 'Organization', name: BRAND.name, url: absoluteUrl('/') }
-      : undefined,
-    reviewedBy: input.reviewer
-      ? { '@type': 'Organization', name: `${BRAND.name} — ${input.reviewer.role}` }
-      : undefined,
+    author: input.author ? authorSchema(input.author) : undefined,
+    reviewedBy: input.reviewer ? authorSchema(input.reviewer) : undefined,
     publisher: { '@id': `${absoluteUrl('/')}#organization` },
     citation: input.sources?.map((source) => ({
       '@type': 'CreativeWork',
@@ -116,7 +148,10 @@ export function faqSchema(items: FaqItem[]): JsonLdObject | null {
   };
 }
 
-export function softwareApplicationSchema(app: AppProduct, path: string): JsonLdObject {
+export function softwareApplicationSchema(
+  app: AppProduct,
+  path: string,
+): JsonLdObject {
   return {
     '@type': 'SoftwareApplication',
     '@id': `${absoluteUrl(path)}#app`,

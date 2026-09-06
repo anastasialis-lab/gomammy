@@ -42,8 +42,8 @@ export const APPS_QUERY = `*[_type == "appProduct"] {
 }`;
 
 export const AUTHORS_QUERY = `*[_type == "author"] {
-  locale, "id": authorId, name, role, bio,
-  "avatar": avatar${IMAGE}, url
+  locale, "id": authorId, entityType, name, role, credentials, specialty,
+  affiliation, bio, "avatar": avatar${IMAGE}, url, sameAs
 }`;
 
 export const ARTICLES_QUERY = `*[_type == "article" && status == "published"] | order(publishedAt desc) {
