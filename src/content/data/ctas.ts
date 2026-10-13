@@ -1,6 +1,7 @@
 import type { Locale } from '@/lib/i18n/config';
 import type { CtaBlock } from '@/lib/content/types';
 import { generatedFor } from '@/content/generated';
+import { clarifyBubbiCta } from './bubbiSafety';
 
 /**
  * Promo blocks available to the editor. In the CMS these become documents;
@@ -172,10 +173,10 @@ const copy: Record<Locale, Record<string, CtaCopy>> = {
 
 export function getCtas(locale: Locale): CtaBlock[] {
   const fromCms = generatedFor('ctas', locale);
-  if (fromCms) return fromCms;
+  if (fromCms) return fromCms.map((cta) => clarifyBubbiCta(cta, locale));
 
   const c = copy[locale];
-  return [
+  const seeded: CtaBlock[] = [
     {
       id: 'bubbi-inline',
       locale,
@@ -201,6 +202,7 @@ export function getCtas(locale: Locale): CtaBlock[] {
       ...c['weeks-banner'],
     },
   ];
+  return seeded.map((cta) => clarifyBubbiCta(cta, locale));
 }
 
 export function getCta(locale: Locale, id: string): CtaBlock | undefined {

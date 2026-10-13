@@ -2,6 +2,7 @@ import type { Locale } from '@/lib/i18n/config';
 import { LOCALES } from '@/lib/i18n/config';
 import type { AppProduct } from '@/lib/content/types';
 import { generatedFor } from '@/content/generated';
+import { clarifyBubbiApp } from './bubbiSafety';
 
 export const APP_KEYS = ['baby-heartbeat'] as const;
 export type AppKey = (typeof APP_KEYS)[number];
@@ -270,12 +271,12 @@ const ARTWORK = {
 
 export function getApps(locale: Locale): AppProduct[] {
   const fromCms = generatedFor('apps', locale);
-  if (fromCms) return fromCms;
+  if (fromCms) return fromCms.map((app) => clarifyBubbiApp(app, locale));
 
   return APP_KEYS.map((key) => {
     const c = copy[locale][key];
     const store = STORE_URLS[key];
-    return {
+    return clarifyBubbiApp({
       translationKey: key,
       locale,
       slug: c.slug,
@@ -294,7 +295,7 @@ export function getApps(locale: Locale): AppProduct[] {
       disclaimer: c.disclaimer,
       relatedArticleKeys: ['baby-heartbeat-in-pregnancy'],
       seo: { title: c.seoTitle, description: c.seoDescription },
-    } satisfies AppProduct;
+    } satisfies AppProduct, locale);
   });
 }
 

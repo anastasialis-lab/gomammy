@@ -43,6 +43,7 @@ function weekSearchMetadata(
   week: number,
   fallback: { title: string; description: string },
 ): { title: string; description: string } {
+  if (week <= 3) return fallback;
   const month = pregnancyMonthFor(week);
 
   switch (locale) {

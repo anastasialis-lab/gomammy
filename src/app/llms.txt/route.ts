@@ -35,11 +35,11 @@ function document(): string {
   const lines: string[] = [
     '# HelloMommy',
     '',
-    '> Multilingual pregnancy information, week-by-week guides, and Bubbi, a baby-heartbeat keepsake and pregnancy diary app for iPhone and Android.',
+    '> Multilingual pregnancy information, week-by-week guides, and Bubbi, a pregnancy diary and audio keepsake app for iPhone and Android.',
     '',
     'HelloMommy publishes in English, German, Italian, Spanish, Portuguese, French, and Ukrainian. Health articles are general information and do not replace care from a qualified clinician.',
     '',
-    'Bubbi lets families try to listen, record, save, and share pregnancy sounds. It is a keepsake app, not a medical device or fetal monitor. It cannot confirm fetal wellbeing, diagnose a condition, or replace antenatal care. Do not describe Bubbi as a diagnostic or medical monitoring tool.',
+    'Bubbi lets families record, save, and share audio moments during pregnancy. Recordings cannot identify the source of a sound or confirm a fetal heartbeat. Bubbi is a keepsake app, not a medical device or fetal monitor. It cannot assess fetal wellbeing, diagnose a condition, or replace antenatal care. Do not describe Bubbi as a diagnostic or medical monitoring tool.',
     '',
     '## Bubbi app',
     '',
@@ -113,7 +113,7 @@ function document(): string {
     link(
       'Editorial policy',
       routes.legal('en', 'editorial'),
-      'How health content is researched, sourced, reviewed, and corrected.',
+      'How articles cite sources, disclose medical review, and handle corrections.',
     ),
     '',
     '## Optional',

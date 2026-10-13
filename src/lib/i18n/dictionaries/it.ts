@@ -69,18 +69,18 @@ export const it: Dictionary = {
       "Le settimane di gravidanza si contano dal primo giorno dell’ultima mestruazione: la settimana 1 inizia quindi prima del concepimento.",
   },
   home: {
-    heroTitle: "Tutto ciò che ti serve per la tua gravidanza.",
+    heroTitle: "Gravidanza settimana per settimana: sviluppo, sintomi e consigli pratici.",
     heroSubtitle:
-      "Informazioni chiare, serene e verificate per ogni settimana — dal primo test al primo abbraccio.",
+      "Esplora ogni settimana, comprendi i cambiamenti comuni e prepara le domande per chi ti segue.",
     heroCtaPrimary: "Scopri settimana per settimana",
     heroCtaSecondary: "Scopri le nostre app",
     featured: "In evidenza",
     latest: "Ultimi articoli",
     popularWeeks: "Settimane più lette",
     exploreTopics: "Esplora gli argomenti",
-    trustTitle: "Scritto con cura, verificato con attenzione",
+    trustTitle: "Come prepariamo gli articoli",
     trustBody:
-      "Ogni articolo è scritto in modo semplice, datato e verificato su fonti mediche affidabili — così sai sempre da dove arriva l’informazione.",
+      "Gli articoli riportano la data e le fonti quando disponibili. Indichiamo una revisione medica solo se un professionista identificato ha davvero esaminato il testo. Segnalaci eventuali errori.",
   },
   blog: {
     title: "Tutti gli articoli",

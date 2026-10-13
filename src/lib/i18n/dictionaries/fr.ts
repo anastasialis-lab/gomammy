@@ -73,18 +73,18 @@ export const fr: Dictionary = {
       "Les semaines de grossesse se comptent à partir du premier jour des dernières règles : la semaine 1 commence donc avant la conception.",
   },
   home: {
-    heroTitle: "Tout ce qu’il vous faut pour votre grossesse.",
+    heroTitle: "Grossesse semaine par semaine : développement, symptômes et conseils pratiques.",
     heroSubtitle:
-      "Des repères clairs, apaisants et vérifiés pour chaque semaine — du premier test au premier câlin.",
+      "Explorez chaque semaine, comprenez les changements courants et préparez vos questions pour votre équipe soignante.",
     heroCtaPrimary: "Voir semaine par semaine",
     heroCtaSecondary: "Découvrir nos applis",
     featured: "À la une",
     latest: "Derniers articles",
     popularWeeks: "Semaines populaires",
     exploreTopics: "Explorer les sujets",
-    trustTitle: "Écrit avec soin, vérifié avec rigueur",
+    trustTitle: "Comment nous préparons les articles",
     trustBody:
-      "Chaque article est rédigé simplement, daté et confronté à des sources médicales fiables — pour que vous sachiez toujours d’où vient l’information.",
+      "Les articles affichent leur date et citent des sources lorsqu’elles sont disponibles. Nous indiquons une relecture médicale uniquement si un professionnel identifié a effectivement relu le texte. Signalez-nous les erreurs.",
   },
   blog: {
     title: "Tous les articles",

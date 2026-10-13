@@ -73,18 +73,18 @@ export const de: Dictionary = {
       "Schwangerschaftswochen werden ab dem ersten Tag der letzten Periode gezählt. Woche 1 beginnt also vor der Empfängnis.",
   },
   home: {
-    heroTitle: "Alles, was du für deine Schwangerschaft brauchst.",
+    heroTitle: "Schwangerschaft Woche für Woche: Entwicklung, Symptome und praktische Tipps.",
     heroSubtitle:
-      "Ruhige, klare und sorgfältig geprüfte Begleitung für jede Woche — vom ersten Test bis zum ersten Kuscheln.",
+      "Entdecke jede Woche, verstehe häufige Veränderungen und bereite Fragen für deine Betreuung vor.",
     heroCtaPrimary: "Schwangerschaftswochen entdecken",
     heroCtaSecondary: "Unsere Apps ansehen",
     featured: "Empfohlen",
     latest: "Neueste Artikel",
     popularWeeks: "Beliebte Wochen",
     exploreTopics: "Themen entdecken",
-    trustTitle: "Mit Sorgfalt geschrieben, auf Richtigkeit geprüft",
+    trustTitle: "So entstehen unsere Artikel",
     trustBody:
-      "Jeder Artikel ist in klarer Sprache geschrieben, mit Datum versehen und an vertrauenswürdigen medizinischen Quellen geprüft — damit du immer weißt, woher die Information kommt.",
+      "Artikel zeigen ihr Datum und nennen Quellen, sofern vorhanden. Eine medizinische Prüfung nennen wir nur, wenn eine namentlich genannte Fachperson den Artikel tatsächlich geprüft hat. Melde uns Fehler.",
   },
   blog: {
     title: "Alle Artikel",

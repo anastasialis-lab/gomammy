@@ -13,6 +13,7 @@ import {
   milestoneFor,
   pregnancyMonthFor,
 } from '@/content/weeks';
+import { earlyStageTitle } from '@/content/weeks/earlyWeeks';
 import { Breadcrumbs } from '@/components/ui/Breadcrumbs';
 import { Faq } from '@/components/article/Faq';
 import { CtaView } from '@/components/cta/CtaView';
@@ -78,8 +79,8 @@ export function WeekView({
 }) {
   const { facts } = page;
   const milestone = milestoneFor(locale, facts);
-  const cta = findCta(locale, 'bubbi-inline');
-  const sidebarCta = findCta(locale, 'bubbi-sidebar');
+  const cta = page.week > 3 ? findCta(locale, 'bubbi-inline') : undefined;
+  const sidebarCta = page.week > 3 ? findCta(locale, 'bubbi-sidebar') : undefined;
   const context = `week_${page.week}`;
   const [monthsFaq, ...remainingFaq] = page.faq;
 
@@ -129,8 +130,8 @@ export function WeekView({
                     {monthsFaq.question}
                   </h2>
                   <p className="mt-1.5 text-sm text-ink-soft">
-                    {monthsFaq.answer}{' '}
-                    {monthContext[locale](pregnancyMonthFor(page.week))}
+                    {monthsFaq.answer}
+                    {page.week > 3 ? ` ${monthContext[locale](pregnancyMonthFor(page.week))}` : ''}
                   </p>
                 </section>
               ) : null}
@@ -153,6 +154,7 @@ export function WeekView({
           </header>
 
           {/* Facts strip */}
+          {page.week > 3 ? (
           <dl className="mt-8 grid grid-cols-2 gap-px overflow-hidden rounded-lg border border-line-soft bg-line-soft sm:grid-cols-4">
             {[
               { label: dict.week.sizeOf, value: page.sizeLabel },
@@ -179,8 +181,9 @@ export function WeekView({
               </div>
             ))}
           </dl>
+          ) : null}
 
-          <SectionBlock title={dict.week.babyDevelopment}>
+          <SectionBlock title={earlyStageTitle(locale, page.week, dict.week.babyDevelopment)}>
             <Bullets items={page.development} />
           </SectionBlock>
 
@@ -205,6 +208,49 @@ export function WeekView({
           </SectionBlock>
 
           <Faq items={remainingFaq} title={dict.article.faqTitle} />
+
+          {page.week <= 3 || page.week >= 27 ? (
+            <section className="mt-10 text-sm text-muted">
+              <h2 className="font-semibold text-ink">{dict.article.sources}</h2>
+              <ul className="mt-2 grid gap-1">
+                {page.week <= 3 ? (
+                  <>
+                    <li>
+                      <a
+                        href="https://www.ekhuft.nhs.uk/services/during-your-pregnancy/pregnancy-timeline/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="link-underline"
+                      >
+                        NHS — pregnancy timeline and dating
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="https://www.nhs.uk/pregnancy/trying-for-a-baby/doing-a-pregnancy-test/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="link-underline"
+                      >
+                        NHS — when to take a pregnancy test
+                      </a>
+                    </li>
+                  </>
+                ) : (
+                  <li>
+                    <a
+                      href="https://www.nhs.uk/pregnancy/keeping-well/your-babys-movements/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="link-underline"
+                    >
+                      NHS — your baby’s movements
+                    </a>
+                  </li>
+                )}
+              </ul>
+            </section>
+          ) : null}
 
           <p className="mt-10 rounded-md bg-ivory-deep/60 p-5 text-sm text-muted">
             {dict.week.dueDateNote}

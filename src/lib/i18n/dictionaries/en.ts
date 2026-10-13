@@ -69,18 +69,18 @@ export const en: Dictionary = {
       "Pregnancy weeks are counted from the first day of your last period, so week 1 begins before conception.",
   },
   home: {
-    heroTitle: "Everything you need for your pregnancy journey.",
+    heroTitle: "Pregnancy week by week: development, symptoms and practical guidance.",
     heroSubtitle:
-      "Calm, clear and carefully reviewed guidance for every week — from the first test to the first cuddle.",
+      "Explore each week, understand common changes and find questions to bring to your care team.",
     heroCtaPrimary: "Explore pregnancy by week",
     heroCtaSecondary: "Discover our apps",
     featured: "Featured",
     latest: "Latest articles",
     popularWeeks: "Popular weeks",
     exploreTopics: "Explore topics",
-    trustTitle: "Written with care, reviewed for accuracy",
+    trustTitle: "How we prepare our articles",
     trustBody:
-      "Every article is written in plain language, dated, and reviewed against trusted medical sources — so you always know where the information comes from.",
+      "Articles show their dates and cite sources where available. We identify a medical reviewer only when a named professional has reviewed the article. Tell us if you find an error.",
   },
   blog: {
     title: "All articles",

@@ -123,7 +123,7 @@ const authorCopy: Record<Locale, Record<string, { role: string; bio: string }>> 
 
 export function getAuthors(locale: Locale): Author[] {
   const fromCms = generatedFor('authors', locale);
-  if (fromCms) return fromCms;
+  if (fromCms) return fromCms.filter(isPublishableAuthor);
   const copy = authorCopy[locale];
   return [
     {
@@ -140,7 +140,17 @@ export function getAuthors(locale: Locale): Author[] {
       bio: copy.reviewer.bio,
       avatar: { src: '/brand/avatar-reviewer.svg', alt: 'HelloMommy', width: 96, height: 96 },
     },
-  ];
+  ].filter(isPublishableAuthor);
+}
+
+function isPublishableAuthor(author: Author): boolean {
+  // The original "reviewer" record is an institutional placeholder. Do not
+  // imply that a clinician reviewed an article until a named, credentialed
+  // person has actually done so. This also suppresses reviewedBy JSON-LD.
+  if (author.id !== 'reviewer') return true;
+  return author.entityType === 'person' &&
+    author.name !== BRAND.name &&
+    Boolean(author.credentials);
 }
 
 export function getAuthor(locale: Locale, id: string): Author | undefined {

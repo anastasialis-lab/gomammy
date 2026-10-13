@@ -73,18 +73,18 @@ export const es: Dictionary = {
       "Las semanas de embarazo se cuentan desde el primer día de tu última regla, así que la semana 1 empieza antes de la concepción.",
   },
   home: {
-    heroTitle: "Todo lo que necesitas para tu embarazo.",
+    heroTitle: "Embarazo semana a semana: desarrollo, síntomas y consejos prácticos.",
     heroSubtitle:
-      "Información tranquila, clara y revisada para cada semana — desde el primer test hasta el primer abrazo.",
+      "Explora cada semana, comprende los cambios habituales y prepara preguntas para tu equipo médico.",
     heroCtaPrimary: "Ver semana a semana",
     heroCtaSecondary: "Descubre nuestras apps",
     featured: "Destacado",
     latest: "Últimos artículos",
     popularWeeks: "Semanas más leídas",
     exploreTopics: "Explora los temas",
-    trustTitle: "Escrito con cuidado, revisado con rigor",
+    trustTitle: "Cómo preparamos los artículos",
     trustBody:
-      "Cada artículo está escrito en lenguaje sencillo, fechado y contrastado con fuentes médicas fiables — para que siempre sepas de dónde viene la información.",
+      "Los artículos muestran su fecha y citan fuentes cuando están disponibles. Solo indicamos revisión médica si un profesional identificado ha revisado el texto. Avísanos si encuentras un error.",
   },
   blog: {
     title: "Todos los artículos",

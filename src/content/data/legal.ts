@@ -111,6 +111,107 @@ const titles: Record<Locale, Record<LegalKey, string>> = {
   },
 };
 
+const editorialCopy: Record<Locale, {
+  intro: string;
+  sourcesTitle: string;
+  sources: string;
+  reviewTitle: string;
+  review: string;
+  correctionsTitle: string;
+  corrections: string;
+  fundingTitle: string;
+  funding: string;
+}> = {
+  en: {
+    intro: 'HelloMommy publishes general pregnancy information and explains how it is prepared.',
+    sourcesTitle: 'Sources',
+    sources: 'Where an article cites guidance or research, its sources are listed on the page. A source citation does not mean that a clinician reviewed the article.',
+    reviewTitle: 'Medical review',
+    review: 'We name a medical reviewer only when a named, qualified professional has reviewed that specific article. Articles without a named reviewer should not be treated as medically reviewed. This site does not replace individual care.',
+    correctionsTitle: 'Corrections',
+    corrections: 'Send corrections to hello@hellomommy.co. We update factual errors and show the latest update date on the article.',
+    fundingTitle: 'Our apps',
+    funding: 'HelloMommy promotes its own apps. Promotional blocks are labelled. Bubbi is a keepsake app and cannot confirm a fetal heartbeat or assess a baby’s health.',
+  },
+  de: {
+    intro: 'HelloMommy veröffentlicht allgemeine Informationen zur Schwangerschaft und erklärt, wie die Inhalte entstehen.',
+    sourcesTitle: 'Quellen',
+    sources: 'Wenn ein Artikel Leitlinien oder Forschung zitiert, stehen die Quellen auf der Seite. Eine Quellenangabe bedeutet nicht, dass eine Fachperson den Artikel medizinisch geprüft hat.',
+    reviewTitle: 'Medizinische Prüfung',
+    review: 'Wir nennen eine medizinische Fachperson nur, wenn eine namentlich genannte und qualifizierte Person den jeweiligen Artikel tatsächlich geprüft hat. Ohne diese Angabe ist der Artikel nicht als medizinisch geprüft zu verstehen. Die Website ersetzt keine persönliche Betreuung.',
+    correctionsTitle: 'Korrekturen',
+    corrections: 'Melde Fehler an hello@hellomommy.co. Wir korrigieren Sachfehler und zeigen das letzte Aktualisierungsdatum am Artikel.',
+    fundingTitle: 'Unsere Apps',
+    funding: 'HelloMommy bewirbt eigene Apps; Werbeblöcke sind gekennzeichnet. Bubbi ist eine Erinnerungs-App und kann weder einen Herzschlag bestätigen noch die Gesundheit des Babys beurteilen.',
+  },
+  it: {
+    intro: 'HelloMommy pubblica informazioni generali sulla gravidanza e spiega come prepara i contenuti.',
+    sourcesTitle: 'Fonti',
+    sources: 'Quando un articolo cita linee guida o ricerche, le fonti sono indicate nella pagina. Citare una fonte non significa che il testo sia stato revisionato da un medico.',
+    reviewTitle: 'Revisione medica',
+    review: 'Indichiamo un revisore medico solo quando un professionista qualificato e identificato ha effettivamente esaminato quello specifico articolo. Senza un revisore nominato, l’articolo non va considerato revisionato dal punto di vista medico. Il sito non sostituisce l’assistenza personale.',
+    correctionsTitle: 'Correzioni',
+    corrections: 'Segnala gli errori a hello@hellomommy.co. Correggiamo le informazioni errate e mostriamo la data dell’ultimo aggiornamento.',
+    fundingTitle: 'Le nostre app',
+    funding: 'HelloMommy promuove le proprie app; i contenuti promozionali sono indicati. Bubbi è un’app per i ricordi e non può confermare il battito o valutare la salute del bambino.',
+  },
+  es: {
+    intro: 'HelloMommy publica información general sobre el embarazo y explica cómo prepara sus contenidos.',
+    sourcesTitle: 'Fuentes',
+    sources: 'Cuando un artículo cita guías o estudios, las fuentes aparecen en la página. Citar una fuente no significa que un profesional sanitario haya revisado el texto.',
+    reviewTitle: 'Revisión médica',
+    review: 'Solo indicamos un revisor médico cuando un profesional identificado y cualificado ha revisado ese artículo concreto. Si no aparece un revisor nombrado, el artículo no debe considerarse revisado médicamente. La web no sustituye la atención personal.',
+    correctionsTitle: 'Correcciones',
+    corrections: 'Escribe a hello@hellomommy.co si encuentras un error. Corregimos los datos erróneos y mostramos la fecha de la última actualización.',
+    fundingTitle: 'Nuestras apps',
+    funding: 'HelloMommy promociona sus propias apps; los bloques promocionales están señalados. Bubbi es una app de recuerdos y no puede confirmar el latido ni evaluar la salud del bebé.',
+  },
+  pt: {
+    intro: 'A HelloMommy publica informação geral sobre gravidez e explica como prepara os conteúdos.',
+    sourcesTitle: 'Fontes',
+    sources: 'Quando um artigo cita recomendações ou estudos, as fontes aparecem na página. Citar uma fonte não significa que um profissional de saúde reviu o texto.',
+    reviewTitle: 'Revisão médica',
+    review: 'Só indicamos um revisor médico quando um profissional identificado e qualificado reviu esse artigo específico. Sem um revisor nomeado, o artigo não deve ser considerado revisto clinicamente. O site não substitui cuidados individuais.',
+    correctionsTitle: 'Correções',
+    corrections: 'Envia correções para hello@hellomommy.co. Corrigimos erros factuais e mostramos a data da última atualização.',
+    fundingTitle: 'As nossas apps',
+    funding: 'A HelloMommy promove as suas próprias apps; os blocos promocionais estão identificados. A Bubbi é uma app de recordações e não confirma batimentos nem avalia a saúde do bebé.',
+  },
+  fr: {
+    intro: 'HelloMommy publie des informations générales sur la grossesse et explique comment ses contenus sont préparés.',
+    sourcesTitle: 'Sources',
+    sources: 'Lorsqu’un article cite des recommandations ou des études, les sources figurent sur la page. Citer une source ne signifie pas qu’un soignant a relu l’article.',
+    reviewTitle: 'Relecture médicale',
+    review: 'Nous indiquons un relecteur médical uniquement lorsqu’un professionnel qualifié et identifié a réellement relu cet article précis. Sans relecteur nommé, l’article ne doit pas être considéré comme relu médicalement. Le site ne remplace pas un suivi individuel.',
+    correctionsTitle: 'Corrections',
+    corrections: 'Signalez les erreurs à hello@hellomommy.co. Nous corrigeons les faits inexacts et affichons la date de dernière mise à jour.',
+    fundingTitle: 'Nos applis',
+    funding: 'HelloMommy présente ses propres applis ; les blocs promotionnels sont identifiés. Bubbi est une appli souvenir et ne peut ni confirmer le rythme cardiaque ni évaluer la santé du bébé.',
+  },
+  uk: {
+    intro: 'HelloMommy публікує загальну інформацію про вагітність і пояснює, як готує матеріали.',
+    sourcesTitle: 'Джерела',
+    sources: 'Якщо стаття посилається на рекомендації чи дослідження, джерела наведені на її сторінці. Наявність джерел не означає, що статтю перевірив лікар.',
+    reviewTitle: 'Медичне рецензування',
+    review: 'Ми вказуємо медичного рецензента лише тоді, коли названий кваліфікований фахівець справді перевірив саме цю статтю. Якщо рецензента не зазначено, статтю не слід вважати медично перевіреною. Сайт не замінює індивідуальну допомогу.',
+    correctionsTitle: 'Виправлення',
+    corrections: 'Повідомляйте про помилки на hello@hellomommy.co. Ми виправляємо фактичні неточності й показуємо дату останнього оновлення статті.',
+    fundingTitle: 'Наші застосунки',
+    funding: 'HelloMommy просуває власні застосунки; рекламні блоки позначені. Bubbi створений для спогадів і не підтверджує серцебиття та не оцінює здоров’я дитини.',
+  },
+};
+
+function editorialBlocks(locale: Locale): LegalPage['blocks'] {
+  const copy = editorialCopy[locale];
+  return [
+    p(copy.intro),
+    h2(copy.sourcesTitle), p(copy.sources),
+    h2(copy.reviewTitle), p(copy.review),
+    h2(copy.correctionsTitle), p(copy.corrections),
+    h2(copy.fundingTitle), p(copy.funding),
+  ];
+}
+
 /**
  * Legal copy is authored in English only.
  *
@@ -255,7 +356,14 @@ export function legalSlugsByLocale(key: LegalKey): Record<Locale, string> {
 
 export function getLegalPage(locale: Locale, key: LegalKey): LegalPage {
   const fromCms = generatedFor('legal', locale)?.find((page) => page.translationKey === key);
-  if (fromCms) return fromCms;
+  if (fromCms) return key === 'editorial'
+    ? {
+        ...fromCms,
+        blocks: editorialBlocks(locale),
+        updatedAt: '2026-10-13',
+        seo: { ...fromCms.seo, description: editorialCopy[locale].intro, noindex: false },
+      }
+    : fromCms;
 
   const title = titles[locale][key];
   const isSource = locale === DEFAULT_LOCALE;
@@ -264,8 +372,10 @@ export function getLegalPage(locale: Locale, key: LegalKey): LegalPage {
     locale,
     slug: slugs[locale][key],
     title,
-    updatedAt: '2026-08-20',
-    blocks: isSource
+    updatedAt: key === 'editorial' ? '2026-10-13' : '2026-08-20',
+    blocks: key === 'editorial'
+      ? editorialBlocks(locale)
+      : isSource
       ? englishBodies[key]
       : [
           p(pendingNotice[locale]),
@@ -277,7 +387,7 @@ export function getLegalPage(locale: Locale, key: LegalKey): LegalPage {
     seo: {
       title,
       description: isSource ? `${title} — HelloMommy.` : pendingNotice[locale],
-      noindex: !isSource,
+      noindex: key === 'editorial' ? false : !isSource,
     },
   };
 }

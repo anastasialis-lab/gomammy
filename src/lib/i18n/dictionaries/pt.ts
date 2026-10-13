@@ -73,18 +73,18 @@ export const pt: Dictionary = {
       "As semanas de gravidez contam-se a partir do primeiro dia da última menstruação, por isso a semana 1 começa antes da conceção.",
   },
   home: {
-    heroTitle: "Tudo o que precisas para a tua gravidez.",
+    heroTitle: "Gravidez semana a semana: desenvolvimento, sintomas e conselhos práticos.",
     heroSubtitle:
-      "Informação calma, clara e revista para cada semana — do primeiro teste ao primeiro abraço.",
+      "Explora cada semana, compreende mudanças comuns e prepara perguntas para a tua equipa de saúde.",
     heroCtaPrimary: "Ver semana a semana",
     heroCtaSecondary: "Conhecer as nossas apps",
     featured: "Em destaque",
     latest: "Artigos recentes",
     popularWeeks: "Semanas mais lidas",
     exploreTopics: "Explorar temas",
-    trustTitle: "Escrito com cuidado, revisto com rigor",
+    trustTitle: "Como preparamos os artigos",
     trustBody:
-      "Cada artigo é escrito em linguagem simples, datado e verificado com fontes médicas de confiança — para saberes sempre de onde vem a informação.",
+      "Os artigos mostram a data e citam fontes quando disponíveis. Só indicamos revisão médica quando um profissional identificado reviu o texto. Diz-nos se encontrares um erro.",
   },
   blog: {
     title: "Todos os artigos",
