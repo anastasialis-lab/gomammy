@@ -209,7 +209,7 @@ export function WeekView({
 
           <Faq items={remainingFaq} title={dict.article.faqTitle} />
 
-          {page.week <= 3 || page.week >= 27 ? (
+          {page.week <= 3 || page.week >= 27 || (locale === 'en' && (page.week === 8 || page.week === 26)) ? (
             <section className="mt-10 text-sm text-muted">
               <h2 className="font-semibold text-ink">{dict.article.sources}</h2>
               <ul className="mt-2 grid gap-1">
@@ -237,16 +237,44 @@ export function WeekView({
                     </li>
                   </>
                 ) : (
-                  <li>
-                    <a
-                      href="https://www.nhs.uk/pregnancy/keeping-well/your-babys-movements/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="link-underline"
-                    >
-                      NHS — your baby’s movements
-                    </a>
-                  </li>
+                  <>
+                    {locale === 'en' && (page.week === 8 || page.week === 26 || page.week === 28) ? (
+                      <li>
+                        <a
+                          href={`https://www.nhs.uk/best-start-in-life/pregnancy/week-by-week-guide-to-pregnancy/${page.week === 8 ? '1st' : page.week === 26 ? '2nd' : '3rd'}-trimester/week-${page.week}/`}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="link-underline"
+                        >
+                          NHS — week {page.week} pregnancy guide
+                        </a>
+                      </li>
+                    ) : null}
+                    {locale === 'en' && page.week === 8 ? (
+                      <li>
+                        <a
+                          href="https://www.nhs.uk/pregnancy/common-symptoms/pregnancy-symptoms-you-need-to-get-help-for/"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="link-underline"
+                        >
+                          NHS — pregnancy symptoms that need help
+                        </a>
+                      </li>
+                    ) : null}
+                    {page.week >= 16 ? (
+                      <li>
+                        <a
+                          href="https://www.nhs.uk/pregnancy/keeping-well/your-babys-movements/"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="link-underline"
+                        >
+                          NHS — your baby’s movements
+                        </a>
+                      </li>
+                    ) : null}
+                  </>
                 )}
               </ul>
             </section>

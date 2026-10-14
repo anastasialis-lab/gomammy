@@ -6,6 +6,7 @@ import { WEEK_FACTS, TOTAL_WEEKS, getWeekFacts } from "./facts";
 import { WEEK_PHRASEBOOKS } from "./phrasebook";
 import { clarifyEarlyWeek } from './earlyWeeks';
 import { clarifyLateWeek } from './lateWeeks';
+import { enrichPriorityWeek } from './priorityWeeks';
 
 export { WEEK_FACTS, TOTAL_WEEKS, getWeekFacts };
 
@@ -114,7 +115,7 @@ export function buildWeekPage(locale: Locale, week: number): WeekPage | null {
   const generated = generatedFor("weeks", locale)?.find(
     (page) => page.week === week,
   );
-  if (generated) return clarifyLateWeek(clarifyEarlyWeek(generated, locale), locale);
+  if (generated) return enrichPriorityWeek(clarifyLateWeek(clarifyEarlyWeek(generated, locale), locale), locale);
 
   const facts = getWeekFacts(week);
   if (!facts) return null;
@@ -136,7 +137,7 @@ export function buildWeekPage(locale: Locale, week: number): WeekPage | null {
 
   const title = t(dict.week.pageTitle, { n: week });
 
-  return clarifyLateWeek(clarifyEarlyWeek({
+  return enrichPriorityWeek(clarifyLateWeek(clarifyEarlyWeek({
     locale,
     week,
     slug: weekSlug(locale, week),
@@ -155,7 +156,7 @@ export function buildWeekPage(locale: Locale, week: number): WeekPage | null {
       description: t(book.seoDescription, { n: week, size: sizeLabel }),
       primaryKeyword: title,
     },
-  }, locale), locale);
+  }, locale), locale), locale);
 }
 
 export function milestoneFor(locale: Locale, facts: WeekFacts): string | null {
